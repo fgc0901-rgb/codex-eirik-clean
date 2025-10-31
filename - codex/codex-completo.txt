@@ -80,7 +80,7 @@
 - **Síntese**
   - Assim nasceram os **Ecos de Yggdrasil** — um clã sombrio, mas protetor, que caminha entre mundos, guardando o equilíbrio.
 
-## <a id="bloco2"></a> [ORIGEM]
+## <a id="bloco3"></a> [MISSÃO]
 
 - O clã não busca glória nem conquista.
 - Seu propósito é vigiar os limiares entre vida e morte, luz e sombra, passado e futuro.
@@ -105,7 +105,6 @@
 
 ## <a id="bloco4"></a> [CAPÍTULOS ÉPICOS]
 
-
 ### A Lenda de Eirik, o Urso Dourado
 - Eirik, marcado pela perda e pela visão de Odin, ergueu-se como líder destinado.
 
@@ -123,13 +122,14 @@
 - Nas luas seguintes, dedicou-se aos animais e descobriu paixão pelos cavalos.
 - Bjorn partiu em uma grande caçada e não retornou.
 - Iomhar desapareceu, lembrado apenas nos corvos que cruzam o céu.
-### 7.11 A Visão das Terras Distantes
-- Após um dia de trabalho duro, Eirik ingeriu acidentalmente uma planta colhida em terras distantes.
-- Foi tomado por sonhos intensos: Yellowstone existia, mas habitada por rostos estranhos, como se fosse uma realidade paralela.
-- A experiência o impediu de atender ao chamado imediato de Cocoroco em Oyaté Thanka.
-- Eirik confessou também sua tristeza pelo desaparecimento de Iomhar, reafirmando a lealdade ao clã e à família nativa.
 
-### 7.14 A Bravura de Kjell Bloodaxe diante do Urso Dourado
+### 7.11 A Visão das Terras Distantes
+- Após ingerir uma planta colhida em terras distantes, Eirik foi tomado por sonhos intensos.
+- Yellowstone existia, mas habitada por rostos estranhos, como se fosse uma realidade paralela.
+- A experiência o impediu de atender ao chamado imediato de Cocoroco em Oyaté Thanka.
+- Eirik confessou sua tristeza pelo desaparecimento de Iomhar, reafirmando a lealdade ao clã e à família nativa.
+
+### 7.14 A Bravura de Kjell Bloodaxe
 - Kjell enfrentou as provações do clã e demonstrou coragem perante Eirik.
 - Sua bravura foi reconhecida como sinal de aceitação.
 
@@ -151,7 +151,6 @@
 
 
 ## <a id="bloco5"></a> [EVENTOS RECENTES]
-
 
 ### 7.1 Guerra de Remo
 - Conflito simbólico entre clãs, travado em barcos, onde a honra foi testada em águas turbulentas.
@@ -176,6 +175,7 @@
 
 ### 7.8 Ascensão de Eirik como Urso Dourado
 - Reconhecimento oficial de Eirik como Jarl Dourado, líder espiritual e guerreiro.
+
 ### 7.9 Chegada de Iomhar, a Sombra do Corvo
 - O misterioso guardião das sombras se uniu ao clã, trazendo consigo presságios e sabedoria oculta.
 
@@ -209,7 +209,6 @@
 - Sua memória permanece como símbolo de devoção e silêncio sagrado.
 
 ## <a id="bloco6"></a> [MENSAGENS OFICIAIS DE EIRIK]
-
 
 ### 8.1 “Entre Névoas e Raízes: O Chamado de Eirik”
 - Mensagem de união, lembrando que o clã deve permanecer firme mesmo quando a névoa cobre os caminhos.
@@ -421,15 +420,6 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 
 ## <a id="bloco9"></a> [SÍMBOLOS, RUNAS E ARTEFATOS]
 
-### Parte 1
-- Runas: Algiz, Eihwaz, Ansuz, Jera, Gebo, Kenaz
-- Totens: Corvos, Lobos, Ursos, Cervos
-- Artefatos principais: Cajado das Raízes, Máscaras dos Destinos, Runa de Eihwaz, Colar das Nove Esferas
-- Artefatos secundários: Lâminas de ferro frio, Caldeirão de Brisingamen, Pedras de Hvergelmir
-### Parte 2 — Novos artefatos
-- Colar das Runas Cristalinas
-- Sabedoria da Obsidiana
-
 ### Runas em uso
 - **Algiz (ᛉ)** — proteção
 - **Eihwaz (ᛇ)** — transição, vida e morte
@@ -438,7 +428,7 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 - **Gebo (ᚷ)** — união e sacrifício
 - **Kenaz (ᚲ)** — chama eterna e iluminação
 
-### Totens complementares
+### Totens
 - **Corvos** — mensageiros de Odin
 - **Lobos** — astúcia e lealdade
 - **Ursos** — força e liderança
@@ -456,7 +446,6 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 - **Pedras de Hvergelmir** — fragmentos que simbolizam a fonte primordial.
 
 ### Novos Artefatos
-
 - **Colar das Runas Cristalinas**
   - Forjado em rituais lunares, cada cristal carrega uma runa gravada.
   - Representa a união entre os mundos e a força coletiva do clã.
@@ -466,6 +455,7 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
   - Pedra negra polida, guardiã de visões ocultas.
   - Permite ao portador enxergar presságios e ecos de realidades paralelas.
   - Considerada perigosa, pois revela verdades que podem pesar sobre o espírito.
+
 
 ## <a id="bloco10"></a> [REGRAS GERAIS — CONDADO DE YELLOWSTONE]
 
@@ -573,6 +563,9 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 - O julgamento é conduzido pelo **Jarl** ou, em sua ausência, pelo **Hersir** ou pela **Völva**.
 - Penas podem ser **narrativas** (exílio, perda de artefato, humilhação pública) ou **técnicas** (advertência, suspensão de RP).
 - O objetivo não é punir, mas **restaurar o equilíbrio** e preservar a coesão do clã.
+
+---
+
 ### Infrações Leves
 - **Quebra de imersão leve**
   - Exemplos: piadas fora de contexto, uso de termos modernos.
@@ -585,8 +578,10 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 - **Ausência em rituais sem justificativa**
   - Falta em cerimônias importantes sem aviso.
   - Pena: pequena penitência ritual (ex: vigília noturna).
-### Infrações Médias
 
+---
+
+### Infrações Médias
 - **Quebra de imersão grave**
   - Exemplos: uso recorrente de termos modernos, piadas fora de contexto em rituais ou combates.
   - Pena: advertência formal + ritual de reparação (vigília, oferenda ou penitência pública).
@@ -606,8 +601,10 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 - **Desrespeito a locais sagrados**
   - Profanação de espaços ritualísticos ou quebra de regras internas.
   - Pena: exclusão temporária de rituais + penitência de reparação (ex: reconstrução, oferenda, vigília).
-### Infrações Graves
 
+---
+
+### Infrações Graves
 - **Traição ao clã**
   - Exemplos: entregar segredos, tramar contra a liderança, aliar-se a inimigos declarados.
   - Pena: exílio narrativo imediato ou execução ritual (dependendo da gravidade).
@@ -631,6 +628,9 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 - **Reincidência em infrações médias**
   - Quando o membro já foi advertido e volta a cometer a mesma conduta.
   - Pena: agravamento automático para infração grave.
+
+---
+
 ### Atenuantes
 - **Confissão espontânea**
   - O membro admite a infração antes de ser descoberto.
@@ -676,8 +676,7 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 
 ## <a id="bloco14"></a> [ECONOMIA DO CLÃ]
 
-
-### Recursos Naturais
+### Parte 1 — Recursos Naturais
 - **Madeira de Yellowstone**
   - Usada para construção de casas, barcos e armas.
   - Considerada sagrada quando retirada próxima à Árvore da Vida.
@@ -697,7 +696,10 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 - **Ervas e raízes**
   - Usadas em rituais de cura, feitiçaria e poções.
   - Algumas são consideradas raras e guardadas pela Völva.
-### Produção
+
+---
+
+### Parte 2 — Produção e Comércio
 - **Ferreiros**
   - Produzem armas, ferramentas e ornamentos.
   - Trabalham com ferro frio e metais sagrados.
@@ -714,34 +716,35 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
   - Produzem unguentos, poções e remédios naturais.
   - Trabalham em conjunto com a Völva.
 
-### Comércio
 - **Trocas internas**
   - Baseadas em escambo: madeira, caça, ervas, armas.
+
 - **Trocas externas**
   - Realizadas com clãs aliados e povos nativos.
   - Itens mais valiosos: runas gravadas, armas de ferro frio, ervas raras.
-### Tesouros do Clã
-- **Cajado das Raízes**
-  - Artefato central, guardado pela Völva.
-- **Colar das Runas Cristalinas**
-  - Usado em rituais de fortalecimento coletivo.
-- **Sabedoria da Obsidiana**
-  - Pedra negra que guarda visões ocultas.
 
-### Tributos
+---
+
+### Parte 3 — Tesouros e Tributos
+- **Tesouros do Clã**
+  - Cajado das Raízes — artefato central, guardado pela Völva.
+  - Colar das Runas Cristalinas — usado em rituais de fortalecimento coletivo.
+  - Sabedoria da Obsidiana — pedra negra que guarda visões ocultas.
+
 - **Tributo ao Jarl**
   - Parte da produção é entregue ao Jarl para manutenção do clã.
+
 - **Tributo à Mãe Terra**
   - Oferendas de caça, pesca e colheita em rituais sazonais.
+
 - **Tributo de Sangue**
   - Sacrifícios simbólicos em batalhas ou rituais de passagem.
 
+---
+
 ### Síntese
 - A economia do clã é baseada em **escambo, rituais e equilíbrio com a natureza**.
-- O valor não está apenas nos bens, mas no **significado espiritual** de cada troca.
-
-
-## <a id="bloco15"></a> [PREFERÊNCIAS DO USUÁRIO]
+- O valor não está apenas nos bens, mas no **significado espiritual** de cada troca.## <a id="bloco15"></a> [PREFERÊNCIAS DO USUÁRIO]
 
 
 - **Formato dos arquivos**  
@@ -769,7 +772,6 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 
 ## <a id="bloco16"></a> [ASSINATURA FINAL]
 
-
 ✠ Eirik Drakkar, o Urso Dourado  
 Jarl Dourado, Guardião das Raízes  
 
@@ -778,4 +780,3 @@ este códex permanece como testemunho da honra,
 da memória e da missão eterna dos **Ecos de Yggdrasil**.  
 
 *"Onde o vento não alcança, nós chegamos."*
-
