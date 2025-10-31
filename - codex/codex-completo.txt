@@ -344,7 +344,7 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 
 ### Trilha dos Nove Mundos
 - Caminho simbólico que representa a jornada por todos os reinos de Yggdrasil.
-## [SÍMBOLOS, RUNAS E ARTEFATOS]
+
 
 ## <a id="bloco9"></a> [SÍMBOLOS, RUNAS E ARTEFATOS]
 
@@ -598,8 +598,8 @@ Que esta história seja guardada como presságio e como guia, lembrando-nos de q
 ---
 
 ### Síntese
-- O Código Penal não busca apenas punir, mas **restaurar o equilíbrio**.
-- Toda pena deve ter caráter **narrativo e simbólico**, reforçando a coesão do clã.
+- O Código Penal não busca apenas punir, mas **restaurar o equilíbrio**.  
+- Toda pena deve ter caráter **narrativo e simbólico**, reforçando a coesão do clã.  
 - O julgamento é sempre acompanhado de rituais, para que a justiça seja também espiritual.
 
 ## <a id="bloco14"></a> [ECONOMIA DO CLÃ]
