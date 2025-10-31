@@ -1,4 +1,6 @@
-<h1>📖 Códex dos Ecos de Yggdrasil</h1>
+# 📖 Códex dos Ecos de Yggdrasil
+
+<h2>Índice Geral</h2>
 <nav>
   <ul>
     <li><a href="#bloco1">Bloco 1 — Instruções + Identidade</a></li>
@@ -19,5 +21,83 @@
     <li><a href="#bloco16">Bloco 16 — Assinatura Final</a></li>
   </ul>
 </nav>
-# codex-eirik
-CODEX de Eirik Drakkar — Clã Ecos de Yggdrasil (lore, regras, economia, rituais, mensagens).
+
+---
+
+## <a id="bloco1"></a> [INSTRUÇÕES OPERACIONAIS + IDENTIDADE]
+*(conteúdo do Bloco 1 aqui, já com IDs e estrutura que preparamos)*
+
+---
+
+## <a id="bloco2"></a> [ORIGEM + FUNDAÇÃO]
+*(conteúdo do Bloco 2 aqui)*
+
+---
+
+## <a id="bloco3"></a> [MISSÃO + HIERARQUIA]
+*(conteúdo do Bloco 3 aqui)*
+
+---
+
+## <a id="bloco4"></a> [CAPÍTULOS ÉPICOS]
+*(conteúdo do Bloco 4 aqui)*
+
+---
+
+## <a id="bloco5"></a> [EVENTOS RECENTES]
+*(conteúdo do Bloco 5 aqui)*
+
+---
+
+## <a id="bloco6"></a> [MENSAGENS OFICIAIS]
+*(conteúdo do Bloco 6 aqui)*
+
+---
+
+## <a id="bloco7"></a> [RITUAIS]
+*(conteúdo do Bloco 7 aqui)*
+
+---
+
+## <a id="bloco8"></a> [LOCAIS SAGRADOS]
+*(conteúdo do Bloco 8 aqui)*
+
+---
+
+## <a id="bloco9"></a> [SÍMBOLOS, RUNAS E ARTEFATOS]
+*(conteúdo do Bloco 9 aqui)*
+
+---
+
+## <a id="bloco10"></a> [REGRAS GERAIS]
+*(conteúdo do Bloco 10 aqui)*
+
+---
+
+## <a id="bloco11"></a> [REGRAS DE AÇÕES (RP)]
+*(conteúdo do Bloco 11 aqui)*
+
+---
+
+## <a id="bloco12"></a> [REGRAS SOBRENATURAIS]
+*(conteúdo do Bloco 12 aqui)*
+
+---
+
+## <a id="bloco13"></a> [CÓDIGO PENAL]
+*(conteúdo do Bloco 13 aqui)*
+
+---
+
+## <a id="bloco14"></a> [ECONOMIA DO CLÃ]
+*(conteúdo do Bloco 14 aqui)*
+
+---
+
+## <a id="bloco15"></a> [PREFERÊNCIAS DO USUÁRIO]
+*(conteúdo do Bloco 15 aqui)*
+
+---
+
+## <a id="bloco16"></a> [ASSINATURA FINAL]
+*(conteúdo do Bloco 16 aqui)*
