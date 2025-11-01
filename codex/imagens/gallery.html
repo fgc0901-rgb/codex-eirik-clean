@@ -27,6 +27,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             transition: transform 0.3s ease;
             background-color: #2a2a2a;
+            cursor: pointer;
         }
 
         .gallery-item:hover {
@@ -35,7 +36,7 @@
 
         .gallery-item img {
             width: 100%;
-            height: 100%;
+            height: 300px;
             object-fit: cover;
             display: block;
         }
@@ -112,48 +113,106 @@
     </div>
 
     <script>
+        // Lista de imagens (hardcoded)
+        const images = [
+            'Captura de tela 2025-10-20 211154.png',
+            'Captura de tela 2025-10-20 212517.png',
+            'Captura de tela 2025-10-21 042553.png',
+            'Captura de tela 2025-10-21 042732.png',
+            'Captura de tela 2025-10-21 042920.png',
+            'Captura de tela 2025-10-21 043006.png',
+            'Captura de tela 2025-10-21 043231.png',
+            'Captura de tela 2025-10-21 043242.png',
+            'Captura de tela 2025-10-21 043332.png',
+            'Captura de tela 2025-10-21 043624.png',
+            'Captura de tela 2025-10-21 044510.png',
+            'Captura de tela 2025-10-21 044700.png',
+            'Captura de tela 2025-10-21 044722.png',
+            'Captura de tela 2025-10-21 045255.png',
+            'Captura de tela 2025-10-21 045657.png',
+            'Captura de tela 2025-10-23 035354.png',
+            'Captura de tela 2025-10-23 035420.png',
+            'Captura de tela 2025-10-23 043652.png',
+            'Captura de tela 2025-10-23 152706.png',
+            'Captura de tela 2025-10-23 152743.png',
+            'Captura de tela 2025-10-23 152826.png',
+            'Captura de tela 2025-10-23 152859.png',
+            'Captura de tela 2025-10-23 210752.png',
+            'Captura de tela 2025-10-23 211455.png',
+            'Captura de tela 2025-10-23 224139.png',
+            'Captura de tela 2025-10-23 224145.png',
+            'Captura de tela 2025-10-23 224234.png',
+            'Captura de tela 2025-10-23 224308.png',
+            'Captura de tela 2025-10-23 224352.png',
+            'Captura de tela 2025-10-23 224435.png',
+            'Captura de tela 2025-10-25 154221.png',
+            'Captura de tela 2025-10-25 160313.png',
+            'Captura de tela 2025-10-25 160328.png',
+            'Captura de tela 2025-10-25 195521.png',
+            'Captura de tela 2025-10-25 195715.png',
+            'Captura de tela 2025-10-25 200125.png',
+            'Captura de tela 2025-10-25 200509.png',
+            'Captura de tela 2025-10-26 131204.png',
+            'Captura de tela 2025-10-31 140236.png',
+            'Captura de tela 2025-10-31 140351.png',
+            'Captura de tela 2025-10-31 161515.png',
+            'Captura de tela 2025-10-31 231717.png',
+            'Captura de tela 2025-11-01 004342.png',
+            'Captura de tela 2025-11-01 004904.png',
+            'Captura de tela 2025-11-01 021643.png',
+            'Captura de tela 2025-11-01 021858.png',
+            'Captura de tela 2025-11-01 022011.png',
+            'Captura de tela 2025-11-01 022130.png',
+            'Captura de tela 2025-11-01 023337.png',
+            'Captura de tela 2025-11-01 023416.png',
+            'Captura de tela 2025-11-01 023454.png',
+            'Captura de tela 2025-11-01 023547.png',
+            'Captura de tela 2025-11-01 023556.png',
+            'Captura de tela 2025-11-01 025938.png',
+            'Captura de tela 2025-11-01 030011.png'
+        ];
+
         // Função para carregar as imagens
         function loadGallery() {
             const gallery = document.getElementById('gallery');
             
-            // Lista de imagens (será preenchida dinamicamente)
-            const images = [];
-            
-            // Para cada imagem encontrada no diretório
-            fetch('list_images.php')
-                .then(response => response.json())
-                .then(imageList => {
-                    imageList.forEach(image => {
-                        const item = document.createElement('div');
-                        item.className = 'gallery-item';
-                        
-                        const img = document.createElement('img');
-                        img.src = image.path;
-                        img.alt = image.name;
-                        
-                        const caption = document.createElement('div');
-                        caption.className = 'caption';
-                        caption.textContent = image.name;
-                        
-                        item.appendChild(img);
-                        item.appendChild(caption);
-                        gallery.appendChild(item);
-                        
-                        // Adicionar funcionalidade de modal
-                        item.onclick = function() {
-                            const modal = document.getElementById('imageModal');
-                            const modalImg = document.getElementById('modalImage');
-                            modal.style.display = "block";
-                            modalImg.src = image.path;
-                        }
-                    });
-                })
-                .catch(error => console.error('Erro ao carregar as imagens:', error));
+            images.forEach(imageName => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                
+                const img = document.createElement('img');
+                img.src = imageName;
+                img.alt = imageName.replace('.png', '');
+                
+                const caption = document.createElement('div');
+                caption.className = 'caption';
+                caption.textContent = imageName.replace('.png', '').replace('Captura de tela ', '');
+                
+                item.appendChild(img);
+                item.appendChild(caption);
+                gallery.appendChild(item);
+                
+                // Adicionar funcionalidade de modal
+                item.onclick = function() {
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+                    modal.style.display = "block";
+                    modalImg.src = imageName;
+                }
+            });
         }
 
         // Fechar modal quando clicar no X
         document.querySelector('.close').onclick = function() {
             document.getElementById('imageModal').style.display = "none";
+        }
+
+        // Fechar modal quando clicar fora da imagem
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
         }
 
         // Carregar galeria quando a página carregar
