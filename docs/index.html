@@ -1,152 +1,300 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html><!DOCTYPE html>
 
-<html lang="pt-br"><html lang="pt-BR">
+<html lang="pt-br">
 
-<head><head>
+<head><html lang="pt-br"><html lang="pt-BR">
 
-    <meta charset="UTF-8">    <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><head><head>
 
-    <title>Galeria de Imagens - Codex Ecos de Yggdrasil</title>    <title>Codex Clã - Ecos de Yggdrasil</title>
+    <title>Codex Ecos de Yggdrasil</title>
 
-    <style>    <style>
+    <style>    <meta charset="UTF-8">    <meta charset="UTF-8">
 
-        body {        body {
+        :root {
 
-            font-family: Arial, sans-serif;            <!DOCTYPE html>
+            --primary-color: #2a2a2a;    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            margin: 0;            <html lang="pt-BR">
+            --secondary-color: #3498db;
 
-            padding: 20px;            <head>
+            --text-color: #fff;    <title>Galeria de Imagens - Codex Ecos de Yggdrasil</title>    <title>Codex Clã - Ecos de Yggdrasil</title>
 
-            background-color: #1a1a1a;                <meta charset="utf-8">
+            --hover-color: #4aa3df;
+
+            --background-color: #1a1a1a;    <style>    <style>
+
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.3);
+
+        }        body {        body {
+
+
+
+        body {            font-family: Arial, sans-serif;            <!DOCTYPE html>
+
+            font-family: 'Arial', sans-serif;
+
+            margin: 0;            margin: 0;            <html lang="pt-BR">
+
+            padding: 0;
+
+            background-color: var(--background-color);            padding: 20px;            <head>
+
+            color: var(--text-color);
+
+            line-height: 1.6;            background-color: #1a1a1a;                <meta charset="utf-8">
+
+        }
 
             color: #fff;                <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        }                <title>Códex — Ecos de Yggdrasil</title>
+        .header {
 
-                <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
+            background-color: var(--primary-color);        }                <title>Códex — Ecos de Yggdrasil</title>
 
-        .gallery {                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+            padding: 2rem 0;
 
-            display: grid;                <style>
+            text-align: center;                <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));                    :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
+            box-shadow: var(--card-shadow);
 
-            gap: 20px;                    .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
+        }        .gallery {                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
 
-            padding: 20px;                    html,body{height:100%;}
 
-        }                    body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
 
-                    .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
+        .header h1 {            display: grid;                <style>
 
-        .gallery-item {                    .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
+            margin: 0;
 
-            position: relative;                    h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
+            font-size: 2.5rem;            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));                    :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
 
-            overflow: hidden;                    .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 
-            border-radius: 8px;                    input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+        }            gap: 20px;                    .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);                    main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
 
-            transition: transform 0.3s ease;                    nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
+
+        .header p {            padding: 20px;                    html,body{height:100%;}
+
+            margin: 1rem 0 0;
+
+            font-size: 1.2rem;        }                    body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
+
+            opacity: 0.9;
+
+        }                    .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
+
+
+
+        .container {        .gallery-item {                    .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
+
+            max-width: 1200px;
+
+            margin: 0 auto;            position: relative;                    h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
+
+            padding: 2rem;
+
+        }            overflow: hidden;                    .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+
+
+        .nav-grid {            border-radius: 8px;                    input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));            box-shadow: 0 4px 8px rgba(0,0,0,0.3);                    main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
+
+            gap: 2rem;
+
+            margin-top: 2rem;            transition: transform 0.3s ease;                    nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
+
+        }
 
             background-color: #2a2a2a;                    section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
 
-            cursor: pointer;                    .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
+        .nav-card {
 
-        }                    .section .actions{margin-top:8px;display:flex;gap:8px}
+            background-color: var(--primary-color);            cursor: pointer;                    .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
 
-                    .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
+            border-radius: 8px;
 
-        .gallery-item:hover {                    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+            padding: 1.5rem;        }                    .section .actions{margin-top:8px;display:flex;gap:8px}
 
-            transform: scale(1.02);                    @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
+            text-decoration: none;
 
-        }                </style>
+            color: var(--text-color);                    .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
+
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            box-shadow: var(--card-shadow);        .gallery-item:hover {                    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+            display: flex;
+
+            flex-direction: column;            transform: scale(1.02);                    @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
+
+            align-items: center;
+
+            text-align: center;        }                </style>
+
+        }
 
                 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-        .gallery-item img {                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        .nav-card:hover {
 
-            width: 100%;            </head>
+            transform: translateY(-5px);        .gallery-item img {                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-            height: 300px;            <body>
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
 
-            object-fit: cover;                <div class="app">
+        }            width: 100%;            </head>
+
+
+
+        .nav-card h2 {            height: 300px;            <body>
+
+            margin: 0 0 1rem;
+
+            color: var(--secondary-color);            object-fit: cover;                <div class="app">
+
+        }
 
             display: block;                    <header class="app-header">
 
-        }                        <div class="title">
+        .nav-card p {
 
-                            <div class="logo">E</div>
+            margin: 0;        }                        <div class="title">
 
-        .gallery-item .caption {                            <div>
+            opacity: 0.8;
 
-            position: absolute;                                <!DOCTYPE html>
+        }                            <div class="logo">E</div>
 
-            bottom: 0;                                <html lang="pt-BR">
 
-            left: 0;                                <head>
 
-            right: 0;                                    <meta charset="utf-8">
+        .icon {        .gallery-item .caption {                            <div>
+
+            font-size: 2.5rem;
+
+            margin-bottom: 1rem;            position: absolute;                                <!DOCTYPE html>
+
+            color: var(--secondary-color);
+
+        }            bottom: 0;                                <html lang="pt-BR">
+
+
+
+        @media (max-width: 768px) {            left: 0;                                <head>
+
+            .header h1 {
+
+                font-size: 2rem;            right: 0;                                    <meta charset="utf-8">
+
+            }
 
             padding: 15px;                                    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            background: rgba(0,0,0,0.7);                                    <title>Códex — Ecos de Yggdrasil</title>
+            .container {
+
+                padding: 1rem;            background: rgba(0,0,0,0.7);                                    <title>Códex — Ecos de Yggdrasil</title>
+
+            }
 
             color: white;                                    <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
 
-            transform: translateY(100%);                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+            .nav-grid {
 
-            transition: transform 0.3s ease;                                    <style>
+                grid-template-columns: 1fr;            transform: translateY(100%);                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
 
-        }                                        :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
+            }
 
-                                        .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
+        }            transition: transform 0.3s ease;                                    <style>
 
-        .gallery-item:hover .caption {                                        html,body{height:100%;}
+    </style>
+
+</head>        }                                        :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
+
+<body>
+
+    <header class="header">                                        .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
+
+        <h1>Códex — Ecos de Yggdrasil</h1>
+
+        <p>Navegue, pesquise e compartilhe — versão interativa</p>        .gallery-item:hover .caption {                                        html,body{height:100%;}
+
+    </header>
 
             transform: translateY(0);                                        body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
 
-        }                                        .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
+    <main class="container">
 
-                                        .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
+        <div class="nav-grid">        }                                        .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
 
-        .modal {                                        h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
+            <a href="codex.html" class="nav-card">
 
-            display: none;                                        .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+                <div class="icon">📚</div>                                        .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
 
-            position: fixed;                                        input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+                <h2>Codex</h2>
 
-            top: 0;                                        main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
+                <p>Explore o conteúdo completo do Códex dos Ecos de Yggdrasil</p>        .modal {                                        h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
 
-            left: 0;                                        nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
+            </a>
 
-            width: 100%;                                        section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
+            <a href="imagens/" class="nav-card">            display: none;                                        .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
 
-            height: 100%;                                        .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
+                <div class="icon">🖼️</div>
 
-            background-color: rgba(0,0,0,0.9);                                        .section .actions{margin-top:8px;display:flex;gap:8px}
+                <h2>Galeria</h2>            position: fixed;                                        input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
 
-            z-index: 1000;                                        .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
+                <p>Visualize todas as imagens e capturas relacionadas</p>
 
-        }                                        footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+            </a>            top: 0;                                        main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
 
-                                        @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
+            <a href="sagas/" class="nav-card">
 
-        .modal-content {                                    </style>
+                <div class="icon">📖</div>            left: 0;                                        nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
 
-            max-width: 90%;                                    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                <h2>Sagas</h2>
 
-            max-height: 90vh;                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+                <p>Leia as histórias e acontecimentos marcantes</p>            width: 100%;                                        section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
 
-            margin: auto;                                </head>
+            </a>
 
-            display: block;                                <body>
+            <a href="rituais/" class="nav-card">            height: 100%;                                        .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
+
+                <div class="icon">✨</div>
+
+                <h2>Rituais</h2>            background-color: rgba(0,0,0,0.9);                                        .section .actions{margin-top:8px;display:flex;gap:8px}
+
+                <p>Descubra os rituais e cerimônias especiais</p>
+
+            </a>            z-index: 1000;                                        .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
+
+            <a href="aliados/" class="nav-card">
+
+                <div class="icon">🤝</div>        }                                        footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+                <h2>Aliados</h2>
+
+                <p>Conheça os membros e aliados importantes</p>                                        @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
+
+            </a>
+
+            <a href="mensagens/" class="nav-card">        .modal-content {                                    </style>
+
+                <div class="icon">💌</div>
+
+                <h2>Mensagens</h2>            max-width: 90%;                                    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+                <p>Acesse mensagens e comunicações especiais</p>
+
+            </a>            max-height: 90vh;                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+        </div>
+
+    </main>            margin: auto;                                </head>
+
+</body>
+
+</html>            display: block;                                <body>
 
             position: relative;                                    <div class="app">
 
