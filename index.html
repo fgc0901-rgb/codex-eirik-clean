@@ -156,7 +156,8 @@
                                                 const actions = document.createElement('div'); actions.className='actions';
                                                 const copyBtn = document.createElement('button'); copyBtn.className='btn'; copyBtn.textContent='Copiar link';
                                                 copyBtn.addEventListener('click', ()=>{
-                                                    const href = location.href.split('#')[0] + '#' + s.id;
+                                                    const baseUrl = 'https://fgc0901-rgb.github.io/codex-eirik';
+                                                    const href = baseUrl + '#' + s.id;
                                                     navigator.clipboard.writeText(href).then(()=>{ copyBtn.textContent='Copiado!'; setTimeout(()=>copyBtn.textContent='Copiar link',1200); });
                                                 });
                                                 const openBtn = document.createElement('button'); openBtn.className='btn'; openBtn.textContent='Abrir (nova aba)';
