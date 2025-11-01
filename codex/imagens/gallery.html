@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens - Codex Ecos de Yggdrasil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            background-color: #2a2a2a;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .caption {
+            transform: translateY(0);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90vh;
+            margin: auto;
+            display: block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Imagens - Codex Ecos de Yggdrasil</h1>
+    
+    <div class="gallery" id="gallery"></div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script>
+        // Função para carregar as imagens
+        function loadGallery() {
+            const gallery = document.getElementById('gallery');
+            
+            // Lista de imagens (será preenchida dinamicamente)
+            const images = [];
+            
+            // Para cada imagem encontrada no diretório
+            fetch('list_images.php')
+                .then(response => response.json())
+                .then(imageList => {
+                    imageList.forEach(image => {
+                        const item = document.createElement('div');
+                        item.className = 'gallery-item';
+                        
+                        const img = document.createElement('img');
+                        img.src = image.path;
+                        img.alt = image.name;
+                        
+                        const caption = document.createElement('div');
+                        caption.className = 'caption';
+                        caption.textContent = image.name;
+                        
+                        item.appendChild(img);
+                        item.appendChild(caption);
+                        gallery.appendChild(item);
+                        
+                        // Adicionar funcionalidade de modal
+                        item.onclick = function() {
+                            const modal = document.getElementById('imageModal');
+                            const modalImg = document.getElementById('modalImage');
+                            modal.style.display = "block";
+                            modalImg.src = image.path;
+                        }
+                    });
+                })
+                .catch(error => console.error('Erro ao carregar as imagens:', error));
+        }
+
+        // Fechar modal quando clicar no X
+        document.querySelector('.close').onclick = function() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // Carregar galeria quando a página carregar
+        window.onload = loadGallery;
+    </script>
+</body>
+</html>

@@ -1,103 +1,93 @@
-# 📖 Códex dos Ecos de Yggdrasil
+# ✠ CODEX DOS ECOS DE YGGDRASIL
 
-<h2>Índice Geral</h2>
-<nav>
-  <ul>
-    <li><a href="#bloco1">Bloco 1 — Instruções + Identidade</a></li>
-    <li><a href="#bloco2">Bloco 2 — Origem + Fundação</a></li>
-    <li><a href="#bloco3">Bloco 3 — Missão + Hierarquia</a></li>
-    <li><a href="#bloco4">Bloco 4 — Capítulos Épicos</a></li>
-    <li><a href="#bloco5">Bloco 5 — Eventos Recentes</a></li>
-    <li><a href="#bloco6">Bloco 6 — Mensagens Oficiais</a></li>
-    <li><a href="#bloco7">Bloco 7 — Rituais</a></li>
-    <li><a href="#bloco8">Bloco 8 — Locais Sagrados</a></li>
-    <li><a href="#bloco9">Bloco 9 — Símbolos, Runas e Artefatos</a></li>
-    <li><a href="#bloco10">Bloco 10 — Regras Gerais</a></li>
-    <li><a href="#bloco11">Bloco 11 — Regras de Ações (RP)</a></li>
-    <li><a href="#bloco12">Bloco 12 — Regras Sobrenaturais</a></li>
-    <li><a href="#bloco13">Bloco 13 — Código Penal</a></li>
-    <li><a href="#bloco14">Bloco 14 — Economia do Clã</a></li>
-    <li><a href="#bloco15">Bloco 15 — Preferências do Usuário</a></li>
-    <li><a href="#bloco16">Bloco 16 — Assinatura Final</a></li>
-  </ul>
-</nav>
+> *"Onde o vento não alcança, nós chegamos."*
 
----
+## 🌲 SOBRE O CODEX SAGRADO
 
-## <a id="bloco1"></a> [INSTRUÇÕES OPERACIONAIS + IDENTIDADE]
-*(conteúdo do Bloco 1 aqui, já com IDs e estrutura que preparamos)*
+Este é o repositório sagrado do Clã Ecos de Yggdrasil, onde guardamos nossa história, tradições e conhecimentos. Como as raízes de Yggdrasil, nosso conhecimento se espalha em várias direções, mas permanece unido em sua essência.
 
----
+## ⚔️ ACESSO AO CODEX
 
-## <a id="bloco2"></a> [ORIGEM + FUNDAÇÃO]
-*(conteúdo do Bloco 2 aqui)*
+### Portal Principal
+- **URL das Raízes**: [fgc0901-rgb.github.io/codex-eirik](https://fgc0901-rgb.github.io/codex-eirik)
+- **Portal Local**: CODEX CLA 2.html
 
----
+### 🔮 COMO NAVEGAR PELOS NOVE MUNDOS
 
-## <a id="bloco3"></a> [MISSÃO + HIERARQUIA]
-*(conteúdo do Bloco 3 aqui)*
+#### Iluminação do Caminho
+- **Luz de Alfheim**: Tema claro para leitura sob o sol
+- **Sombras de Niflheim**: Tema escuro para rituais noturnos
+- **Tocha do Viajante**: Botão de alternância no canto superior
 
----
+#### 🗺️ Caminhos da Sabedoria
+- **Raízes de Yggdrasil**: Menu lateral com todas as seções
+- **Olho de Odin**: Busca por palavras sagradas
+- **Galhos Ancestrais**: Seções que se expandem ao toque
 
-## <a id="bloco4"></a> [CAPÍTULOS ÉPICOS]
-*(conteúdo do Bloco 4 aqui)*
+#### 📜 Dons dos Deuses
+- **Corvos de Odin**: Links para compartilhar conhecimento
+- **Runas do Destino**: Âncoras para seções específicas
+- **Pergaminhos de Mímir**: Opção de impressão sagrada
 
----
+### 🌟 AS SEÇÕES SAGRADAS
 
-## <a id="bloco5"></a> [EVENTOS RECENTES]
-*(conteúdo do Bloco 5 aqui)*
+### 📚 ÍNDICE DAS RAÍZES
 
----
+1. **Identidade Essencial**
+   - A essência de nosso clã
+   - Nossa liderança e emblemas sagrados
 
-## <a id="bloco6"></a> [MENSAGENS OFICIAIS]
-*(conteúdo do Bloco 6 aqui)*
+2. **Origem e Fundação**
+   - O chamado de Odin
+   - O pacto com a Árvore Sagrada
+   - As runas primordiais
 
----
+3. **Capítulos Épicos**
+   - As sagas de nossos heróis
+   - Os eventos que moldaram nosso destino
 
-## <a id="bloco7"></a> [RITUAIS]
-*(conteúdo do Bloco 7 aqui)*
+4. **Rituais e Locais Sagrados**
+   - Cerimônias ancestrais
+   - Lugares de poder
 
----
+5. **Leis e Códigos**
+   - As regras que nos guiam
+   - A ordem que preservamos
 
-## <a id="bloco8"></a> [LOCAIS SAGRADOS]
-*(conteúdo do Bloco 8 aqui)*
+### 🎯 RUNAS DE NAVEGAÇÃO
 
----
+#### O Caminho do Iniciado
+- **Busca Sagrada**: Invoque o conhecimento pelo Olho de Odin
+- **Raízes da Sabedoria**: Navegue pelo menu lateral
+- **Corvos Mensageiros**: Compartilhe seções específicas
+- **Véu da Noite**: Ative o tema escuro para rituais noturnos
+- **Runas Móveis**: Acesse o conhecimento em qualquer jornada
 
-## <a id="bloco9"></a> [SÍMBOLOS, RUNAS E ARTEFATOS]
-*(conteúdo do Bloco 9 aqui)*
+#### Dicas dos Anciões
+- Use a busca para encontrar temas específicos
+- Expanda e recolha seções como galhos de Yggdrasil
+- Compartilhe conhecimento usando os links sagrados
+- Alterne entre luz e sombra conforme sua necessidade
+- Guarde o conhecimento em pergaminhos através da impressão
 
----
+## 🌿 CRESCIMENTO DO CONHECIMENTO
 
-## <a id="bloco10"></a> [REGRAS GERAIS]
-*(conteúdo do Bloco 10 aqui)*
+Como a Grande Árvore, nosso conhecimento cresce constantemente. O Codex é atualizado sempre que novos eventos, mensagens ou mudanças significativas ocorrem em nosso clã.
 
----
+### Últimas Ramificações
+- Adição de Kjell Bloodaxe à hierarquia
+- Novos rituais das Runas de Cristal
+- A história da Mandrágora por Cocoroco
+- O destino de Iomhar e do Guardião Silencioso
 
-## <a id="bloco11"></a> [REGRAS DE AÇÕES (RP)]
-*(conteúdo do Bloco 11 aqui)*
+## ⚡ SINAIS E PRESSÁGIOS
 
----
+Se encontrar algum galho quebrado (erro) ou tiver oferendas (sugestões) para fortalecer nossas raízes, entre em contato com:
 
-## <a id="bloco12"></a> [REGRAS SOBRENATURAIS]
-*(conteúdo do Bloco 12 aqui)*
-
----
-
-## <a id="bloco13"></a> [CÓDIGO PENAL]
-*(conteúdo do Bloco 13 aqui)*
-
----
-
-## <a id="bloco14"></a> [ECONOMIA DO CLÃ]
-*(conteúdo do Bloco 14 aqui)*
+✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
 
 ---
 
-## <a id="bloco15"></a> [PREFERÊNCIAS DO USUÁRIO]
-*(conteúdo do Bloco 15 aqui)*
+*"Que as raízes de Yggdrasil guiem seu caminho através deste conhecimento sagrado."*
 
----
-
-## <a id="bloco16"></a> [ASSINATURA FINAL]
-*(conteúdo do Bloco 16 aqui)*
+✠ Ecos de Yggdrasil
