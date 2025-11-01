@@ -1,192 +1,526 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codex Clã - Ecos de Yggdrasil</title>
-    <style>
-        body {
-            <!DOCTYPE html>
-            <html lang="pt-BR">
-            <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>Códex — Ecos de Yggdrasil</title>
+<!DOCTYPE html><!DOCTYPE html>
+
+<html lang="pt-br"><html lang="pt-BR">
+
+<head><head>
+
+    <meta charset="UTF-8">    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeria de Imagens - Codex Ecos de Yggdrasil</title>    <title>Codex Clã - Ecos de Yggdrasil</title>
+
+    <style>    <style>
+
+        body {        body {
+
+            font-family: Arial, sans-serif;            <!DOCTYPE html>
+
+            margin: 0;            <html lang="pt-BR">
+
+            padding: 20px;            <head>
+
+            background-color: #1a1a1a;                <meta charset="utf-8">
+
+            color: #fff;                <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        }                <title>Códex — Ecos de Yggdrasil</title>
+
                 <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
-                <style>
-                    :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
-                    .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
-                    html,body{height:100%;}
-                    body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
+
+        .gallery {                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+
+            display: grid;                <style>
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));                    :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
+
+            gap: 20px;                    .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
+
+            padding: 20px;                    html,body{height:100%;}
+
+        }                    body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
+
                     .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
-                    .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
-                    h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
-                    .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-                    input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
-                    main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
-                    nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
-                    section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
-                    .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
-                    .section .actions{margin-top:8px;display:flex;gap:8px}
+
+        .gallery-item {                    .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
+
+            position: relative;                    h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
+
+            overflow: hidden;                    .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+            border-radius: 8px;                    input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);                    main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
+
+            transition: transform 0.3s ease;                    nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
+
+            background-color: #2a2a2a;                    section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
+
+            cursor: pointer;                    .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
+
+        }                    .section .actions{margin-top:8px;display:flex;gap:8px}
+
                     .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
-                    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
-                    @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
-                </style>
+
+        .gallery-item:hover {                    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+            transform: scale(1.02);                    @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
+
+        }                </style>
+
                 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-            </head>
-            <body>
-                <div class="app">
-                    <header class="app-header">
-                        <div class="title">
+
+        .gallery-item img {                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+            width: 100%;            </head>
+
+            height: 300px;            <body>
+
+            object-fit: cover;                <div class="app">
+
+            display: block;                    <header class="app-header">
+
+        }                        <div class="title">
+
                             <div class="logo">E</div>
-                            <div>
-                                <!DOCTYPE html>
-                                <html lang="pt-BR">
-                                <head>
-                                    <meta charset="utf-8">
-                                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                                    <title>Códex — Ecos de Yggdrasil</title>
-                                    <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
-                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
-                                    <style>
-                                        :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
+
+        .gallery-item .caption {                            <div>
+
+            position: absolute;                                <!DOCTYPE html>
+
+            bottom: 0;                                <html lang="pt-BR">
+
+            left: 0;                                <head>
+
+            right: 0;                                    <meta charset="utf-8">
+
+            padding: 15px;                                    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            background: rgba(0,0,0,0.7);                                    <title>Códex — Ecos de Yggdrasil</title>
+
+            color: white;                                    <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
+
+            transform: translateY(100%);                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+
+            transition: transform 0.3s ease;                                    <style>
+
+        }                                        :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
+
                                         .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
-                                        html,body{height:100%;}
-                                        body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
-                                        .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
+
+        .gallery-item:hover .caption {                                        html,body{height:100%;}
+
+            transform: translateY(0);                                        body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
+
+        }                                        .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
+
                                         .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
-                                        h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
-                                        .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-                                        input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
-                                        main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
-                                        nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
-                                        section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
-                                        .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
-                                        .section .actions{margin-top:8px;display:flex;gap:8px}
-                                        .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
-                                        footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+        .modal {                                        h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
+
+            display: none;                                        .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+            position: fixed;                                        input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+
+            top: 0;                                        main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
+
+            left: 0;                                        nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
+
+            width: 100%;                                        section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
+
+            height: 100%;                                        .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
+
+            background-color: rgba(0,0,0,0.9);                                        .section .actions{margin-top:8px;display:flex;gap:8px}
+
+            z-index: 1000;                                        .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
+
+        }                                        footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
                                         @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
-                                    </style>
-                                    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-                                </head>
-                                <body>
-                                    <div class="app">
-                                        <header class="app-header">
-                                            <div class="title">
-                                                <div class="logo">E</div>
-                                                <div>
-                                                    <h1>Códex — Ecos de Yggdrasil</h1>
+
+        .modal-content {                                    </style>
+
+            max-width: 90%;                                    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+            max-height: 90vh;                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+            margin: auto;                                </head>
+
+            display: block;                                <body>
+
+            position: relative;                                    <div class="app">
+
+            top: 50%;                                        <header class="app-header">
+
+            transform: translateY(-50%);                                            <div class="title">
+
+            opacity: 0;                                                <div class="logo">E</div>
+
+            transition: opacity 0.3s ease;                                                <div>
+
+        }                                                    <h1>Códex — Ecos de Yggdrasil</h1>
+
                                                     <div class="meta">Navegue, pesquise e compartilhe — versão interativa</div>
-                                                </div>
-                                            </div>
-                                            <div class="controls">
+
+        .modal-content.loaded {                                                </div>
+
+            opacity: 1;                                            </div>
+
+        }                                            <div class="controls">
+
                                                 <div class="search">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="#cbd5e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                                    <input id="searchInput" placeholder="Pesquisar (tecla / para focar)" aria-label="Pesquisar">
-                                                </div>
-                                                <select id="sectionFilter"><option value="">Todas as seções</option></select>
-                                                <button id="themeToggle" class="icon" title="Alternar tema">Tema</button>
-                                                <button id="printBtn" class="icon" title="Imprimir">Imprimir</button>
-                                            </div>
-                                        </header>
-                                        <main class="container">
+
+        .close {                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="#cbd5e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+            position: absolute;                                                    <input id="searchInput" placeholder="Pesquisar (tecla / para focar)" aria-label="Pesquisar">
+
+            top: 15px;                                                </div>
+
+            right: 35px;                                                <select id="sectionFilter"><option value="">Todas as seções</option></select>
+
+            color: #f1f1f1;                                                <button id="themeToggle" class="icon" title="Alternar tema">Tema</button>
+
+            font-size: 40px;                                                <button id="printBtn" class="icon" title="Imprimir">Imprimir</button>
+
+            font-weight: bold;                                            </div>
+
+            cursor: pointer;                                        </header>
+
+        }                                        <main class="container">
+
                                             <nav id="toc" aria-label="Índice das seções">
-                                                <h2>Índice</h2>
-                                                <ul id="tocList"></ul>
-                                            </nav>
-                                            <section id="reader" aria-live="polite"></section>
-                                        </main>
-                                        <footer>© Ecos de Yggdrasil — Códex interativo</footer>
-                                    </div>
-                                    <script>
-                                        // Embedded sections (generated from codex-completo.txt)
-                                        const sections = [
-                                    {
-                                        "title": "INSTRUÇÕES OPERACIONAIS",
-                                        "content": "- Teste: esta é uma alteração de exemplo para validar a atualização automática.\n\n---",
-                                        "id": "instrucoes-operacionais"
+
+        .nav-button {                                                <h2>Índice</h2>
+
+            position: absolute;                                                <ul id="tocList"></ul>
+
+            top: 50%;                                            </nav>
+
+            transform: translateY(-50%);                                            <section id="reader" aria-live="polite"></section>
+
+            color: #f1f1f1;                                        </main>
+
+            font-size: 40px;                                        <footer>© Ecos de Yggdrasil — Códex interativo</footer>
+
+            font-weight: bold;                                    </div>
+
+            cursor: pointer;                                    <script>
+
+            background: rgba(0,0,0,0.5);                                        // Embedded sections (generated from codex-completo.txt)
+
+            padding: 20px;                                        const sections = [
+
+            border-radius: 50%;                                    {
+
+            line-height: 0;                                        "title": "INSTRUÇÕES OPERACIONAIS",
+
+            transition: background-color 0.3s ease;                                        "content": "- Teste: esta é uma alteração de exemplo para validar a atualização automática.\n\n---",
+
+        }                                        "id": "instrucoes-operacionais"
+
                                     },
-                                    {
-                                        "title": "IDENTIDADE ESSENCIAL",
-                                        "content": "- Clã: **Ecos de Yggdrasil**\n- Nota de teste: adicionado registro de integração via script.",
+
+        .nav-button:hover {                                    {
+
+            background: rgba(0,0,0,0.8);                                        "title": "IDENTIDADE ESSENCIAL",
+
+        }                                        "content": "- Clã: **Ecos de Yggdrasil**\n- Nota de teste: adicionado registro de integração via script.",
+
                                         "id": "identidade-essencial"
-                                    }
-                                ];
+
+        #prevButton {                                    }
+
+            left: 20px;                                ];
+
+        }
 
                                         // configure marked + highlight.js
-                                        marked.setOptions({
-                                            gfm: true,
-                                            breaks: true,
-                                            smartLists: true,
-                                            highlight: function(code, lang){
-                                                try{
-                                                    if(lang && hljs.getLanguage(lang)) return hljs.highlight(code, {language: lang}).value;
-                                                    return hljs.highlightAuto(code).value;
-                                                }catch(e){ return code; }
-                                            }
-                                        });
 
-                                        const searchInput = document.getElementById('searchInput');
-                                        const sectionFilter = document.getElementById('sectionFilter');
-                                        const tocList = document.getElementById('tocList');
-                                        const reader = document.getElementById('reader');
-                                        const themeToggle = document.getElementById('themeToggle');
+        #nextButton {                                        marked.setOptions({
+
+            right: 20px;                                            gfm: true,
+
+        }                                            breaks: true,
+
+                                            smartLists: true,
+
+        .spinner {                                            highlight: function(code, lang){
+
+            position: absolute;                                                try{
+
+            top: 50%;                                                    if(lang && hljs.getLanguage(lang)) return hljs.highlight(code, {language: lang}).value;
+
+            left: 50%;                                                    return hljs.highlightAuto(code).value;
+
+            transform: translate(-50%, -50%);                                                }catch(e){ return code; }
+
+            width: 50px;                                            }
+
+            height: 50px;                                        });
+
+            border: 5px solid #f3f3f3;
+
+            border-top: 5px solid #3498db;                                        const searchInput = document.getElementById('searchInput');
+
+            border-radius: 50%;                                        const sectionFilter = document.getElementById('sectionFilter');
+
+            animation: spin 1s linear infinite;                                        const tocList = document.getElementById('tocList');
+
+            display: none;                                        const reader = document.getElementById('reader');
+
+        }                                        const themeToggle = document.getElementById('themeToggle');
+
                                         const printBtn = document.getElementById('printBtn');
 
-                                        function buildTOC(){
-                                            sectionFilter.innerHTML = '<option value="">Todas as seções</option>' + sections.map(s=>`<option value="${s.id}">${s.title}</option>`).join('');
-                                            tocList.innerHTML = sections.map(s=>`<li><a href="#${s.id}" data-id="${s.id}">${s.title}</a></li>`).join('');
+        @keyframes spin {
+
+            0% { transform: translate(-50%, -50%) rotate(0deg); }                                        function buildTOC(){
+
+            100% { transform: translate(-50%, -50%) rotate(360deg); }                                            sectionFilter.innerHTML = '<option value="">Todas as seções</option>' + sections.map(s=>`<option value="${s.id}">${s.title}</option>`).join('');
+
+        }                                            tocList.innerHTML = sections.map(s=>`<li><a href="#${s.id}" data-id="${s.id}">${s.title}</a></li>`).join('');
+
                                             tocList.querySelectorAll('a').forEach(a=> a.addEventListener('click', e=>{ e.preventDefault(); document.getElementById(a.dataset.id).scrollIntoView({behavior:'smooth',block:'start'}); setActiveTOC(a.dataset.id);}));
-                                        }
 
-                                        function setActiveTOC(id){ tocList.querySelectorAll('a').forEach(a=> a.classList.toggle('active', a.dataset.id===id)); }
+        h1 {                                        }
 
-                                        function renderSections(filterId, query){
-                                            reader.innerHTML = '';
+            text-align: center;
+
+            color: #fff;                                        function setActiveTOC(id){ tocList.querySelectorAll('a').forEach(a=> a.classList.toggle('active', a.dataset.id===id)); }
+
+            margin-bottom: 30px;
+
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);                                        function renderSections(filterId, query){
+
+        }                                            reader.innerHTML = '';
+
                                             const visible = sections.filter(s=> (!filterId || s.id===filterId) && (!query || (s.title + '\n' + s.content).toLowerCase().includes(query.toLowerCase())) );
-                                            visible.forEach(s=>{
-                                                const el = document.createElement('article'); el.className='section'; el.id = s.id;
-                                                const h = document.createElement('h2'); h.textContent = s.title; el.appendChild(h);
-                                                const meta = document.createElement('div'); meta.className='meta'; meta.textContent = '';
-                                                el.appendChild(meta);
 
-                                                const actions = document.createElement('div'); actions.className='actions';
-                                                const copyBtn = document.createElement('button'); copyBtn.className='btn'; copyBtn.textContent='Copiar link';
-                                                copyBtn.addEventListener('click', ()=>{
-                                                    const href = location.href.split('#')[0] + '#' + s.id;
-                                                    navigator.clipboard.writeText(href).then(()=>{ copyBtn.textContent='Copiado!'; setTimeout(()=>copyBtn.textContent='Copiar link',1200); });
+        @media (max-width: 600px) {                                            visible.forEach(s=>{
+
+            .gallery {                                                const el = document.createElement('article'); el.className='section'; el.id = s.id;
+
+                grid-template-columns: 1fr;                                                const h = document.createElement('h2'); h.textContent = s.title; el.appendChild(h);
+
+            }                                                const meta = document.createElement('div'); meta.className='meta'; meta.textContent = '';
+
+        }                                                el.appendChild(meta);
+
+    </style>
+
+</head>                                                const actions = document.createElement('div'); actions.className='actions';
+
+<body>                                                const copyBtn = document.createElement('button'); copyBtn.className='btn'; copyBtn.textContent='Copiar link';
+
+    <h1>Galeria de Imagens - Codex Ecos de Yggdrasil</h1>                                                copyBtn.addEventListener('click', ()=>{
+
+                                                        const href = location.href.split('#')[0] + '#' + s.id;
+
+    <div class="gallery" id="gallery"></div>                                                    navigator.clipboard.writeText(href).then(()=>{ copyBtn.textContent='Copiado!'; setTimeout(()=>copyBtn.textContent='Copiar link',1200); });
+
                                                 });
-                                                const openBtn = document.createElement('button'); openBtn.className='btn'; openBtn.textContent='Abrir (nova aba)';
-                                                openBtn.addEventListener('click', ()=>{ const href = location.href.split('#')[0] + '#' + s.id; window.open(href, '_blank'); });
-                                                actions.appendChild(copyBtn); actions.appendChild(openBtn);
-                                                el.appendChild(actions);
 
-                                                const body = document.createElement('div'); body.className='body';
-                                                body.innerHTML = marked.parse(s.content || '');
+    <div id="imageModal" class="modal">                                                const openBtn = document.createElement('button'); openBtn.className='btn'; openBtn.textContent='Abrir (nova aba)';
+
+        <span class="close">&times;</span>                                                openBtn.addEventListener('click', ()=>{ const href = location.href.split('#')[0] + '#' + s.id; window.open(href, '_blank'); });
+
+        <div class="spinner" id="spinner"></div>                                                actions.appendChild(copyBtn); actions.appendChild(openBtn);
+
+        <img class="modal-content" id="modalImage">                                                el.appendChild(actions);
+
+        <div class="nav-button" id="prevButton">&#10094;</div>
+
+        <div class="nav-button" id="nextButton">&#10095;</div>                                                const body = document.createElement('div'); body.className='body';
+
+    </div>                                                body.innerHTML = marked.parse(s.content || '');
+
                                                 el.appendChild(body);
 
-                                                reader.appendChild(el);
-                                                // highlight code blocks (in case marked output has them)
-                                                el.querySelectorAll('pre code').forEach(block=> hljs.highlightElement(block));
-                                            });
-                                        }
+    <script>
 
-                                        let tmr;
-                                        function refresh(){ clearTimeout(tmr); tmr=setTimeout(()=>{ const q=searchInput.value.trim(); const f=sectionFilter.value; renderSections(f,q); },200); }
-                                        searchInput.addEventListener('input', refresh);
-                                        sectionFilter.addEventListener('change', refresh);
+        // Lista de imagens                                                reader.appendChild(el);
 
-                                        // theme
-                                        let light = localStorage.getItem('codex_theme')==='light';
-                                        function applyTheme(){ document.body.classList.toggle('theme-light', light); localStorage.setItem('codex_theme', light?'light':'dark'); }
-                                        themeToggle.addEventListener('click', ()=>{ light=!light; applyTheme(); }); applyTheme();
-                                        printBtn.addEventListener('click', ()=> window.print());
-                                        document.addEventListener('keydown', (e)=>{ if(e.key==='/' && document.activeElement!==searchInput){ e.preventDefault(); searchInput.focus(); }});
+        const images = [                                                // highlight code blocks (in case marked output has them)
 
-                                        buildTOC(); renderSections();
-                                    </script>
-                                </body>
-                                </html>
+            'imagens/Captura de tela 2025-10-20 211154.png',                                                el.querySelectorAll('pre code').forEach(block=> hljs.highlightElement(block));
+
+            'imagens/Captura de tela 2025-10-20 212517.png',                                            });
+
+            'imagens/Captura de tela 2025-10-21 042553.png',                                        }
+
+            'imagens/Captura de tela 2025-10-21 042732.png',
+
+            'imagens/Captura de tela 2025-10-21 042920.png',                                        let tmr;
+
+            'imagens/Captura de tela 2025-10-21 043006.png',                                        function refresh(){ clearTimeout(tmr); tmr=setTimeout(()=>{ const q=searchInput.value.trim(); const f=sectionFilter.value; renderSections(f,q); },200); }
+
+            'imagens/Captura de tela 2025-10-21 043231.png',                                        searchInput.addEventListener('input', refresh);
+
+            'imagens/Captura de tela 2025-10-21 043242.png',                                        sectionFilter.addEventListener('change', refresh);
+
+            'imagens/Captura de tela 2025-10-21 043332.png',
+
+            'imagens/Captura de tela 2025-10-21 043624.png',                                        // theme
+
+            'imagens/Captura de tela 2025-10-21 044510.png',                                        let light = localStorage.getItem('codex_theme')==='light';
+
+            'imagens/Captura de tela 2025-10-21 044700.png',                                        function applyTheme(){ document.body.classList.toggle('theme-light', light); localStorage.setItem('codex_theme', light?'light':'dark'); }
+
+            'imagens/Captura de tela 2025-10-21 044722.png',                                        themeToggle.addEventListener('click', ()=>{ light=!light; applyTheme(); }); applyTheme();
+
+            'imagens/Captura de tela 2025-10-21 045255.png',                                        printBtn.addEventListener('click', ()=> window.print());
+
+            'imagens/Captura de tela 2025-10-21 045657.png',                                        document.addEventListener('keydown', (e)=>{ if(e.key==='/' && document.activeElement!==searchInput){ e.preventDefault(); searchInput.focus(); }});
+
+            'imagens/Captura de tela 2025-10-23 035354.png',
+
+            'imagens/Captura de tela 2025-10-23 035420.png',                                        buildTOC(); renderSections();
+
+            'imagens/Captura de tela 2025-10-23 043652.png',                                    </script>
+
+            'imagens/Captura de tela 2025-10-23 152706.png',                                </body>
+
+            'imagens/Captura de tela 2025-10-23 152743.png',                                </html>
+            'imagens/Captura de tela 2025-10-23 152826.png',
+            'imagens/Captura de tela 2025-10-23 152859.png',
+            'imagens/Captura de tela 2025-10-23 210752.png',
+            'imagens/Captura de tela 2025-10-23 211455.png',
+            'imagens/Captura de tela 2025-10-23 224139.png',
+            'imagens/Captura de tela 2025-10-23 224145.png',
+            'imagens/Captura de tela 2025-10-23 224234.png',
+            'imagens/Captura de tela 2025-10-23 224308.png',
+            'imagens/Captura de tela 2025-10-23 224352.png',
+            'imagens/Captura de tela 2025-10-23 224435.png',
+            'imagens/Captura de tela 2025-10-25 154221.png',
+            'imagens/Captura de tela 2025-10-25 160313.png',
+            'imagens/Captura de tela 2025-10-25 160328.png',
+            'imagens/Captura de tela 2025-10-25 195521.png',
+            'imagens/Captura de tela 2025-10-25 195715.png',
+            'imagens/Captura de tela 2025-10-25 200125.png',
+            'imagens/Captura de tela 2025-10-25 200509.png',
+            'imagens/Captura de tela 2025-10-26 131204.png',
+            'imagens/Captura de tela 2025-10-31 140236.png',
+            'imagens/Captura de tela 2025-10-31 140351.png',
+            'imagens/Captura de tela 2025-10-31 161515.png',
+            'imagens/Captura de tela 2025-10-31 231717.png',
+            'imagens/Captura de tela 2025-11-01 004342.png',
+            'imagens/Captura de tela 2025-11-01 004904.png',
+            'imagens/Captura de tela 2025-11-01 021643.png',
+            'imagens/Captura de tela 2025-11-01 021858.png',
+            'imagens/Captura de tela 2025-11-01 022011.png',
+            'imagens/Captura de tela 2025-11-01 022130.png',
+            'imagens/Captura de tela 2025-11-01 023337.png',
+            'imagens/Captura de tela 2025-11-01 023416.png',
+            'imagens/Captura de tela 2025-11-01 023454.png',
+            'imagens/Captura de tela 2025-11-01 023547.png',
+            'imagens/Captura de tela 2025-11-01 023556.png',
+            'imagens/Captura de tela 2025-11-01 025938.png',
+            'imagens/Captura de tela 2025-11-01 030011.png'
+        ];
+
+        // Função para carregar as imagens
+        function loadGallery() {
+            const gallery = document.getElementById('gallery');
+            
+            images.forEach(imageName => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                
+                const img = document.createElement('img');
+                img.src = imageName;
+                img.alt = imageName.replace('imagens/Captura de tela ', '').replace('.png', '');
+                
+                const caption = document.createElement('div');
+                caption.className = 'caption';
+                const date = imageName.match(/\d{4}-\d{2}-\d{2}/)[0];
+                const time = imageName.match(/\d{2}\d{2}\d{2}/)[0];
+                const formattedDate = new Date(date).toLocaleDateString('pt-BR');
+                const formattedTime = time.replace(/(\d{2})(\d{2})(\d{2})/, '$1:$2:$3');
+                caption.textContent = `${formattedDate} ${formattedTime}`;
+                
+                item.appendChild(img);
+                item.appendChild(caption);
+                gallery.appendChild(item);
+                
+                // Adicionar funcionalidade de modal
+                item.onclick = function() {
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+                    const spinner = document.getElementById('spinner');
+                    
+                    // Encontrar o índice da imagem clicada
+                    currentImageIndex = images.indexOf(imageName);
+                    
+                    // Mostrar modal e spinner
+                    modal.style.display = "block";
+                    spinner.style.display = "block";
+                    modalImg.classList.remove('loaded');
+                    
+                    // Carregar nova imagem
+                    loadModalImage(imageName);
+                }
+            });
+        }
+
+        // Função para carregar imagem no modal
+        function loadModalImage(imageName) {
+            const modalImg = document.getElementById('modalImage');
+            const spinner = document.getElementById('spinner');
+
+            modalImg.onload = function() {
+                spinner.style.display = "none";
+                modalImg.classList.add('loaded');
+            }
+
+            modalImg.src = imageName;
+        }
+
+        // Função para navegar entre imagens
+        function navigateImage(direction) {
+            currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+            loadModalImage(images[currentImageIndex]);
+        }
+
+        // Fechar modal quando clicar no X
+        document.querySelector('.close').onclick = function() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // Fechar modal quando clicar fora da imagem
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Navegação com botões
+        document.getElementById('prevButton').onclick = function(e) {
+            e.stopPropagation();
+            navigateImage(-1);
+        }
+
+        document.getElementById('nextButton').onclick = function(e) {
+            e.stopPropagation();
+            navigateImage(1);
+        }
+
+        // Navegação com teclado
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('imageModal');
+            if (modal.style.display === "block") {
+                if (e.key === "ArrowLeft") {
+                    navigateImage(-1);
+                } else if (e.key === "ArrowRight") {
+                    navigateImage(1);
+                } else if (e.key === "Escape") {
+                    modal.style.display = "none";
+                }
+            }
+        });
+
+        // Carregar galeria quando a página carregar
+        window.onload = loadGallery;
+    </script>
+</body>
+</html>

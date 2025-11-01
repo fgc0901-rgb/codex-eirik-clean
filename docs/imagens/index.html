@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens - Codex Ecos de Yggdrasil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            background-color: #2a2a2a;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .caption {
+            transform: translateY(0);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90vh;
+            margin: auto;
+            display: block;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-content.loaded {
+            opacity: 1;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 50%;
+            line-height: 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: rgba(0,0,0,0.8);
+        }
+
+        #prevButton {
+            left: 20px;
+        }
+
+        #nextButton {
+            right: 20px;
+        }
+
+        .spinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: none;
+        }
+
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Imagens - Codex Ecos de Yggdrasil</h1>
+    
+    <div class="gallery" id="gallery"></div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="spinner" id="spinner"></div>
+        <img class="modal-content" id="modalImage">
+        <div class="nav-button" id="prevButton">&#10094;</div>
+        <div class="nav-button" id="nextButton">&#10095;</div>
+    </div>
+
+    <script>
+        // Variáveis globais para controle da navegação
+        let currentImageIndex = 0;
+
+        // Lista de imagens (hardcoded)
+        // URL base para as imagens (caminho relativo à raiz do site)
+        const baseUrl = '/codex-eirik/codex/imagens/';
+        
+        const images = [
+            baseUrl + 'Captura de tela 2025-10-20 211154.png',
+            baseUrl + 'Captura de tela 2025-10-20 212517.png',
+            baseUrl + 'Captura de tela 2025-10-21 042553.png',
+            baseUrl + 'Captura de tela 2025-10-21 042732.png',
+            baseUrl + 'Captura de tela 2025-10-21 042920.png',
+            baseUrl + 'Captura de tela 2025-10-21 043006.png',
+            baseUrl + 'Captura de tela 2025-10-21 043231.png',
+            baseUrl + 'Captura de tela 2025-10-21 043242.png',
+            baseUrl + 'Captura de tela 2025-10-21 043332.png',
+            baseUrl + 'Captura de tela 2025-10-21 043624.png',
+            baseUrl + 'Captura de tela 2025-10-21 044510.png',
+            baseUrl + 'Captura de tela 2025-10-21 044700.png',
+            baseUrl + 'Captura de tela 2025-10-21 044722.png',
+            baseUrl + 'Captura de tela 2025-10-21 045255.png',
+            baseUrl + 'Captura de tela 2025-10-21 045657.png',
+            baseUrl + 'Captura de tela 2025-10-23 035354.png',
+            baseUrl + 'Captura de tela 2025-10-23 035420.png',
+            baseUrl + 'Captura de tela 2025-10-23 043652.png',
+            baseUrl + 'Captura de tela 2025-10-23 152706.png',
+            baseUrl + 'Captura de tela 2025-10-23 152743.png',
+            baseUrl + 'Captura de tela 2025-10-23 152826.png',
+            baseUrl + 'Captura de tela 2025-10-23 152859.png',
+            baseUrl + 'Captura de tela 2025-10-23 210752.png',
+            baseUrl + 'Captura de tela 2025-10-23 211455.png',
+            baseUrl + 'Captura de tela 2025-10-23 224139.png',
+            baseUrl + 'Captura de tela 2025-10-23 224145.png',
+            baseUrl + 'Captura de tela 2025-10-23 224234.png',
+            baseUrl + 'Captura de tela 2025-10-23 224308.png',
+            baseUrl + 'Captura de tela 2025-10-23 224352.png',
+            baseUrl + 'Captura de tela 2025-10-23 224435.png',
+            baseUrl + 'Captura de tela 2025-10-25 154221.png',
+            baseUrl + 'Captura de tela 2025-10-25 160313.png',
+            baseUrl + 'Captura de tela 2025-10-25 160328.png',
+            baseUrl + 'Captura de tela 2025-10-25 195521.png',
+            baseUrl + 'Captura de tela 2025-10-25 195715.png',
+            baseUrl + 'Captura de tela 2025-10-25 200125.png',
+            baseUrl + 'Captura de tela 2025-10-25 200509.png',
+            baseUrl + 'Captura de tela 2025-10-26 131204.png',
+            baseUrl + 'Captura de tela 2025-10-31 140236.png',
+            baseUrl + 'Captura de tela 2025-10-31 140351.png',
+            baseUrl + 'Captura de tela 2025-10-31 161515.png',
+            baseUrl + 'Captura de tela 2025-10-31 231717.png',
+            baseUrl + 'Captura de tela 2025-11-01 004342.png',
+            baseUrl + 'Captura de tela 2025-11-01 004904.png',
+            baseUrl + 'Captura de tela 2025-11-01 021643.png',
+            baseUrl + 'Captura de tela 2025-11-01 021858.png',
+            baseUrl + 'Captura de tela 2025-11-01 022011.png',
+            baseUrl + 'Captura de tela 2025-11-01 022130.png',
+            baseUrl + 'Captura de tela 2025-11-01 023337.png',
+            baseUrl + 'Captura de tela 2025-11-01 023416.png',
+            baseUrl + 'Captura de tela 2025-11-01 023454.png',
+            baseUrl + 'Captura de tela 2025-11-01 023547.png',
+            baseUrl + 'Captura de tela 2025-11-01 023556.png',
+            baseUrl + 'Captura de tela 2025-11-01 025938.png',
+            baseUrl + 'Captura de tela 2025-11-01 030011.png'
+        ];
+
+        // Função para carregar as imagens
+        function loadGallery() {
+            const gallery = document.getElementById('gallery');
+            
+            images.forEach(imageName => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                
+                const img = document.createElement('img');
+                img.src = imageName;
+                img.alt = imageName.replace('.png', '');
+                
+                const caption = document.createElement('div');
+                caption.className = 'caption';
+                const date = imageName.match(/\d{4}-\d{2}-\d{2}/)[0];
+                const time = imageName.match(/\d{2}\d{2}\d{2}/)[0];
+                const formattedDate = new Date(date).toLocaleDateString('pt-BR');
+                const formattedTime = time.replace(/(\d{2})(\d{2})(\d{2})/, '$1:$2:$3');
+                caption.textContent = `${formattedDate} ${formattedTime}`;
+                
+                item.appendChild(img);
+                item.appendChild(caption);
+                gallery.appendChild(item);
+                
+                // Adicionar funcionalidade de modal
+                item.onclick = function() {
+                    const modal = document.getElementById('imageModal');
+                    const modalImg = document.getElementById('modalImage');
+                    const spinner = document.getElementById('spinner');
+                    
+                    // Encontrar o índice da imagem clicada
+                    currentImageIndex = images.indexOf(imageName);
+                    
+                    // Mostrar modal e spinner
+                    modal.style.display = "block";
+                    spinner.style.display = "block";
+                    modalImg.classList.remove('loaded');
+                    
+                    // Carregar nova imagem
+                    loadModalImage(imageName);
+                }
+            });
+        }
+
+        // Função para carregar imagem no modal
+        function loadModalImage(imageName) {
+            const modalImg = document.getElementById('modalImage');
+            const spinner = document.getElementById('spinner');
+
+            modalImg.onload = function() {
+                spinner.style.display = "none";
+                modalImg.classList.add('loaded');
+            }
+
+            modalImg.src = imageName;
+        }
+
+        // Função para navegar entre imagens
+        function navigateImage(direction) {
+            currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
+            loadModalImage(images[currentImageIndex]);
+        }
+
+        // Fechar modal quando clicar no X
+        document.querySelector('.close').onclick = function() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // Fechar modal quando clicar fora da imagem
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Navegação com botões
+        document.getElementById('prevButton').onclick = function(e) {
+            e.stopPropagation();
+            navigateImage(-1);
+        }
+
+        document.getElementById('nextButton').onclick = function(e) {
+            e.stopPropagation();
+            navigateImage(1);
+        }
+
+        // Navegação com teclado
+        document.addEventListener('keydown', function(e) {
+            const modal = document.getElementById('imageModal');
+            if (modal.style.display === "block") {
+                if (e.key === "ArrowLeft") {
+                    navigateImage(-1);
+                } else if (e.key === "ArrowRight") {
+                    navigateImage(1);
+                } else if (e.key === "Escape") {
+                    modal.style.display = "none";
+                }
+            }
+        });
+
+        // Carregar galeria quando a página carregar
+        window.onload = loadGallery;
+    </script>
+</body>
+</html>
