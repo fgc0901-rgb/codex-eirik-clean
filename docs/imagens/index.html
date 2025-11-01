@@ -3,31 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Imagens - Codex Ecos de Yggdrasil</title>
+    <title>Galeria - Codex Ecos de Yggdrasil</title>
     <style>
+        :root {
+            --primary-color: #2a2a2a;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #fff;
+            --hover-color: #4aa3df;
+            --background-color: #1a1a1a;
+            --card-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: #fff;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .back-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-button:hover {
+            opacity: 1;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .filter-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .filter-button {
+            background-color: var(--primary-color);
+            border: none;
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-button:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .filter-button.active {
+            background-color: var(--secondary-color);
+        }
+
+        .search-box {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            min-width: 200px;
         }
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery.loading {
+            opacity: 0.5;
         }
 
         .gallery-item {
             position: relative;
-            overflow: hidden;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
             transition: transform 0.3s ease;
-            background-color: #2a2a2a;
-            cursor: pointer;
+            background-color: var(--primary-color);
+            aspect-ratio: 16/9;
         }
 
         .gallery-item:hover {
@@ -36,9 +132,14 @@
 
         .gallery-item img {
             width: 100%;
-            height: 300px;
+            height: 100%;
             object-fit: cover;
             display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
         }
 
         .gallery-item .caption {
@@ -46,15 +147,28 @@
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 15px;
-            background: rgba(0,0,0,0.7);
+            padding: 1rem;
+            background: rgba(0,0,0,0.8);
             color: white;
             transform: translateY(100%);
             transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
         }
 
         .gallery-item:hover .caption {
             transform: translateY(0);
+        }
+
+        .caption-date {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .caption-category {
+            font-size: 0.9rem;
+            color: var(--accent-color);
         }
 
         .modal {
@@ -84,21 +198,38 @@
             opacity: 1;
         }
 
+        .modal-info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.8);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 300px;
+        }
+
         .close {
             position: absolute;
             top: 15px;
             right: 35px;
-            color: #f1f1f1;
+            color: var(--text-color);
             font-size: 40px;
             font-weight: bold;
             cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .close:hover {
+            color: var(--secondary-color);
         }
 
         .nav-button {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            color: #f1f1f1;
+            color: var(--text-color);
             font-size: 40px;
             font-weight: bold;
             cursor: pointer;
@@ -106,11 +237,12 @@
             padding: 20px;
             border-radius: 50%;
             line-height: 0;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
+            z-index: 1010;
         }
 
         .nav-button:hover {
-            background: rgba(0,0,0,0.8);
+            background: var(--secondary-color);
         }
 
         #prevButton {
@@ -128,10 +260,21 @@
             transform: translate(-50%, -50%);
             width: 50px;
             height: 50px;
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid #3498db;
+            border: 5px solid var(--primary-color);
+            border-top: 5px solid var(--secondary-color);
             border-radius: 50%;
             animation: spin 1s linear infinite;
+            display: none;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: var(--text-color);
+            background-color: var(--primary-color);
+            border-radius: 8px;
+            margin-top: 2rem;
             display: none;
         }
 
@@ -140,202 +283,358 @@
             100% { transform: translate(-50%, -50%) rotate(360deg); }
         }
 
-        h1 {
-            text-align: center;
-            color: #fff;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+                padding: 0 60px;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .filter-group {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-button {
+                padding: 15px;
+                font-size: 30px;
+            }
+
+            #prevButton {
+                left: 10px;
+            }
+
+            #nextButton {
+                right: 10px;
+            }
         }
 
-        @media (max-width: 600px) {
-            .gallery {
-                grid-template-columns: 1fr;
-            }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease;
         }
     </style>
 </head>
 <body>
-    <h1>Galeria de Imagens - Codex Ecos de Yggdrasil</h1>
-    
-    <div class="gallery" id="gallery"></div>
+    <header class="header">
+        <a href="../" class="back-button">
+            ← Voltar
+        </a>
+        <h1>Galeria - Codex Ecos de Yggdrasil</h1>
+    </header>
 
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <div class="spinner" id="spinner"></div>
-        <img class="modal-content" id="modalImage">
-        <div class="nav-button" id="prevButton">&#10094;</div>
-        <div class="nav-button" id="nextButton">&#10095;</div>
-    </div>
+    <main class="container">
+        <div class="controls">
+            <div class="filter-group">
+                <button class="filter-button active" data-category="all">Todas</button>
+                <button class="filter-button" data-category="rituais">Rituais</button>
+                <button class="filter-button" data-category="eventos">Eventos</button>
+                <button class="filter-button" data-category="membros">Membros</button>
+                <button class="filter-button" data-category="locais">Locais</button>
+            </div>
+            <div class="filter-group">
+                <input type="text" class="search-box" placeholder="Pesquisar imagens..." id="searchBox">
+            </div>
+            <div class="filter-group">
+                <button class="filter-button" data-sort="date-asc">Data ↑</button>
+                <button class="filter-button" data-sort="date-desc">Data ↓</button>
+            </div>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+        <div class="no-results">Nenhuma imagem encontrada</div>
+
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="spinner" id="spinner"></div>
+            <img class="modal-content" id="modalImage">
+            <div class="modal-info" id="modalInfo"></div>
+            <div class="nav-button" id="prevButton">&#10094;</div>
+            <div class="nav-button" id="nextButton">&#10095;</div>
+        </div>
+    </main>
 
     <script>
-        // Variáveis globais para controle da navegação
-        let currentImageIndex = 0;
-
-        // Lista de imagens (hardcoded)
-        // URL base para as imagens (caminho relativo à raiz do site)
-        const baseUrl = '/codex-eirik/codex/imagens/';
-        
-        const images = [
-            baseUrl + 'Captura de tela 2025-10-20 211154.png',
-            baseUrl + 'Captura de tela 2025-10-20 212517.png',
-            baseUrl + 'Captura de tela 2025-10-21 042553.png',
-            baseUrl + 'Captura de tela 2025-10-21 042732.png',
-            baseUrl + 'Captura de tela 2025-10-21 042920.png',
-            baseUrl + 'Captura de tela 2025-10-21 043006.png',
-            baseUrl + 'Captura de tela 2025-10-21 043231.png',
-            baseUrl + 'Captura de tela 2025-10-21 043242.png',
-            baseUrl + 'Captura de tela 2025-10-21 043332.png',
-            baseUrl + 'Captura de tela 2025-10-21 043624.png',
-            baseUrl + 'Captura de tela 2025-10-21 044510.png',
-            baseUrl + 'Captura de tela 2025-10-21 044700.png',
-            baseUrl + 'Captura de tela 2025-10-21 044722.png',
-            baseUrl + 'Captura de tela 2025-10-21 045255.png',
-            baseUrl + 'Captura de tela 2025-10-21 045657.png',
-            baseUrl + 'Captura de tela 2025-10-23 035354.png',
-            baseUrl + 'Captura de tela 2025-10-23 035420.png',
-            baseUrl + 'Captura de tela 2025-10-23 043652.png',
-            baseUrl + 'Captura de tela 2025-10-23 152706.png',
-            baseUrl + 'Captura de tela 2025-10-23 152743.png',
-            baseUrl + 'Captura de tela 2025-10-23 152826.png',
-            baseUrl + 'Captura de tela 2025-10-23 152859.png',
-            baseUrl + 'Captura de tela 2025-10-23 210752.png',
-            baseUrl + 'Captura de tela 2025-10-23 211455.png',
-            baseUrl + 'Captura de tela 2025-10-23 224139.png',
-            baseUrl + 'Captura de tela 2025-10-23 224145.png',
-            baseUrl + 'Captura de tela 2025-10-23 224234.png',
-            baseUrl + 'Captura de tela 2025-10-23 224308.png',
-            baseUrl + 'Captura de tela 2025-10-23 224352.png',
-            baseUrl + 'Captura de tela 2025-10-23 224435.png',
-            baseUrl + 'Captura de tela 2025-10-25 154221.png',
-            baseUrl + 'Captura de tela 2025-10-25 160313.png',
-            baseUrl + 'Captura de tela 2025-10-25 160328.png',
-            baseUrl + 'Captura de tela 2025-10-25 195521.png',
-            baseUrl + 'Captura de tela 2025-10-25 195715.png',
-            baseUrl + 'Captura de tela 2025-10-25 200125.png',
-            baseUrl + 'Captura de tela 2025-10-25 200509.png',
-            baseUrl + 'Captura de tela 2025-10-26 131204.png',
-            baseUrl + 'Captura de tela 2025-10-31 140236.png',
-            baseUrl + 'Captura de tela 2025-10-31 140351.png',
-            baseUrl + 'Captura de tela 2025-10-31 161515.png',
-            baseUrl + 'Captura de tela 2025-10-31 231717.png',
-            baseUrl + 'Captura de tela 2025-11-01 004342.png',
-            baseUrl + 'Captura de tela 2025-11-01 004904.png',
-            baseUrl + 'Captura de tela 2025-11-01 021643.png',
-            baseUrl + 'Captura de tela 2025-11-01 021858.png',
-            baseUrl + 'Captura de tela 2025-11-01 022011.png',
-            baseUrl + 'Captura de tela 2025-11-01 022130.png',
-            baseUrl + 'Captura de tela 2025-11-01 023337.png',
-            baseUrl + 'Captura de tela 2025-11-01 023416.png',
-            baseUrl + 'Captura de tela 2025-11-01 023454.png',
-            baseUrl + 'Captura de tela 2025-11-01 023547.png',
-            baseUrl + 'Captura de tela 2025-11-01 023556.png',
-            baseUrl + 'Captura de tela 2025-11-01 025938.png',
-            baseUrl + 'Captura de tela 2025-11-01 030011.png'
-        ];
-
-        // Função para carregar as imagens
-        function loadGallery() {
-            const gallery = document.getElementById('gallery');
+        // Função para categorizar imagens com base em seus nomes
+        function categorizeImage(imageName) {
+            const categories = [];
             
-            images.forEach(imageName => {
-                const item = document.createElement('div');
-                item.className = 'gallery-item';
-                
-                const img = document.createElement('img');
-                img.src = imageName;
-                img.alt = imageName.replace('.png', '');
-                
-                const caption = document.createElement('div');
-                caption.className = 'caption';
-                const date = imageName.match(/\d{4}-\d{2}-\d{2}/)[0];
-                const time = imageName.match(/\d{2}\d{2}\d{2}/)[0];
-                const formattedDate = new Date(date).toLocaleDateString('pt-BR');
-                const formattedTime = time.replace(/(\d{2})(\d{2})(\d{2})/, '$1:$2:$3');
-                caption.textContent = `${formattedDate} ${formattedTime}`;
-                
-                item.appendChild(img);
-                item.appendChild(caption);
-                gallery.appendChild(item);
-                
-                // Adicionar funcionalidade de modal
-                item.onclick = function() {
-                    const modal = document.getElementById('imageModal');
-                    const modalImg = document.getElementById('modalImage');
-                    const spinner = document.getElementById('spinner');
-                    
-                    // Encontrar o índice da imagem clicada
-                    currentImageIndex = images.indexOf(imageName);
-                    
-                    // Mostrar modal e spinner
-                    modal.style.display = "block";
-                    spinner.style.display = "block";
-                    modalImg.classList.remove('loaded');
-                    
-                    // Carregar nova imagem
-                    loadModalImage(imageName);
+            // Palavras-chave para categorização
+            const keywords = {
+                rituais: ['ritual', 'cerimonia', 'runas'],
+                eventos: ['evento', 'reuniao', 'encontro'],
+                membros: ['membro', 'pessoa', 'retrato'],
+                locais: ['local', 'lugar', 'cenario']
+            };
+
+            // Verificar palavras-chave no nome da imagem
+            for (const [category, words] of Object.entries(keywords)) {
+                if (words.some(word => imageName.toLowerCase().includes(word))) {
+                    categories.push(category);
                 }
-            });
-        }
-
-        // Função para carregar imagem no modal
-        function loadModalImage(imageName) {
-            const modalImg = document.getElementById('modalImage');
-            const spinner = document.getElementById('spinner');
-
-            modalImg.onload = function() {
-                spinner.style.display = "none";
-                modalImg.classList.add('loaded');
             }
 
-            modalImg.src = imageName;
+            // Se nenhuma categoria foi encontrada, usar "outros"
+            return categories.length > 0 ? categories : ['outros'];
+        }
+
+        // Dados das imagens com categorias
+        const imagesData = [
+            'Captura de tela 2025-10-20 211154.png',
+            'Captura de tela 2025-10-20 212517.png',
+            'Captura de tela 2025-10-21 042553.png',
+            'Captura de tela 2025-10-21 042732.png',
+            'Captura de tela 2025-10-21 042920.png',
+            'Captura de tela 2025-10-21 043006.png',
+            'Captura de tela 2025-10-21 043231.png',
+            'Captura de tela 2025-10-21 043242.png',
+            'Captura de tela 2025-10-21 043332.png',
+            'Captura de tela 2025-10-21 043624.png',
+            'Captura de tela 2025-10-21 044510.png',
+            'Captura de tela 2025-10-21 044700.png',
+            'Captura de tela 2025-10-21 044722.png',
+            'Captura de tela 2025-10-21 045255.png',
+            'Captura de tela 2025-10-21 045657.png',
+            'Captura de tela 2025-10-23 035354.png',
+            'Captura de tela 2025-10-23 035420.png',
+            'Captura de tela 2025-10-23 043652.png',
+            'Captura de tela 2025-10-23 152706.png',
+            'Captura de tela 2025-10-23 152743.png',
+            'Captura de tela 2025-10-23 152826.png',
+            'Captura de tela 2025-10-23 152859.png',
+            'Captura de tela 2025-10-23 210752.png',
+            'Captura de tela 2025-10-23 211455.png',
+            'Captura de tela 2025-10-23 224139.png',
+            'Captura de tela 2025-10-23 224145.png',
+            'Captura de tela 2025-10-23 224234.png',
+            'Captura de tela 2025-10-23 224308.png',
+            'Captura de tela 2025-10-23 224352.png',
+            'Captura de tela 2025-10-23 224435.png',
+            'Captura de tela 2025-10-25 154221.png',
+            'Captura de tela 2025-10-25 160313.png',
+            'Captura de tela 2025-10-25 160328.png',
+            'Captura de tela 2025-10-25 195521.png',
+            'Captura de tela 2025-10-25 195715.png',
+            'Captura de tela 2025-10-25 200125.png',
+            'Captura de tela 2025-10-25 200509.png',
+            'Captura de tela 2025-10-26 131204.png',
+            'Captura de tela 2025-10-31 140236.png',
+            'Captura de tela 2025-10-31 140351.png',
+            'Captura de tela 2025-10-31 161515.png',
+            'Captura de tela 2025-10-31 231717.png',
+            'Captura de tela 2025-11-01 004342.png',
+            'Captura de tela 2025-11-01 004904.png',
+            'Captura de tela 2025-11-01 021643.png',
+            'Captura de tela 2025-11-01 021858.png',
+            'Captura de tela 2025-11-01 022011.png',
+            'Captura de tela 2025-11-01 022130.png',
+            'Captura de tela 2025-11-01 023337.png',
+            'Captura de tela 2025-11-01 023416.png',
+            'Captura de tela 2025-11-01 023454.png',
+            'Captura de tela 2025-11-01 023547.png',
+            'Captura de tela 2025-11-01 023556.png',
+            'Captura de tela 2025-11-01 025938.png',
+            'Captura de tela 2025-11-01 030011.png'
+        ].map(filename => ({
+            filename,
+            path: filename,
+            date: filename.match(/\d{4}-\d{2}-\d{2}/)[0],
+            time: filename.match(/\d{2}\d{2}\d{2}/)[0],
+            categories: categorizeImage(filename)
+        }));
+
+        let currentFilter = 'all';
+        let currentSort = 'date-desc';
+        let currentSearch = '';
+        let filteredImages = [...imagesData];
+        let currentImageIndex = 0;
+
+        // Função para formatar data e hora
+        function formatDateTime(date, time) {
+            const formattedDate = new Date(date).toLocaleDateString('pt-BR');
+            const formattedTime = time.replace(/(\d{2})(\d{2})(\d{2})/, '$1:$2:$3');
+            return `${formattedDate} ${formattedTime}`;
+        }
+
+        // Função para filtrar imagens
+        function filterImages() {
+            const gallery = document.getElementById('gallery');
+            const noResults = document.querySelector('.no-results');
+            
+            filteredImages = imagesData.filter(image => {
+                const matchesCategory = currentFilter === 'all' || image.categories.includes(currentFilter);
+                const matchesSearch = currentSearch === '' || 
+                    image.filename.toLowerCase().includes(currentSearch.toLowerCase());
+                return matchesCategory && matchesSearch;
+            });
+
+            // Aplicar ordenação
+            filteredImages.sort((a, b) => {
+                const dateA = new Date(a.date + 'T' + a.time.replace(/(\d{2})(\d{2})(\d{2})/, '$1:$2:$3'));
+                const dateB = new Date(b.date + 'T' + b.time.replace(/(\d{2})(\d{2})(\d{2})/, '$1:$2:$3'));
+                return currentSort === 'date-asc' ? dateA - dateB : dateB - dateA;
+            });
+
+            // Limpar galeria
+            gallery.innerHTML = '';
+            gallery.classList.add('loading');
+
+            if (filteredImages.length === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+                
+                // Renderizar imagens filtradas
+                filteredImages.forEach((image, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'gallery-item fade-in';
+                    
+                    const img = document.createElement('img');
+                    img.src = image.path;
+                    img.alt = formatDateTime(image.date, image.time);
+                    
+                    const caption = document.createElement('div');
+                    caption.className = 'caption';
+                    
+                    const dateTime = document.createElement('div');
+                    dateTime.className = 'caption-date';
+                    dateTime.textContent = formatDateTime(image.date, image.time);
+                    
+                    const categories = document.createElement('div');
+                    categories.className = 'caption-category';
+                    categories.textContent = image.categories.join(', ');
+                    
+                    caption.appendChild(dateTime);
+                    caption.appendChild(categories);
+                    
+                    item.appendChild(img);
+                    item.appendChild(caption);
+                    
+                    item.onclick = () => openModal(index);
+                    
+                    gallery.appendChild(item);
+                });
+            }
+
+            gallery.classList.remove('loading');
+        }
+
+        // Função para abrir modal
+        function openModal(index) {
+            currentImageIndex = index;
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalInfo = document.getElementById('modalInfo');
+            const spinner = document.getElementById('spinner');
+            
+            modal.style.display = 'block';
+            spinner.style.display = 'block';
+            modalImg.classList.remove('loaded');
+            
+            const image = filteredImages[index];
+            modalImg.src = image.path;
+            modalInfo.innerHTML = `
+                <div class="caption-date">${formatDateTime(image.date, image.time)}</div>
+                <div class="caption-category">${image.categories.join(', ')}</div>
+            `;
+            
+            modalImg.onload = () => {
+                spinner.style.display = 'none';
+                modalImg.classList.add('loaded');
+            };
         }
 
         // Função para navegar entre imagens
         function navigateImage(direction) {
-            currentImageIndex = (currentImageIndex + direction + images.length) % images.length;
-            loadModalImage(images[currentImageIndex]);
+            currentImageIndex = (currentImageIndex + direction + filteredImages.length) % filteredImages.length;
+            openModal(currentImageIndex);
         }
 
-        // Fechar modal quando clicar no X
-        document.querySelector('.close').onclick = function() {
-            document.getElementById('imageModal').style.display = "none";
-        }
+        // Event Listeners
+        document.addEventListener('DOMContentLoaded', () => {
+            // Filtros de categoria
+            document.querySelectorAll('.filter-button[data-category]').forEach(button => {
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-button[data-category]').forEach(btn => 
+                        btn.classList.remove('active'));
+                    button.classList.add('active');
+                    currentFilter = button.dataset.category;
+                    filterImages();
+                });
+            });
 
-        // Fechar modal quando clicar fora da imagem
-        window.onclick = function(event) {
+            // Ordenação
+            document.querySelectorAll('.filter-button[data-sort]').forEach(button => {
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('.filter-button[data-sort]').forEach(btn => 
+                        btn.classList.remove('active'));
+                    button.classList.add('active');
+                    currentSort = button.dataset.sort;
+                    filterImages();
+                });
+            });
+
+            // Pesquisa
+            const searchBox = document.getElementById('searchBox');
+            let searchTimeout;
+            searchBox.addEventListener('input', () => {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    currentSearch = searchBox.value;
+                    filterImages();
+                }, 300);
+            });
+
+            // Modal
             const modal = document.getElementById('imageModal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-        // Navegação com botões
-        document.getElementById('prevButton').onclick = function(e) {
-            e.stopPropagation();
-            navigateImage(-1);
-        }
-
-        document.getElementById('nextButton').onclick = function(e) {
-            e.stopPropagation();
-            navigateImage(1);
-        }
-
-        // Navegação com teclado
-        document.addEventListener('keydown', function(e) {
-            const modal = document.getElementById('imageModal');
-            if (modal.style.display === "block") {
-                if (e.key === "ArrowLeft") {
-                    navigateImage(-1);
-                } else if (e.key === "ArrowRight") {
-                    navigateImage(1);
-                } else if (e.key === "Escape") {
-                    modal.style.display = "none";
+            document.querySelector('.close').onclick = () => {
+                modal.style.display = 'none';
+            };
+            
+            window.onclick = (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
                 }
-            }
-        });
+            };
 
-        // Carregar galeria quando a página carregar
-        window.onload = loadGallery;
+            document.getElementById('prevButton').onclick = (e) => {
+                e.stopPropagation();
+                navigateImage(-1);
+            };
+
+            document.getElementById('nextButton').onclick = (e) => {
+                e.stopPropagation();
+                navigateImage(1);
+            };
+
+            // Navegação com teclado
+            document.addEventListener('keydown', (e) => {
+                if (modal.style.display === 'block') {
+                    if (e.key === 'ArrowLeft') {
+                        navigateImage(-1);
+                    } else if (e.key === 'ArrowRight') {
+                        navigateImage(1);
+                    } else if (e.key === 'Escape') {
+                        modal.style.display = 'none';
+                    }
+                }
+            });
+
+            // Carregar galeria inicial
+            filterImages();
+        });
     </script>
 </body>
 </html>
