@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codex Clã - Ecos de Yggdrasil</title>
+    <style>
+        body {
+            <!DOCTYPE html>
+            <html lang="pt-BR">
+            <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Códex — Ecos de Yggdrasil</title>
+                <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+                <style>
+                    :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
+                    .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
+                    html,body{height:100%;}
+                    body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
+                    .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
+                    .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
+                    h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
+                    .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+                    input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+                    main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
+                    nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
+                    section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
+                    .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
+                    .section .actions{margin-top:8px;display:flex;gap:8px}
+                    .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
+                    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+                    @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
+                </style>
+                <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+            </head>
+            <body>
+                <div class="app">
+                    <header class="app-header">
+                        <div class="title">
+                            <div class="logo">E</div>
+                            <div>
+                                <!DOCTYPE html>
+                                <html lang="pt-BR">
+                                <head>
+                                    <meta charset="utf-8">
+                                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                                    <title>Códex — Ecos de Yggdrasil</title>
+                                    <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
+                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+                                    <style>
+                                        :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
+                                        .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
+                                        html,body{height:100%;}
+                                        body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
+                                        .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
+                                        .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
+                                        h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
+                                        .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+                                        input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+                                        main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
+                                        nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
+                                        section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
+                                        .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
+                                        .section .actions{margin-top:8px;display:flex;gap:8px}
+                                        .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
+                                        footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+                                        @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
+                                    </style>
+                                    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+                                </head>
+                                <body>
+                                    <div class="app">
+                                        <header class="app-header">
+                                            <div class="title">
+                                                <div class="logo">E</div>
+                                                <div>
+                                                    <h1>Códex — Ecos de Yggdrasil</h1>
+                                                    <div class="meta">Navegue, pesquise e compartilhe — versão interativa</div>
+                                                </div>
+                                            </div>
+                                            <div class="controls">
+                                                <div class="search">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="#cbd5e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                                    <input id="searchInput" placeholder="Pesquisar (tecla / para focar)" aria-label="Pesquisar">
+                                                </div>
+                                                <select id="sectionFilter"><option value="">Todas as seções</option></select>
+                                                <button id="themeToggle" class="icon" title="Alternar tema">Tema</button>
+                                                <button id="printBtn" class="icon" title="Imprimir">Imprimir</button>
+                                            </div>
+                                        </header>
+                                        <main class="container">
+                                            <nav id="toc" aria-label="Índice das seções">
+                                                <h2>Índice</h2>
+                                                <ul id="tocList"></ul>
+                                            </nav>
+                                            <section id="reader" aria-live="polite"></section>
+                                        </main>
+                                        <footer>© Ecos de Yggdrasil — Códex interativo</footer>
+                                    </div>
+                                    <script>
+                                        // Embedded sections (generated from codex-completo.txt)
+                                        const sections = [
+                                    {
+                                        "title": "INSTRUÇÕES OPERACIONAIS",
+                                        "content": "- Teste: esta é uma alteração de exemplo para validar a atualização automática.\n\n---",
+                                        "id": "instrucoes-operacionais"
+                                    },
+                                    {
+                                        "title": "IDENTIDADE ESSENCIAL",
+                                        "content": "- Clã: **Ecos de Yggdrasil**\n- Nota de teste: adicionado registro de integração via script.",
+                                        "id": "identidade-essencial"
+                                    }
+                                ];
+
+                                        // configure marked + highlight.js
+                                        marked.setOptions({
+                                            gfm: true,
+                                            breaks: true,
+                                            smartLists: true,
+                                            highlight: function(code, lang){
+                                                try{
+                                                    if(lang && hljs.getLanguage(lang)) return hljs.highlight(code, {language: lang}).value;
+                                                    return hljs.highlightAuto(code).value;
+                                                }catch(e){ return code; }
+                                            }
+                                        });
+
+                                        const searchInput = document.getElementById('searchInput');
+                                        const sectionFilter = document.getElementById('sectionFilter');
+                                        const tocList = document.getElementById('tocList');
+                                        const reader = document.getElementById('reader');
+                                        const themeToggle = document.getElementById('themeToggle');
+                                        const printBtn = document.getElementById('printBtn');
+
+                                        function buildTOC(){
+                                            sectionFilter.innerHTML = '<option value="">Todas as seções</option>' + sections.map(s=>`<option value="${s.id}">${s.title}</option>`).join('');
+                                            tocList.innerHTML = sections.map(s=>`<li><a href="#${s.id}" data-id="${s.id}">${s.title}</a></li>`).join('');
+                                            tocList.querySelectorAll('a').forEach(a=> a.addEventListener('click', e=>{ e.preventDefault(); document.getElementById(a.dataset.id).scrollIntoView({behavior:'smooth',block:'start'}); setActiveTOC(a.dataset.id);}));
+                                        }
+
+                                        function setActiveTOC(id){ tocList.querySelectorAll('a').forEach(a=> a.classList.toggle('active', a.dataset.id===id)); }
+
+                                        function renderSections(filterId, query){
+                                            reader.innerHTML = '';
+                                            const visible = sections.filter(s=> (!filterId || s.id===filterId) && (!query || (s.title + '\n' + s.content).toLowerCase().includes(query.toLowerCase())) );
+                                            visible.forEach(s=>{
+                                                const el = document.createElement('article'); el.className='section'; el.id = s.id;
+                                                const h = document.createElement('h2'); h.textContent = s.title; el.appendChild(h);
+                                                const meta = document.createElement('div'); meta.className='meta'; meta.textContent = '';
+                                                el.appendChild(meta);
+
+                                                const actions = document.createElement('div'); actions.className='actions';
+                                                const copyBtn = document.createElement('button'); copyBtn.className='btn'; copyBtn.textContent='Copiar link';
+                                                copyBtn.addEventListener('click', ()=>{
+                                                    const href = location.href.split('#')[0] + '#' + s.id;
+                                                    navigator.clipboard.writeText(href).then(()=>{ copyBtn.textContent='Copiado!'; setTimeout(()=>copyBtn.textContent='Copiar link',1200); });
+                                                });
+                                                const openBtn = document.createElement('button'); openBtn.className='btn'; openBtn.textContent='Abrir (nova aba)';
+                                                openBtn.addEventListener('click', ()=>{ const href = location.href.split('#')[0] + '#' + s.id; window.open(href, '_blank'); });
+                                                actions.appendChild(copyBtn); actions.appendChild(openBtn);
+                                                el.appendChild(actions);
+
+                                                const body = document.createElement('div'); body.className='body';
+                                                body.innerHTML = marked.parse(s.content || '');
+                                                el.appendChild(body);
+
+                                                reader.appendChild(el);
+                                                // highlight code blocks (in case marked output has them)
+                                                el.querySelectorAll('pre code').forEach(block=> hljs.highlightElement(block));
+                                            });
+                                        }
+
+                                        let tmr;
+                                        function refresh(){ clearTimeout(tmr); tmr=setTimeout(()=>{ const q=searchInput.value.trim(); const f=sectionFilter.value; renderSections(f,q); },200); }
+                                        searchInput.addEventListener('input', refresh);
+                                        sectionFilter.addEventListener('change', refresh);
+
+                                        // theme
+                                        let light = localStorage.getItem('codex_theme')==='light';
+                                        function applyTheme(){ document.body.classList.toggle('theme-light', light); localStorage.setItem('codex_theme', light?'light':'dark'); }
+                                        themeToggle.addEventListener('click', ()=>{ light=!light; applyTheme(); }); applyTheme();
+                                        printBtn.addEventListener('click', ()=> window.print());
+                                        document.addEventListener('keydown', (e)=>{ if(e.key==='/' && document.activeElement!==searchInput){ e.preventDefault(); searchInput.focus(); }});
+
+                                        buildTOC(); renderSections();
+                                    </script>
+                                </body>
+                                </html>
