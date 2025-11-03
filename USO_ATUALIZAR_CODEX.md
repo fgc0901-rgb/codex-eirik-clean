@@ -1,0 +1,3 @@
+# ⚔️ Guia de Uso — atualizar_codex_github.py
+
+Este script mantém o Códex atualizado...
