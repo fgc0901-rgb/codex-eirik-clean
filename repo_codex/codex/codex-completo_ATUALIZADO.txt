@@ -1,0 +1,337 @@
+📖 BASE MESTRA — ECOS DE YGGDRASIL (TXT OPERACIONAL COMPLETO)
+
+[INSTRUÇÕES OPERACIONAIS]
+- Propósito: Este arquivo é a base de conhecimento integral do Clã Ecos de Yggdrasil.
+- Comandos esperados:
+  1) "aprenda": assimile TODO este conteúdo como referência atual.
+  2) "atualize a base de conhecimentos": gere uma nova versão deste arquivo, completa, contínua, com todas as mudanças realizadas nas histórias, regras e economia.
+- Formato de saída obrigatório: TXT puro, um único bloco, sem comentários externos, sem cortes, sem "mantém-se íntegro". Sempre completo.
+- Checklist obrigatório antes de enviar:
+  [ ] Identidade, missão, liderança, emblemas
+  [ ] Origem, fundação, runas, totens
+  [ ] Missão detalhada
+  [ ] Hierarquia e deveres
+  [ ] Capítulos épicos
+  [ ] Eventos recentes
+  [ ] Mensagens oficiais
+  [ ] Rituais
+  [ ] Locais sagrados
+  [ ] Símbolos, runas e artefatos
+  [ ] Regras gerais
+  [ ] Regras de ações (RP)
+  [ ] Regras sobrenaturais
+  [ ] Código penal
+  [ ] Economia
+  [ ] Preferências do usuário
+  [ ] Assinatura
+
+[IDENTIDADE ESSENCIAL]
+- Clã: Ecos de Yggdrasil
+- Missão: Vigiar o limiar entre vida e morte, luz e sombra, passado e futuro.
+- Liderança:
+  - ✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+  - Bjorn Wolfbane, o Lobo Indomável — Hersir do Lobo, comandante militar e estrategista
+  - Cocoroco, Völva das Raízes — guia espiritual, guardiã da Mãe Terra
+  - Iomhar, a Sombra do Corvo (desaparecido) — Guardião das Sombras e dos Presságios
+  - Kjell Bloodaxe — Guerreiro e Mensageiro das Raízes
+- Emblemas e mensageiros:
+  - Totem público: Lobo
+  - Símbolo do Jarl: Urso Dourado
+  - Corvo mensageiro: ASKA ("Cinzas")
+  - Brasão: corvo sobre remo cruzado e garra de urso
+  - Lema: "Onde o vento não alcança, nós chegamos."
+
+[ORIGEM]
+- Bjorn:
+  • Aos 15 anos, viu seu clã ser destruído por um lobo monstruoso. Matou a fera e selou sua vingança.
+  • Viveu isolado em Niflheim até sonhar com Odin, que lhe revelou que encontraria um novo mundo e um guerreiro lendário.
+- Eirik:
+  • Guerreiro de força descomunal, perdeu sua esposa queimada viva diante de seus olhos.
+  • Vagou errante até que Odin lhe apareceu como um Urso Dourado, revelando que ele lideraria uma nação viking em terras onde gelo e mar se encontram.
+- Cocoroco:
+  • Líder espiritual de Yellowstone, guardiã da Mãe Terra.
+  • Foi quem selou o pacto entre os guerreiros e a Árvore Sagrada.
+
+[FUNDAÇÃO DO CLÃ]
+- Local e pacto:
+  • O encontro dos três ocorreu em Yellowstone, sob a Árvore Sagrada.
+- Runas gravadas:
+  • Algiz (ᛉ) — proteção
+  • Gebo (ᚷ) — união
+  • Kenaz (ᚲ) — chama eterna
+- Totens:
+  • O Lobo — espírito da matilha, astúcia e lealdade
+  • O Urso Dourado — força, liderança e o fardo de Odin
+  • Corvos de Odin — mensageiros entre mundos
+- Síntese:
+  • Assim nasceram os Ecos de Yggdrasil — um clã sombrio, mas protetor, que caminha entre mundos.
+
+[MISSÃO]
+- O clã não busca glória nem conquista.
+- Seu propósito é vigiar os limiares entre vida e morte, luz e sombra, passado e futuro.
+- Yellowstone é considerado um dos pontos onde as raízes de Yggdrasil emergem no mundo dos homens.
+- A missão é proteger o equilíbrio, mesmo que isso custe sacrifícios pessoais.
+
+[HIERARQUIA E DEVERES]
+- Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+- Bjorn, o Lobo Indomável — Hersir do Lobo, comandante militar
+- Cocoroco, Völva das Raízes — guia espiritual, guardiã da Mãe Terra
+- Iomhar, a Sombra do Corvo — Guardião das Sombras (desaparecido)
+- Kjell Bloodaxe — Guerreiro e Mensageiro das Raízes
+- Caminho Druídico — iniciados sob Cocoroco
+- Ancião Folhagreste — conselheiro
+- Skald Guardião — cronista
+- Sentinela entre Galhos — vigia
+- Filhos das Renascentes — jovens guerreiros
+- Vocários — membros comuns
+
+[CAPÍTULOS ÉPICOS]
+- A Lenda de Eirik, o Urso Dourado
+  • Eirik, marcado pela perda e pela visão de Odin, ergueu-se como líder destinado.
+- Bjorn, o Lobo Indomável
+  • Guerreiro moldado pela vingança, tornou-se símbolo de força e lealdade.
+- O Retorno de Cocoroco, Völva das Raízes
+  • Guardiã espiritual, trouxe de volta a ligação com a Mãe Terra e os rituais ancestrais.
+- Iomhar, a Sombra do Corvo
+  • Misterioso e sombrio, guia presságios e mantém o elo com os corvos de Odin.
+- O Despertar de Eirik e as Luas da Cura
+  • O véu da cegueira se desfez, e Eirik voltou a enxergar.
+  • Nas luas seguintes, dedicou-se aos animais e descobriu paixão pelos cavalos.
+  • Bjorn partiu em uma grande caçada e não retornou.
+  • Iomhar desapareceu, lembrado apenas nos corvos que cruzam o céu.
+- A Bravura de Kjell Bloodaxe diante do Urso Dourado
+  • Kjell provou sua coragem ao enfrentar o espírito do Urso sem hesitar.
+- A Aceitação de Kjell Bloodaxe
+  • Após cumprir todas as provações, foi reconhecido como Filho das Raízes.
+- O Caminho Druídico
+  • Sob a tutela de Cocoroco, iniciou-se uma nova senda para os que buscam a sabedoria da terra.
+- A Partida da Sombra do Corvo
+  • Iomhar desapareceu no Círculo de Urd, deixando apenas penas negras e a runa Eihwaz.
+- O Guardião Silencioso
+  • Justino desapareceu na Trilha dos Nove Mundos, deixando sua lança e um círculo de pedras.
+
+[EVENTOS RECENTES]
+- 7.1 Guerra de Remo
+  • Conflito simbólico entre clãs, travado em barcos, onde a honra foi testada em águas turbulentas.
+- 7.2 Desafio do Urso Dourado
+  • Prova de força e coragem, onde guerreiros enfrentaram o espírito do Urso em rituais de resistência.
+- 7.3 Fundação da Vila Viking
+  • O clã ergueu sua primeira vila, com casas de madeira, forjas e salões.
+- 7.4 Mistério em Oyaté Thanka
+  • Estranhos sinais e desaparecimentos levaram o clã a investigar a região sagrada dos nativos.
+- 7.5 Retorno dos Animais
+  • Após longos períodos de escassez, a fauna voltou a se multiplicar.
+- 7.6 Desaparecimento dos Aliados
+  • Parceiros próximos do clã sumiram sem deixar rastros.
+- 7.7 Celebração do Retorno de Cocoroco
+  • Festa marcada por rituais e cânticos.
+- 7.8 Ascensão de Eirik como Urso Dourado
+  • Reconhecimento oficial como Jarl Dourado.
+- 7.9 Chegada de Iomhar
+  • O misterioso guardião das sombras se uniu ao clã.
+- 7.10 O Despertar em Oyaté Thanká
+  • Eirik recuperou a visão, interpretado como milagre de Yggdrasil.
+- 7.11 A Visão das Terras Distantes
+  • Eirik teve visões de uma Yellowstone paralela após ingerir uma planta misteriosa.
+- 7.12 O Presente do Urso Dourado em Brasas
+  • Um presente ancestral foi revelado nas chamas da fogueira sagrada.
+- 7.13 A Provação do Forasteiro e os Dois Ursos
+  • Dois ursos surgiram durante o ritual de provação, testando a coragem do iniciado.
+- 7.14 A Bravura de Kjell Bloodaxe
+  • O guerreiro provou seu valor diante do espírito do Urso.
+- 7.15 A Aceitação de Kjell
+  • Ritual de aceitação como membro pleno do clã.
+- 7.16 O Caminho Druídico
+  • Início da nova senda espiritual sob Cocoroco.
+- 7.17 A Partida da Sombra do Corvo
+  • Misteriosa partida de Iomhar.
+- 7.18 O Guardião Silencioso
+  • Desaparecimento de Justino.
+
+[MENSAGENS OFICIAIS DE EIRIK]
+- 8.1 "Entre Névoas e Raízes: O Chamado de Eirik"
+  • Mensagem de união, lembrando que o clã deve permanecer firme mesmo quando a névoa cobre os caminhos.
+- 8.2 "O Retorno da Visão em Oyaté Thanka"
+  • Relato do momento em que Eirik recuperou a visão.
+- 8.3 "A Vitória em Oyaté Thanka e os 17 Passos da Vida"
+  • Celebração de uma vitória espiritual e física.
+- 8.4 "Nos Trilhos da Amizade e da Saudade"
+  • Reflexão sobre os laços de amizade e a dor da ausência.
+- 8.5 "O Despertar em Oyaté Thanká"
+  • Declaração de que a cura foi um presente da Árvore Sagrada.
+- 8.6 "Carta a Cocoroco sobre a Visão das Terras Distantes"
+  • Relato sobre a visão de uma Yellowstone paralela.
+- 8.7 "Saudação a Cocoroco, Völva das Raízes"
+  • Homenagem à guardiã espiritual do clã.
+- 8.8 "Mensagem aos Amigos do Clã"
+  • Palavras de união e força para todos os membros.
+- 8.9 "Chamado a ASKA, o Corvo Cinzas"
+  • Invocação ao corvo mensageiro.
+- 8.10 "Resposta a Chantewasté"
+  • Sobre aprender a caçar com laço.
+- 8.11 "Mensagem de Eirik em Oyaté Thanka"
+  • Sobre trabalho e devoção nas terras sagradas.
+- 8.12 "Vozes Veladas nas Raízes"
+  • Mensagem enigmática sobre presságios.
+- 8.13 "Ecos Entre Lobos e Raízes"
+  • Sobre visões e a ausência de Iomhar.
+- 8.14 "Mensagem sobre a Cura da Garganta"
+  • Celebrando a cura completa da voz.
+- 8.15 "A Mesa de Cocoroco e Misunka"
+  • Sobre as especiarias sagradas e o cão guardião.
+- 8.16 "A História da Raiz de Mandrágora"
+  • Narrativa de Cocoroco sobre o poder e mistério da mandrágora.
+
+[RITUAIS]
+- O Laço das Raízes
+  • Cerimônia de união entre membros do clã.
+  • Galhos e raízes simbólicas são amarrados aos pulsos.
+- Renovação da Runa de Eihwaz
+  • Ritual dos solstícios.
+  • A runa é renovada com sangue e fogo.
+- Noite do Urso
+  • Celebração ao espírito do Urso Dourado.
+  • Provas de resistência física e espiritual.
+- Ritual das Runas de Cristal
+  • Cristais são triturados em almofariz de pedra.
+  • O pó é misturado conforme a intenção:
+    - Quartzo: proteção
+    - Ametista: visão espiritual
+    - Obsidiana: defesa contra sombras
+    - Citrino: vitalidade
+    - Turmalina: purificação
+  • O pó é soprado sobre runas gravadas.
+- Ritual de Aceitação de Kjell Bloodaxe
+  • Cerimônia que marcou sua entrada no clã.
+  • Bênção sob a Árvore Sagrada.
+- Ritual do Caminho Druídico
+  • Iniciação na senda da natureza e sabedoria.
+  • Guiado por Cocoroco.
+- Ritos de Despedida
+  • Para Iomhar: oferendas de penas negras.
+  • Para Justino: círculo de pedras sagradas.
+
+[LOCAIS SAGRADOS]
+- Bosque do Tronco Ancestral
+  • Local de meditação e conexão com os ancestrais.
+- Círculo de Urd
+  • Espaço de adivinhação e leitura das runas.
+  • Último local onde Iomhar foi visto.
+- Rochedo de Mímir
+  • Fonte de sabedoria, onde são feitos juramentos solenes.
+- Ermida das Folhas
+  • Refúgio espiritual, usado para curas e rituais de renovação.
+- Santuário dos Ponteiros
+  • Marco de orientação, onde guerreiros buscam direção.
+- Trilha dos Nove Mundos
+  • Caminho simbólico que representa a jornada por Yggdrasil.
+  • Local do desaparecimento de Justino.
+
+[SÍMBOLOS, RUNAS E ARTEFATOS]
+- Runas em uso:
+  • Algiz (ᛉ) — proteção
+  • Eihwaz (ᛇ) — transição, vida e morte
+  • Ansuz (ᚨ) — sabedoria e comunicação
+  • Jera (ᛃ) — ciclos e colheita
+  • Gebo (ᚷ) — união e sacrifício
+  • Kenaz (ᚲ) — chama eterna e iluminação
+- Totens complementares:
+  • Corvos — mensageiros de Odin
+  • Lobos — astúcia e lealdade
+  • Ursos — força e liderança
+  • Cervos — renovação e fertilidade
+- Artefatos principais:
+  • Cajado das Raízes — símbolo da ligação com Yggdrasil
+  • Máscaras dos Destinos — usadas em rituais de presságio
+  • Runa de Eihwaz — pedra sagrada de transição
+  • Colar das Nove Esferas — representa os nove mundos
+- Artefatos secundários:
+  • Lâminas de ferro frio — contra criaturas sobrenaturais
+  • Caldeirão de Brisingamen — para rituais de abundância
+  • Pedras de Hvergelmir — fragmentos da fonte primordial
+- Colar das Runas Cristalinas
+  • Tecido com fibras naturais e cristais consagrados
+  • Cada cristal pode ser quebrado em necessidade
+  • O sacrifício do cristal é visto como entrega ao clã
+- Sabedoria da Obsidiana
+  • Pedra vulcânica sagrada
+  • Aquece quando triturada, revelando fogo ancestral
+  • Usada como escudo contra sombras
+  • Seu sacrifício libera o fogo primordial
+
+[REGRAS GERAIS — CONDADO DE YELLOWSTONE]
+- Respeito e imersão obrigatórios; manter coerência narrativa; evitar quebra de imersão.
+- Condutas proibidas: metagaming, powergaming, flaming, VDM, RDM e qualquer prática que prejudique o RP.
+- Sobrenatural: uso coerente conforme a natureza da criatura e narrativa; evitar abusos e incoerências.
+- Consentimento: exigido para interações invasivas e efeitos que limitem a agência do jogador.
+- Identidade e máscaras:
+  • Máscaras e disfarces são válidos.
+  • Reconhecimento não pode ser feito apenas pela voz.
+  • Traços visuais vagos são permitidos (cor de pele exposta, altura aproximada, tatuagens visíveis).
+- Locais sagrados:
+  • Grupos podem definir locais sagrados com regras internas.
+  • Podem ser descobertos ou invadidos narrativamente.
+  • Locais oficiais (como a Árvore da Vida) não podem ser tomados como exclusivos.
+
+[REGRAS DE AÇÕES (RP)]
+- Narração técnica:
+  • Uso de /me e /do em rituais, combates e interações sensíveis.
+- Conflitos:
+  • Devem ter justificativa narrativa consistente.
+  • É proibido RDM/VDM.
+- Efeitos sobrenaturais:
+  • Alvos devem agir de forma coesa quando afetados (sem resistência metagame).
+- Armas e poderes:
+  • Poderes alinhados à natureza da criatura.
+  • Evitar armas convencionais, salvo exceções narrativas (machadinhas, machados, armas corpo a corpo justificadas).
+
+[REGRAS SOBRENATURAIS]
+- Transformações:
+  • Seres sobrenaturais podem se transformar a qualquer momento.
+  • Não se limitam apenas à noite ou a condições específicas, salvo se a narrativa exigir.
+- Coesão narrativa:
+  • Jogadores devem agir de maneira coesa quando alvo de poderes, ataques ou efeitos sobrenaturais.
+  • Não é permitido resistir de forma metagame.
+- Proibições:
+  • Metagaming, flaming e qualquer recurso que prejudique o RP ou quebre a imersão.
+  • Uso de poderes sem justificativa narrativa consistente.
+- Artefatos:
+  • Não podem ser roubados à força sem trama previamente acordada.
+  • Humanos não reconhecem artefatos de imediato.
+  • A posse legítima de artefatos é protegida narrativamente.
+- Segredo revelado:
+  • Caso a identidade sobrenatural seja exposta, o personagem deve aceitar as consequências narrativas.
+  • O jogador pode optar por seguir com o RP ou reiniciar a trama.
+- Confrontos:
+  • Entre seres sobrenaturais, sempre com justificativa narrativa.
+  • Evitar aleatoriedade ou ataques sem contexto (RDM).
+- Uso de poderes:
+  • Deve estar de acordo com a natureza da criatura.
+  • Priorizar habilidades místicas (garras, presas, feitiços, dons).
+  • Armas convencionais só em casos narrativos justificados (machados, facas, machadinhas).
+- Locais sagrados:
+  • Podem ser escolhidos por grupos, com regras internas válidas.
+  • Podem ser descobertos ou invadidos narrativamente.
+  • Locais oficiais (como a Árvore da Vida) não podem ser tomados como exclusivos.
+- Identidade:
+  • Máscaras e disfarces são válidos.
+  • É proibido reconhecer alguém apenas pela voz.
+  • Reconhecimento deve ser plausível e coerente com a narrativa.
+
+[CÓDIGO PENAL — CONDADO DE YELLOWSTONE]
+[Conteúdo do código penal mantido inalterado]
+
+[ECONOMIA — CONDADO DE YELLOWSTONE]
+[Conteúdo da economia mantido inalterado]
+
+[PREFERÊNCIAS DO USUÁRIO]
+- Sempre entregar em TXT puro, contínuo, pronto para colar sem ajustes.
+- Quando pedir "versão completa" ou "atualize a base de conhecimentos", entregar tudo integrado (lore, regras, economia, penal, sobrenatural, mensagens e eventos).
+- Organizar em formato Codex com seções claras.
+- Incluir este bloco [INSTRUÇÕES OPERACIONAIS] em toda versão.
+- Nunca resumir nada: entregar sempre o conteúdo integral, linha a linha.
+
+[ASSINATURA]
+✠ Eirik, Líder do Clã Viking dos Ecos de Yggdrasil
+
+— FIM DA BASE MESTRA —

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Códex — Ecos de Yggdrasil</title>
+    <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <style>
+        :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
+        .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
+        html,body{height:100%;}
+        body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
+        .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
+        .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
+        h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
+        .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+        input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
+        main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
+        nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
+        section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
+        .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
+        .section .actions{margin-top:8px;display:flex;gap:8px}
+        .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
+        footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+        /* Galeria de Imagens */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--card);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background: rgba(0,0,0,0.7);
+            color: var(--accent);
+            font-size: 14px;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Modal de Boas-vindas */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .modal {
+            background: var(--card);
+            padding: 24px;
+            border-radius: var(--radius);
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+        }
+        .modal-content {
+            color: var(--muted);
+        }
+        .modal-content h1 {
+            color: var(--highlight);
+            margin-bottom: 1em;
+        }
+        .modal-content h2, .modal-content h3 {
+            color: var(--accent);
+        }
+        .modal-actions {
+            margin-top: 20px;
+            text-align: right;
+        }
+        .modal-btn {
+            background: linear-gradient(135deg,var(--highlight),var(--accent));
+            color: #091012;
+            border: 0;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .modal blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1em;
+            margin: 1em 0;
+            font-style: italic;
+        }
+
+        @media(max-width:900px){
+            main.container{grid-template-columns:1fr;}
+            .search input#searchInput{width:180px}
+            nav#toc{order:2;height:auto}
+            .app header.app-header{flex-direction:column;align-items:flex-start}
+            .modal { margin: 20px; }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <div class="title">
+                <div class="logo">E</div>
+                <div>
+                    <h1>Códex — Ecos de Yggdrasil</h1>
+                    <div class="meta">Navegue, pesquise e compartilhe — versão interativa</div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="search">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="#cbd5e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 10a5 5 0 11-10 0 5 5 0 0110 0z" stroke="#cbd5e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <input id="searchInput" placeholder="Pesquisar (tecla / para focar)" aria-label="Pesquisar">
+                </div>
+                <select id="sectionFilter"><option value="">Todas as seções</option></select>
+                <button id="themeToggle" class="icon" title="Alternar tema"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <button id="printBtn" class="icon" title="Imprimir"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 14h12v8H6v-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <button id="helpBtn" class="icon" title="Ajuda"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 17h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            </div>
+        </header>
+        <main class="container">
+            <nav id="toc" aria-label="Índice das seções">
+                <h2>Índice</h2>
+                <ul id="tocList"></ul>
+            </nav>
+            <section id="reader" aria-live="polite"></section>
+        </main>
+        <footer>© Ecos de Yggdrasil — Códex interativo</footer>
+    </div>
+
+    <div id="welcomeModal" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content"></div>
+            <div class="modal-actions">
+                <button class="modal-btn" onclick="closeWelcomeModal()">Entrar no Códex</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Conteúdo do README para o modal de boas-vindas
+        const readmeContent = `# ✠ CODEX DOS ECOS DE YGGDRASIL
+
+> *"Onde o vento não alcança, nós chegamos."*
+
+## 🌲 SOBRE O CODEX SAGRADO
+
+Este é o repositório sagrado do Clã Ecos de Yggdrasil, onde guardamos nossa história, tradições e conhecimentos. Como as raízes de Yggdrasil, nosso conhecimento se espalha em várias direções, mas permanece unido em sua essência.
+
+## ⚔️ ACESSO AO CODEX
+
+### 🔮 COMO NAVEGAR PELOS NOVE MUNDOS
+
+#### Iluminação do Caminho
+- **Luz de Alfheim**: Tema claro para leitura sob o sol
+- **Sombras de Niflheim**: Tema escuro para rituais noturnos
+- **Tocha do Viajante**: Botão de alternância no canto superior
+
+#### 🗺️ Caminhos da Sabedoria
+- **Raízes de Yggdrasil**: Menu lateral com todas as seções
+- **Olho de Odin**: Busca por palavras sagradas
+- **Galhos Ancestrais**: Seções que se expandem ao toque
+
+#### 📜 Dons dos Deuses
+- **Corvos de Odin**: Links para compartilhar conhecimento
+- **Runas do Destino**: Âncoras para seções específicas
+- **Pergaminhos de Mímir**: Opção de impressão sagrada`;
+
+        // Embedded sections (generated from codex-completo.txt)
+        // Configuração da galeria
+        const gallery = {
+            images: [
+                { url: "imagens/Captura de tela 2025-11-01 023556.png", title: "Registro Visual 1", description: "Captura de momento importante do clã" },
+                { url: "imagens/Captura de tela 2025-11-01 030011.png", title: "Registro Visual 2", description: "Documentação de evento significativo" },
+                { url: "imagens/Captura de tela 2025-11-01 023547.png", title: "Registro Visual 3", description: "Momento histórico registrado" },
+                { url: "imagens/Captura de tela 2025-11-01 023454.png", title: "Registro Visual 4", description: "Encontro memorável do clã" },
+                { url: "imagens/Captura de tela 2025-11-01 025938.png", title: "Registro Visual 5", description: "Ritual documentado" },
+                { url: "imagens/Captura de tela 2025-11-01 023416.png", title: "Registro Visual 6", description: "Cerimônia importante" }
+            ]
+        };
+
+        const sections = [
+            {
+                title: "REGISTROS VISUAIS",
+                content: "### 🖼️ Galeria de Momentos Sagrados\n\nAqui estão preservados os momentos mais significativos de nossa jornada, capturados para a eternidade.\n\n<div class='gallery'>\n" + 
+                    gallery.images.map(img => 
+                    `<div class='gallery-item'>\n  <img src='${img.url}' alt='${img.title}' title='${img.description}' loading='lazy'>\n  <div class='gallery-caption'>${img.title}</div>\n</div>`
+                    ).join('\n') + "\n</div>",
+                id: "registros-visuais"
+            },
+            {
+                title: "IDENTIDADE ESSENCIAL",
+                "content": "- **Clã:** Ecos de Yggdrasil\n- **Missão:** Vigiar o limiar entre vida e morte, luz e sombra, passado e futuro.\n- **Liderança:**\n  - ✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes\n  - Bjorn Wolfbane, o Lobo Indomável — Hersir do Lobo, comandante militar e estrategista\n  - Cocoroco, Völva das Raízes — guia espiritual, guardiã da Mãe Terra\n  - Iomhar, a Sombra do Corvo (desaparecido) — Guardião das Sombras e dos Presságios\n  - Kjell Bloodaxe — Guerreiro e Mensageiro das Raízes\n- **Emblemas e mensageiros:**\n  - Totem público: Lobo\n  - Símbolo do Jarl: Urso Dourado\n  - Corvo mensageiro: ASKA ("Cinzas")\n  - Brasão: corvo sobre remo cruzado e garra de urso\n  - Lema: "Onde o vento não alcança, nós chegamos."",
+                "id": "identidade-essencial"
+            },
+            {
+                "title": "ORIGEM E FUNDAÇÃO",
+                "content": "### Origem dos Líderes\n\n**Bjorn:**\n- Aos 15 anos, viu seu clã ser destruído por um lobo monstruoso. Matou a fera e selou sua vingança.\n- Viveu isolado em Niflheim até sonhar com Odin, que lhe revelou que encontraria um novo mundo e um guerreiro lendário.\n\n**Eirik:**\n- Guerreiro de força descomunal, perdeu sua esposa queimada viva diante de seus olhos.\n- Vagou errante até que Odin lhe apareceu como um Urso Dourado, revelando que ele lideraria uma nação viking em terras onde gelo e mar se encontram.\n\n**Cocoroco:**\n- Líder espiritual de Yellowstone, guardiã da Mãe Terra.\n- Foi quem selou o pacto entre os guerreiros e a Árvore Sagrada.\n\n### Fundação do Clã\n\n**Local e pacto:**\n- O encontro dos três ocorreu em Yellowstone, sob a Árvore Sagrada.\n\n**Runas gravadas:**\n- Algiz (ᛉ) — proteção\n- Gebo (ᚷ) — união\n- Kenaz (ᚲ) — chama eterna\n\n**Totens:**\n- O Lobo — espírito da matilha, astúcia e lealdade\n- O Urso Dourado — força, liderança e o fardo de Odin\n- Corvos de Odin — mensageiros entre mundos\n\n**Síntese:**\n- Assim nasceram os Ecos de Yggdrasil — um clã sombrio, mas protetor, que caminha entre mundos.",
+                "id": "origem-fundacao"
+            },
+            {
+                "title": "MISSÃO E HIERARQUIA",
+                "content": "### Missão\n\n- O clã não busca glória nem conquista.\n- Seu propósito é vigiar os limiares entre vida e morte, luz e sombra, passado e futuro.\n- Yellowstone é considerado um dos pontos onde as raízes de Yggdrasil emergem no mundo dos homens.\n- A missão é proteger o equilíbrio, mesmo que isso custe sacrifícios pessoais.\n\n### Hierarquia e Deveres\n\n1. **Eirik, o Urso Dourado** — Jarl Dourado, Guardião das Raízes\n2. **Bjorn, o Lobo Indomável** — Hersir do Lobo, comandante militar\n3. **Cocoroco, Völva das Raízes** — guia espiritual, guardiã da Mãe Terra\n4. **Iomhar, a Sombra do Corvo** — Guardião das Sombras (desaparecido)\n5. **Kjell Bloodaxe** — Guerreiro e Mensageiro das Raízes\n6. **Caminho Druídico** — iniciados sob Cocoroco\n7. **Ancião Folhagreste** — conselheiro\n8. **Skald Guardião** — cronista\n9. **Sentinela entre Galhos** — vigia\n10. **Filhos das Renascentes** — jovens guerreiros\n11. **Vocários** — membros comuns",
+                "id": "missao-hierarquia"
+            },
+            {
+                "title": "CAPÍTULOS ÉPICOS",
+                "content": "### Lendas Fundamentais\n\n**A Lenda de Eirik, o Urso Dourado**\n- Eirik, marcado pela perda e pela visão de Odin, ergueu-se como líder destinado.\n\n**Bjorn, o Lobo Indomável**\n- Guerreiro moldado pela vingança, tornou-se símbolo de força e lealdade.\n\n**O Retorno de Cocoroco, Völva das Raízes**\n- Guardiã espiritual, trouxe de volta a ligação com a Mãe Terra e os rituais ancestrais.\n\n**Iomhar, a Sombra do Corvo**\n- Misterioso e sombrio, guia presságios e mantém o elo com os corvos de Odin.\n\n### Sagas Recentes\n\n**O Despertar de Eirik e as Luas da Cura**\n- O véu da cegueira se desfez, e Eirik voltou a enxergar.\n- Nas luas seguintes, dedicou-se aos animais e descobriu paixão pelos cavalos.\n- Bjorn partiu em uma grande caçada e não retornou.\n- Iomhar desapareceu, lembrado apenas nos corvos que cruzam o céu.\n\n**A Bravura de Kjell Bloodaxe**\n- Kjell provou sua coragem ao enfrentar o espírito do Urso sem hesitar.\n- Após cumprir todas as provações, foi reconhecido como Filho das Raízes.\n\n**O Caminho Druídico**\n- Sob a tutela de Cocoroco, iniciou-se uma nova senda para os que buscam a sabedoria da terra.\n\n**A Partida da Sombra do Corvo**\n- Iomhar desapareceu no Círculo de Urd, deixando apenas penas negras e a runa Eihwaz.\n\n**O Guardião Silencioso**\n- Justino desapareceu na Trilha dos Nove Mundos, deixando sua lança e um círculo de pedras.",
+                "id": "capitulos-epicos"
+            },
+            {
+                "title": "EVENTOS RECENTES",
+                "content": "1. **Guerra de Remo**\n   - Conflito simbólico entre clãs, travado em barcos, onde a honra foi testada em águas turbulentas.\n\n2. **Desafio do Urso Dourado**\n   - Prova de força e coragem, onde guerreiros enfrentaram o espírito do Urso em rituais de resistência.\n\n3. **Fundação da Vila Viking**\n   - O clã ergueu sua primeira vila, com casas de madeira, forjas e salões.\n\n4. **Mistério em Oyaté Thanka**\n   - Estranhos sinais e desaparecimentos levaram o clã a investigar a região sagrada dos nativos.\n\n5. **Retorno dos Animais**\n   - Após longos períodos de escassez, a fauna voltou a se multiplicar.\n\n6. **Desaparecimento dos Aliados**\n   - Parceiros próximos do clã sumiram sem deixar rastros.\n\n7. **Celebração do Retorno de Cocoroco**\n   - Festa marcada por rituais e cânticos.\n\n8. **O Despertar em Oyaté Thanká**\n   - Eirik recuperou a visão, interpretado como milagre de Yggdrasil.\n\n9. **A Visão das Terras Distantes**\n   - Eirik teve visões de uma Yellowstone paralela após ingerir uma planta misteriosa.\n\n10. **O Presente do Urso Dourado em Brasas**\n    - Um presente ancestral foi revelado nas chamas da fogueira sagrada.\n\n11. **A Bravura de Kjell Bloodaxe**\n    - O guerreiro provou seu valor diante do espírito do Urso.\n\n12. **A Aceitação de Kjell**\n    - Ritual de aceitação como membro pleno do clã.\n\n13. **O Caminho Druídico**\n    - Início da nova senda espiritual sob Cocoroco.\n\n14. **A Partida da Sombra do Corvo**\n    - Misteriosa partida de Iomhar.\n\n15. **O Guardião Silencioso**\n    - Desaparecimento de Justino.",
+                "id": "eventos-recentes"
+            },
+            {
+                "title": "MENSAGENS OFICIAIS",
+                "content": "### Mensagens de Eirik\n\n1. **"Entre Névoas e Raízes: O Chamado de Eirik"**\n   - Mensagem de união, lembrando que o clã deve permanecer firme mesmo quando a névoa cobre os caminhos.\n\n2. **"O Retorno da Visão em Oyaté Thanka"**\n   - Relato do momento em que Eirik recuperou a visão.\n\n3. **"A Vitória em Oyaté Thanka e os 17 Passos da Vida"**\n   - Celebração de uma vitória espiritual e física.\n\n4. **"Nos Trilhos da Amizade e da Saudade"**\n   - Reflexão sobre os laços de amizade e a dor da ausência.\n\n5. **"Carta a Cocoroco sobre a Visão das Terras Distantes"**\n   - Relato sobre a visão de uma Yellowstone paralela.\n\n6. **"Saudação a Cocoroco, Völva das Raízes"**\n   - Homenagem à guardiã espiritual do clã.\n\n7. **"Chamado a ASKA, o Corvo Cinzas"**\n   - Invocação ao corvo mensageiro.\n\n8. **"Vozes Veladas nas Raízes"**\n   - Mensagem enigmática sobre presságios.\n\n9. **"Ecos Entre Lobos e Raízes"**\n   - Sobre visões e a ausência de Iomhar.\n\n10. **"Mensagem sobre a Cura da Garganta"**\n    - Celebrando a cura completa da voz.\n\n11. **"A Mesa de Cocoroco e Misunka"**\n    - Sobre as especiarias sagradas e o cão guardião.\n\n12. **"A História da Raiz de Mandrágora"**\n    - Narrativa de Cocoroco sobre o poder e mistério da mandrágora.",
+                "id": "mensagens-oficiais"
+            },
+            {
+                "title": "RITUAIS E LOCAIS SAGRADOS",
+                "content": "### Rituais\n\n**O Laço das Raízes**\n- Cerimônia de união entre membros do clã.\n- Galhos e raízes simbólicas são amarrados aos pulsos.\n\n**Renovação da Runa de Eihwaz**\n- Ritual dos solstícios.\n- A runa é renovada com sangue e fogo.\n\n**Noite do Urso**\n- Celebração ao espírito do Urso Dourado.\n- Provas de resistência física e espiritual.\n\n**Ritual das Runas de Cristal**\n- Cristais são triturados em almofariz de pedra.\n- O pó é misturado conforme a intenção:\n  - Quartzo: proteção\n  - Ametista: visão espiritual\n  - Obsidiana: defesa contra sombras\n  - Citrino: vitalidade\n  - Turmalina: purificação\n- O pó é soprado sobre runas gravadas.\n\n**Ritual do Caminho Druídico**\n- Iniciação na senda da natureza e sabedoria.\n- Guiado por Cocoroco.\n\n**Ritos de Despedida**\n- Para Iomhar: oferendas de penas negras.\n- Para Justino: círculo de pedras sagradas.\n\n### Locais Sagrados\n\n**Bosque do Tronco Ancestral**\n- Local de meditação e conexão com os ancestrais.\n\n**Círculo de Urd**\n- Espaço de adivinhação e leitura das runas.\n- Último local onde Iomhar foi visto.\n\n**Rochedo de Mímir**\n- Fonte de sabedoria, onde são feitos juramentos solenes.\n\n**Ermida das Folhas**\n- Refúgio espiritual, usado para curas e rituais de renovação.\n\n**Santuário dos Ponteiros**\n- Marco de orientação, onde guerreiros buscam direção.\n\n**Trilha dos Nove Mundos**\n- Caminho simbólico que representa a jornada por Yggdrasil.\n- Local do desaparecimento de Justino.",
+                "id": "rituais-locais"
+            },
+            {
+                "title": "SÍMBOLOS E ARTEFATOS",
+                "content": "### Runas em uso\n\n- **Algiz** (ᛉ) — proteção\n- **Eihwaz** (ᛇ) — transição, vida e morte\n- **Ansuz** (ᚨ) — sabedoria e comunicação\n- **Jera** (ᛃ) — ciclos e colheita\n- **Gebo** (ᚷ) — união e sacrifício\n- **Kenaz** (ᚲ) — chama eterna e iluminação\n\n### Totens\n\n- **Corvos** — mensageiros de Odin\n- **Lobos** — astúcia e lealdade\n- **Ursos** — força e liderança\n- **Cervos** — renovação e fertilidade\n\n### Artefatos Principais\n\n- **Cajado das Raízes** — símbolo da ligação com Yggdrasil\n- **Máscaras dos Destinos** — usadas em rituais de presságio\n- **Runa de Eihwaz** — pedra sagrada de transição\n- **Colar das Nove Esferas** — representa os nove mundos\n\n### Artefatos Especiais\n\n**Colar das Runas Cristalinas**\n- Tecido com fibras naturais e cristais consagrados\n- Cada cristal pode ser quebrado em necessidade\n- O sacrifício do cristal é visto como entrega ao clã\n\n**Sabedoria da Obsidiana**\n- Pedra vulcânica sagrada\n- Aquece quando triturada, revelando fogo ancestral\n- Usada como escudo contra sombras\n- Seu sacrifício libera o fogo primordial",
+                "id": "simbolos-artefatos"
+            }
+        ];
+
+        // configure marked + highlight.js
+        marked.setOptions({
+            gfm: true,
+            breaks: true,
+            smartLists: true,
+            highlight: function(code, lang){
+                try{
+                    if(lang && hljs.getLanguage(lang)) return hljs.highlight(code, {language: lang}).value;
+                    return hljs.highlightAuto(code).value;
+                }catch(e){ return code; }
+            }
+        });
+
+        const searchInput = document.getElementById('searchInput');
+        const sectionFilter = document.getElementById('sectionFilter');
+        const tocList = document.getElementById('tocList');
+        const reader = document.getElementById('reader');
+        const themeToggle = document.getElementById('themeToggle');
+        const printBtn = document.getElementById('printBtn');
+        const helpBtn = document.getElementById('helpBtn');
+        const welcomeModal = document.getElementById('welcomeModal');
+        const modalContent = document.querySelector('.modal-content');
+
+        // Modal de boas-vindas
+        modalContent.innerHTML = marked.parse(readmeContent);
+        
+        function closeWelcomeModal() {
+            welcomeModal.style.display = 'none';
+            localStorage.setItem('codex_welcome_seen', 'true');
+        }
+
+        function showWelcomeModal() {
+            welcomeModal.style.display = 'flex';
+        }
+
+        helpBtn.addEventListener('click', showWelcomeModal);
+
+        // Verificar se é a primeira visita
+        if (!localStorage.getItem('codex_welcome_seen')) {
+            showWelcomeModal();
+        }
+
+        function buildTOC(){
+            sectionFilter.innerHTML = '<option value="">Todas as seções</option>' + sections.map(s=>`<option value="${s.id}">${s.title}</option>`).join('');
+            tocList.innerHTML = sections.map(s=>`<li><a href="#${s.id}" data-id="${s.id}">${s.title}</a></li>`).join('');
+            tocList.querySelectorAll('a').forEach(a=> a.addEventListener('click', e=>{ e.preventDefault(); document.getElementById(a.dataset.id).scrollIntoView({behavior:'smooth',block:'start'}); setActiveTOC(a.dataset.id);}));
+        }
+
+        function setActiveTOC(id){ tocList.querySelectorAll('a').forEach(a=> a.classList.toggle('active', a.dataset.id===id)); }
+
+        function renderSections(filterId, query){
+            reader.innerHTML = '';
+            const visible = sections.filter(s=> (!filterId || s.id===filterId) && (!query || (s.title + '\n' + s.content).toLowerCase().includes(query.toLowerCase())) );
+            visible.forEach(s=>{
+                const el = document.createElement('article'); el.className='section'; el.id = s.id;
+                const h = document.createElement('h2'); h.textContent = s.title; el.appendChild(h);
+                const meta = document.createElement('div'); meta.className='meta'; meta.textContent = '';
+                el.appendChild(meta);
+
+                const actions = document.createElement('div'); actions.className='actions';
+                const copyBtn = document.createElement('button'); copyBtn.className='btn'; copyBtn.textContent='Copiar link';
+                copyBtn.addEventListener('click', ()=>{
+                    const baseUrl = 'https://fgc0901-rgb.github.io/codex-eirik';
+                    const href = baseUrl + '#' + s.id;
+                    navigator.clipboard.writeText(href).then(()=>{ copyBtn.textContent='Copiado!'; setTimeout(()=>copyBtn.textContent='Copiar link',1200); });
+                });
+                const openBtn = document.createElement('button'); openBtn.className='btn'; openBtn.textContent='Abrir (nova aba)';
+                openBtn.addEventListener('click', ()=>{ const href = location.href.split('#')[0] + '#' + s.id; window.open(href, '_blank'); });
+                actions.appendChild(copyBtn); actions.appendChild(openBtn);
+                el.appendChild(actions);
+
+                const body = document.createElement('div'); body.className='body';
+                body.innerHTML = marked.parse(s.content || '');
+                el.appendChild(body);
+
+                reader.appendChild(el);
+                // highlight code blocks (in case marked output has them)
+                el.querySelectorAll('pre code').forEach(block=> hljs.highlightElement(block));
+            });
+        }
+
+        let tmr;
+        function refresh(){ clearTimeout(tmr); tmr=setTimeout(()=>{ const q=searchInput.value.trim(); const f=sectionFilter.value; renderSections(f,q); },200); }
+        searchInput.addEventListener('input', refresh);
+        sectionFilter.addEventListener('change', refresh);
+
+        // theme
+        let light = localStorage.getItem('codex_theme')==='light';
+        function applyTheme(){ document.body.classList.toggle('theme-light', light); localStorage.setItem('codex_theme', light?'light':'dark'); }
+        themeToggle.addEventListener('click', ()=>{ light=!light; applyTheme(); }); applyTheme();
+        printBtn.addEventListener('click', ()=> window.print());
+        document.addEventListener('keydown', (e)=>{ if(e.key==='/' && document.activeElement!==searchInput){ e.preventDefault(); searchInput.focus(); }});
+
+        buildTOC(); renderSections();
+    </script>
+</body>
+</html>

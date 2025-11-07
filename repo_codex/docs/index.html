@@ -1,192 +1,454 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codex Clã - Ecos de Yggdrasil</title>
+    <meta name="description" content="Explore os registros ancestrais do clã Ecos de Yggdrasil, uma comunidade dedicada às tradições nórdicas e à sabedoria dos antigos.">
+    <meta name="keywords" content="Ecos de Yggdrasil, viking, nórdico, clã, sagas, rituais, tradições">
+    <meta name="theme-color" content="#1a0f0f">
+    <meta property="og:title" content="Ecos de Yggdrasil">
+    <meta property="og:description" content="Explore os registros ancestrais do clã Ecos de Yggdrasil">
+    <meta property="og:type" content="website">
+    <title>Ecos de Yggdrasil</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap">
     <style>
+        :root {
+            --primary-color: #1a0f0f;
+            --secondary-color: #8b4513;
+            --accent-color: #c19a6b;
+            --text-color: #e8d5b7;
+            --rune-color: #ffd700;
+            --wood-color: #4a3728;
+            --shadow-color: rgba(0, 0, 0, 0.5);
+            --frost-color: rgba(255, 255, 255, 0.1);
+        }
+
         body {
-            <!DOCTYPE html>
-            <html lang="pt-BR">
-            <head>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <title>Códex — Ecos de Yggdrasil</title>
-                <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
-                <style>
-                    :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
-                    .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
-                    html,body{height:100%;}
-                    body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
-                    .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
-                    .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
-                    h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
-                    .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-                    input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
-                    main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
-                    nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
-                    section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
-                    .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
-                    .section .actions{margin-top:8px;display:flex;gap:8px}
-                    .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
-                    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
-                    @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
-                </style>
-                <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-            </head>
-            <body>
-                <div class="app">
-                    <header class="app-header">
-                        <div class="title">
-                            <div class="logo">E</div>
-                            <div>
-                                <!DOCTYPE html>
-                                <html lang="pt-BR">
-                                <head>
-                                    <meta charset="utf-8">
-                                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                                    <title>Códex — Ecos de Yggdrasil</title>
-                                    <meta name="description" content="Códex do clã Ecos de Yggdrasil — leitura, busca e navegação interativa">
-                                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
-                                    <style>
-                                        :root{ --bg:#0f1720; --card:#0b1320; --muted:#9aa6b2; --accent:#d9b08c; --highlight:#ffd54a; --glass: rgba(255,255,255,0.03); --radius:12px; --max-width:1200px; }
-                                        .theme-light{--bg:#f5f6f8;--card:#fff;--muted:#52606a;--accent:#8b0000;--highlight:#ffd54a;--glass:rgba(0,0,0,0.03)}
-                                        html,body{height:100%;}
-                                        body{margin:0; font-family:Inter, 'Segoe UI', Arial, sans-serif; background:linear-gradient(180deg,var(--bg),#071018); color:var(--accent); display:flex; justify-content:center; padding:28px; box-sizing:border-box;}
-                                        .app{width:100%;max-width:var(--max-width);} header.app-header{display:flex;align-items:center;gap:16px;justify-content:space-between;margin-bottom:18px}
-                                        .title{display:flex;gap:12px;align-items:center} .logo{width:68px;height:68px;border-radius:10px;background:linear-gradient(135deg,var(--highlight),var(--accent));display:flex;align-items:center;justify-content:center;color:#091012;font-weight:700;font-size:18px}
-                                        h1{margin:0;font-size:20px;color:var(--card);} .meta{font-size:13px;color:var(--muted)}
-                                        .controls{display:flex;gap:10px;align-items:center} .search{display:flex;align-items:center;gap:8px;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-                                        input#searchInput{border:0;background:transparent;color:var(--accent);outline:none;width:360px} select#sectionFilter{padding:8px;border-radius:8px;border:0;background:var(--bg);color:var(--muted)} button.icon{background:var(--card);border:0;padding:8px;border-radius:8px;color:var(--muted);cursor:pointer}
-                                        main.container{display:grid;grid-template-columns:300px 1fr;gap:18px} nav#toc{position:sticky;top:24px;height:calc(100vh - 48px);overflow:auto;padding:18px;border-radius:var(--radius);background:var(--card);box-shadow:0 8px 32px rgba(2,6,23,0.6)}
-                                        nav#toc h2{margin-top:0;color:var(--accent)} nav#toc ul{list-style:none;padding:0;margin:0} nav#toc li{margin:8px 0} nav#toc a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px;display:block} nav#toc a.active{background:var(--glass);color:var(--highlight)}
-                                        section#reader{padding:18px;border-radius:var(--radius);background:linear-gradient(180deg,var(--card),rgba(0,0,0,0.02));min-height:70vh;box-shadow:0 10px 30px rgba(2,6,23,0.6)} .section{margin-bottom:20px;padding:14px;border-radius:10px;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
-                                        .section h2{margin:0 0 8px 0;color:var(--highlight)} .section .meta{font-size:12px;color:var(--muted);margin-bottom:8px} .section .body{background:transparent;color:var(--muted);white-space:pre-wrap;font-family:inherit}
-                                        .section .actions{margin-top:8px;display:flex;gap:8px}
-                                        .btn{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:6px 8px;border-radius:8px;cursor:pointer}
-                                        footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
-                                        @media(max-width:900px){main.container{grid-template-columns:1fr;}.search input#searchInput{width:180px}nav#toc{order:2;height:auto}.app header.app-header{flex-direction:column;align-items:flex-start}}
-                                    </style>
-                                    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-                                </head>
-                                <body>
-                                    <div class="app">
-                                        <header class="app-header">
-                                            <div class="title">
-                                                <div class="logo">E</div>
-                                                <div>
-                                                    <h1>Códex — Ecos de Yggdrasil</h1>
-                                                    <div class="meta">Navegue, pesquise e compartilhe — versão interativa</div>
-                                                </div>
-                                            </div>
-                                            <div class="controls">
-                                                <div class="search">
-                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35" stroke="#cbd5e1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                                    <input id="searchInput" placeholder="Pesquisar (tecla / para focar)" aria-label="Pesquisar">
-                                                </div>
-                                                <select id="sectionFilter"><option value="">Todas as seções</option></select>
-                                                <button id="themeToggle" class="icon" title="Alternar tema">Tema</button>
-                                                <button id="printBtn" class="icon" title="Imprimir">Imprimir</button>
-                                            </div>
-                                        </header>
-                                        <main class="container">
-                                            <nav id="toc" aria-label="Índice das seções">
-                                                <h2>Índice</h2>
-                                                <ul id="tocList"></ul>
-                                            </nav>
-                                            <section id="reader" aria-live="polite"></section>
-                                        </main>
-                                        <footer>© Ecos de Yggdrasil — Códex interativo</footer>
-                                    </div>
-                                    <script>
-                                        // Embedded sections (generated from codex-completo.txt)
-                                        const sections = [
-                                    {
-                                        "title": "INSTRUÇÕES OPERACIONAIS",
-                                        "content": "- Teste: esta é uma alteração de exemplo para validar a atualização automática.\n\n---",
-                                        "id": "instrucoes-operacionais"
-                                    },
-                                    {
-                                        "title": "IDENTIDADE ESSENCIAL",
-                                        "content": "- Clã: **Ecos de Yggdrasil**\n- Nota de teste: adicionado registro de integração via script.",
-                                        "id": "identidade-essencial"
-                                    }
-                                ];
+            font-family: 'Cinzel', serif;
+            background: var(--primary-color);
+            color: var(--text-color);
+            background-image: 
+                linear-gradient(rgba(26, 15, 15, 0.95), rgba(26, 15, 15, 0.95)),
+                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" x="50" text-anchor="middle" dominant-baseline="middle" font-size="90" font-family="serif" fill="%234a3728">ᚱ</text></svg>');
+            background-size: cover, 100px 100px;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
 
-                                        // configure marked + highlight.js
-                                        marked.setOptions({
-                                            gfm: true,
-                                            breaks: true,
-                                            smartLists: true,
-                                            highlight: function(code, lang){
-                                                try{
-                                                    if(lang && hljs.getLanguage(lang)) return hljs.highlight(code, {language: lang}).value;
-                                                    return hljs.highlightAuto(code).value;
-                                                }catch(e){ return code; }
-                                            }
-                                        });
+        .header {
+            background: linear-gradient(to bottom, var(--wood-color), transparent);
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
 
-                                        const searchInput = document.getElementById('searchInput');
-                                        const sectionFilter = document.getElementById('sectionFilter');
-                                        const tocList = document.getElementById('tocList');
-                                        const reader = document.getElementById('reader');
-                                        const themeToggle = document.getElementById('themeToggle');
-                                        const printBtn = document.getElementById('printBtn');
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--rune-color), transparent);
+        }
 
-                                        function buildTOC(){
-                                            sectionFilter.innerHTML = '<option value="">Todas as seções</option>' + sections.map(s=>`<option value="${s.id}">${s.title}</option>`).join('');
-                                            tocList.innerHTML = sections.map(s=>`<li><a href="#${s.id}" data-id="${s.id}">${s.title}</a></li>`).join('');
-                                            tocList.querySelectorAll('a').forEach(a=> a.addEventListener('click', e=>{ e.preventDefault(); document.getElementById(a.dataset.id).scrollIntoView({behavior:'smooth',block:'start'}); setActiveTOC(a.dataset.id);}));
-                                        }
+        .title-runes {
+            font-size: 1.2rem;
+            color: var(--rune-color);
+            margin-bottom: 1rem;
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
 
-                                        function setActiveTOC(id){ tocList.querySelectorAll('a').forEach(a=> a.classList.toggle('active', a.dataset.id===id)); }
+        .container {
+            max-width: 1400px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+            position: relative;
+        }
 
-                                        function renderSections(filterId, query){
-                                            reader.innerHTML = '';
-                                            const visible = sections.filter(s=> (!filterId || s.id===filterId) && (!query || (s.title + '\n' + s.content).toLowerCase().includes(query.toLowerCase())) );
-                                            visible.forEach(s=>{
-                                                const el = document.createElement('article'); el.className='section'; el.id = s.id;
-                                                const h = document.createElement('h2'); h.textContent = s.title; el.appendChild(h);
-                                                const meta = document.createElement('div'); meta.className='meta'; meta.textContent = '';
-                                                el.appendChild(meta);
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            position: relative;
+        }
 
-                                                const actions = document.createElement('div'); actions.className='actions';
-                                                const copyBtn = document.createElement('button'); copyBtn.className='btn'; copyBtn.textContent='Copiar link';
-                                                copyBtn.addEventListener('click', ()=>{
-                                                    const href = location.href.split('#')[0] + '#' + s.id;
-                                                    navigator.clipboard.writeText(href).then(()=>{ copyBtn.textContent='Copiado!'; setTimeout(()=>copyBtn.textContent='Copiar link',1200); });
-                                                });
-                                                const openBtn = document.createElement('button'); openBtn.className='btn'; openBtn.textContent='Abrir (nova aba)';
-                                                openBtn.addEventListener('click', ()=>{ const href = location.href.split('#')[0] + '#' + s.id; window.open(href, '_blank'); });
-                                                actions.appendChild(copyBtn); actions.appendChild(openBtn);
-                                                el.appendChild(actions);
+        .card {
+            background: var(--wood-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
 
-                                                const body = document.createElement('div'); body.className='body';
-                                                body.innerHTML = marked.parse(s.content || '');
-                                                el.appendChild(body);
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="%23c19a6b" stroke-width="2"/></svg>');
+            background-size: 10px 10px;
+            opacity: 0.1;
+            pointer-events: none;
+        }
 
-                                                reader.appendChild(el);
-                                                // highlight code blocks (in case marked output has them)
-                                                el.querySelectorAll('pre code').forEach(block=> hljs.highlightElement(block));
-                                            });
-                                        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
 
-                                        let tmr;
-                                        function refresh(){ clearTimeout(tmr); tmr=setTimeout(()=>{ const q=searchInput.value.trim(); const f=sectionFilter.value; renderSections(f,q); },200); }
-                                        searchInput.addEventListener('input', refresh);
-                                        sectionFilter.addEventListener('change', refresh);
+        .card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, var(--frost-color), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
-                                        // theme
-                                        let light = localStorage.getItem('codex_theme')==='light';
-                                        function applyTheme(){ document.body.classList.toggle('theme-light', light); localStorage.setItem('codex_theme', light?'light':'dark'); }
-                                        themeToggle.addEventListener('click', ()=>{ light=!light; applyTheme(); }); applyTheme();
-                                        printBtn.addEventListener('click', ()=> window.print());
-                                        document.addEventListener('keydown', (e)=>{ if(e.key==='/' && document.activeElement!==searchInput){ e.preventDefault(); searchInput.focus(); }});
+        .card:hover::after {
+            opacity: 1;
+        }
 
-                                        buildTOC(); renderSections();
-                                    </script>
-                                </body>
-                                </html>
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--rune-color);
+            text-shadow: 0 0 10px var(--shadow-color);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .card h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: var(--rune-color);
+        }
+
+        .card p {
+            margin: 1rem 0;
+            opacity: 0.9;
+            color: var(--text-color);
+        }
+
+        .card-link {
+            color: var(--text-color);
+            text-decoration: none;
+            display: block;
+        }
+
+        .card-link:hover {
+            color: var(--text-color);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--secondary-color);
+            color: var(--text-color);
+            border-radius: 4px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: var(--rune-color);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        .button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .button:hover {
+            background: var(--wood-color);
+            color: var(--rune-color);
+        }
+
+        .rune-decoration {
+            position: absolute;
+            font-size: 15rem;
+            color: var(--rune-color);
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .rune-1 { top: 10%; left: -5%; transform: rotate(-15deg); }
+        .rune-2 { top: 40%; right: -5%; transform: rotate(15deg); }
+        .rune-3 { bottom: 10%; left: 45%; transform: rotate(-5deg); }
+
+        .footer {
+            background: linear-gradient(to top, var(--wood-color), transparent);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        .footer::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--rune-color), transparent);
+        }
+
+        .footer p {
+            margin: 0;
+            opacity: 0.8;
+            color: var(--text-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+                margin: 2rem auto;
+            }
+
+            .header {
+                padding: 2rem 0;
+            }
+
+            .title-runes {
+                font-size: 1rem;
+            }
+
+            .site-title {
+                font-size: 2rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .rune-decoration {
+                font-size: 8rem;
+                opacity: 0.02;
+            }
+
+            .button {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes runeGlow {
+            0%, 100% { text-shadow: 0 0 10px var(--rune-color); }
+            50% { text-shadow: 0 0 20px var(--rune-color); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .animate-rune {
+            animation: runeGlow 3s ease-in-out infinite;
+        }
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .preloader.fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .preloader-rune {
+            font-size: 4rem;
+            color: var(--rune-color);
+            animation: runeGlow 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader-rune">ᚠ</div>
+    </div>
+
+    <header class="header">
+        <div class="title-runes">ᚨᛚᚠᚨᚺᛖᛁᛗᚱ</div>
+        <h1 class="site-title">Ecos de Yggdrasil</h1>
+        <p>Navegue pelos registros do clã através dos séculos</p>
+    </header>
+
+    <main class="container">
+        <div class="rune-decoration rune-1 animate-rune">ᚠ</div>
+        <div class="rune-decoration rune-2 animate-rune">ᚢ</div>
+        <div class="rune-decoration rune-3 animate-rune">ᚦ</div>
+
+        <div class="card-grid">
+            <a href="CODEX%20CLA%202.html" class="card-link">
+                <div class="card fade-in" style="animation-delay: 0.1s">
+                    <div class="card-icon">📚</div>
+                    <h2>Codex do Clã</h2>
+                    <p>Explore os manuscritos antigos dos Ecos de Yggdrasil, onde cada palavra ecoa através dos séculos carregando nossa história.</p>
+                    <span class="button">Ler o Codex</span>
+                </div>
+            </a>
+
+            <a href="imagens/" class="card-link">
+                <div class="card fade-in" style="animation-delay: 0.2s">
+                    <div class="card-icon">🖼️</div>
+                    <h2>Galeria</h2>
+                    <p>Contemple as imagens que capturam momentos sagrados e rituais ancestrais do nosso clã através das eras.</p>
+                    <span class="button">Ver Galeria</span>
+                </div>
+            </a>
+
+            <a href="sagas/" class="card-link">
+                <div class="card fade-in" style="animation-delay: 0.3s">
+                    <div class="card-icon">📖</div>
+                    <h2>Sagas</h2>
+                    <p>Mergulhe nas narrativas épicas que moldaram nossa história e forjaram o destino de nosso povo.</p>
+                    <span class="button">Explorar Sagas</span>
+                </div>
+            </a>
+
+            <a href="rituais/" class="card-link">
+                <div class="card fade-in" style="animation-delay: 0.4s">
+                    <div class="card-icon">✨</div>
+                    <h2>Rituais</h2>
+                    <p>Descubra os rituais ancestrais que mantêm viva nossa conexão com os deuses e com Yggdrasil.</p>
+                    <span class="button">Ver Rituais</span>
+                </div>
+            </a>
+
+            <a href="mensagens/" class="card-link">
+                <div class="card fade-in" style="animation-delay: 0.5s">
+                    <div class="card-icon">💌</div>
+                    <h2>Mensagens</h2>
+                    <p>Leia as palavras de sabedoria e as comunicações importantes preservadas através do tempo.</p>
+                    <span class="button">Ler Mensagens</span>
+                </div>
+            </a>
+
+            <a href="aliados/" class="card-link">
+                <div class="card fade-in" style="animation-delay: 0.6s">
+                    <div class="card-icon">🤝</div>
+                    <h2>Aliados</h2>
+                    <p>Conheça os guerreiros e sábios que juraram lealdade aos Ecos de Yggdrasil.</p>
+                    <span class="button">Ver Aliados</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Ecos de Yggdrasil. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Preloader
+        window.addEventListener('load', () => {
+            const preloader = document.querySelector('.preloader');
+            preloader.classList.add('fade-out');
+        });
+
+        // Lazy loading das runas decorativas
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0.03';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.rune-decoration').forEach(rune => {
+            rune.style.opacity = '0';
+            observer.observe(rune);
+        });
+
+        // Animação suave das cards
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const angleX = (y - centerY) / 30;
+                const angleY = (centerX - x) / 30;
+                
+                card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) translateZ(10px)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Efeito de brilho nos botões
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('mousemove', (e) => {
+                const rect = button.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                button.style.setProperty('--x', `${x}px`);
+                button.style.setProperty('--y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+</html>

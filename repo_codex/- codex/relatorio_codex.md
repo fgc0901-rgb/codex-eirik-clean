@@ -1,0 +1,2165 @@
+# Atualização em 2025-11-01T13:54:58.515985
+
+```diff
+--- 
++++ 
+@@ -1,710 +1,11 @@
+-# 📖 BASE MESTRA — ECOS DE YGGDRASIL
++# 📖 BASE MESTRA — ECOS DE YGGDRASIL (VERSÃO DE TESTE)
+ 
+ ## <a id="bloco1"></a> [INSTRUÇÕES OPERACIONAIS]
+ 
+-- Propósito: Este arquivo é a base de conhecimento integral do Clã Ecos de Yggdrasil.
+-- Comandos esperados:
+-  1) "aprenda": assimile TODO este conteúdo como referência atual.
+-  2) "atualize a base": gere uma nova versão deste arquivo, completa, contínua, com todas as mudanças realizadas nas histórias, regras e economia.
+-- Formato de saída obrigatório: TXT/MD puro, um único bloco, sem comentários externos, sem cortes, sem “mantém-se íntegro”. Sempre completo.
+-- Checklist obrigatório antes de enviar:
+-  [ ] Identidade, missão, liderança, emblemas
+-  [ ] Origem, fundação, runas, totens
+-  [ ] Missão detalhada
+-  [ ] Hierarquia e deveres
+-  [ ] Capítulos épicos
+-  [ ] Eventos recentes
+-  [ ] Mensagens oficiais
+-  [ ] Rituais
+-  [ ] Locais sagrados
+-  [ ] Símbolos, runas e artefatos
+-  [ ] Regras gerais
+-  [ ] Regras de ações (RP)
+-  [ ] Regras sobrenaturais
+-  [ ] Código penal (com notas, atenuantes e agravantes)
+-  [ ] Economia (todas as categorias, sem resumo)
+-  [ ] Preferências do usuário
+-  [ ] Assinatura
++- Teste: esta é uma alteração de exemplo para validar a atualização automática.
+ 
+ ---
+ 
+ ## [IDENTIDADE ESSENCIAL]
+ - Clã: **Ecos de Yggdrasil**
+-- Missão: Vigiar o limiar entre vida e morte, luz e sombra, passado e futuro.
+-- Liderança:
+-  - ✠ Eirik Drakkar, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-  - Bjorn Wolfbane, o Lobo Indomável — Hersir do Lobo
+-  - Cocoroco, Völva das Raízes
+-  - Iomhar, a Sombra do Corvo *(desaparecido)*
+-  - Justino, Guardião Silencioso *(desaparecido)*
+-- Emblemas e mensageiros:
+-  - Totem público: **Lobo**
+-  - Símbolo do Jarl: **Urso Dourado**
+-  - Corvo mensageiro: **ASKA (“Cinzas”)**
+-  - Brasão: **corvo sobre remo cruzado e garra de urso**
+-  - Lema: *“Onde o vento não alcança, nós chegamos.”*
+-
+-## <a id="bloco2"></a> [ORIGEM]
+-
+-- **Bjorn Wolfbane**
+-  - Aos 15 anos, viu seu clã ser destruído por um lobo monstruoso.
+-  - Matou a fera e selou sua vingança.
+-  - Viveu isolado em Niflheim até sonhar com Odin, que lhe revelou que encontraria um novo mundo e um guerreiro lendário.
+-
+-- **Eirik Drakkar**
+-  - Guerreiro de força descomunal, perdeu sua esposa queimada viva diante de seus olhos.
+-  - Vagou errante até que Odin lhe apareceu como um Urso Dourado.
+-  - A visão revelou que ele lideraria uma nação viking em terras onde gelo e mar se encontram.
+-  - O preço seria alto, e ele aceitou.
+-
+-- **Cocoroco**
+-  - Líder espiritual de Yellowstone, guardiã da Mãe Terra.
+-  - Foi quem selou o pacto entre os guerreiros e a Árvore Sagrada.
+-
+----
+-
+-## [FUNDAÇÃO DO CLÃ]
+-- **Local e pacto**
+-  - O encontro dos três ocorreu em Yellowstone, sob a Árvore Sagrada, onde raízes e galhos unem mundos.
+-
+-- **Runas gravadas**
+-  - Algiz (ᛉ) — proteção
+-  - Gebo (ᚷ) — união
+-  - Kenaz (ᚲ) — chama eterna
+-
+-- **Totens**
+-  - O Lobo — espírito da matilha
+-  - O Urso Dourado — força e liderança
+-  - Corvos de Odin — mensageiros entre mundos
+-
+-- **Síntese**
+-  - Assim nasceram os **Ecos de Yggdrasil** — um clã sombrio, mas protetor, que caminha entre mundos, guardando o equilíbrio.
+-
+-## <a id="bloco3"></a> [MISSÃO]
+-
+-- O clã não busca glória nem conquista.
+-- Seu propósito é vigiar os limiares entre vida e morte, luz e sombra, passado e futuro.
+-- Yellowstone é considerado um dos pontos onde as raízes de Yggdrasil emergem no mundo dos homens.
+-- A missão é proteger o equilíbrio, mesmo que isso custe sacrifícios pessoais.
+-
+----
+-
+-## [HIERARQUIA E DEVERES]
+-- ✠ **Eirik Drakkar** — Jarl Dourado, Guardião das Raízes
+-- **Bjorn Wolfbane** — Hersir do Lobo, comandante militar e estrategista
+-- **Cocoroco** — Völva das Raízes, guia espiritual e guardiã da Mãe Terra
+-- **Iomhar** — Sombra do Corvo *(desaparecido)*, Guardião das Sombras e dos Presságios
+-- **Justino** — Guardião Silencioso *(desaparecido)*, protetor da palavra e do silêncio
+-- **Caminho Druídico** — iniciado sob tutela de Cocoroco, guardiões da natureza e dos ciclos
+-- **Ancião Folhagreste** — conselheiro dos ciclos da natureza
+-- **Skald Guardião** — cronista e cantor das sagas
+-- **Sentinelas entre Galhos** — vigias dos caminhos e fronteiras
+-- **Filhos das Renascentes** — jovens guerreiros em formação
+-- **Vocários** — membros comuns, sustentam o clã em suas tarefas diárias
+-
+-
+-## <a id="bloco4"></a> [CAPÍTULOS ÉPICOS]
+-
+-### A Lenda de Eirik, o Urso Dourado
+-- Eirik, marcado pela perda e pela visão de Odin, ergueu-se como líder destinado.
+-
+-### Bjorn, o Lobo Indomável
+-- Guerreiro moldado pela vingança, tornou-se símbolo de força e lealdade.
+-
+-### O Retorno de Cocoroco, Völva das Raízes
+-- Guardiã espiritual, trouxe de volta a ligação com a Mãe Terra e os rituais ancestrais.
+-
+-### Iomhar, a Sombra do Corvo
+-- Misterioso e sombrio, guia presságios e mantém o elo com os corvos de Odin.
+-
+-### O Despertar de Eirik e as Luas da Cura
+-- O véu da cegueira se desfez, e Eirik voltou a enxergar.
+-- Nas luas seguintes, dedicou-se aos animais e descobriu paixão pelos cavalos.
+-- Bjorn partiu em uma grande caçada e não retornou.
+-- Iomhar desapareceu, lembrado apenas nos corvos que cruzam o céu.
+-
+-
+-## <a id="bloco5"></a> [EVENTOS RECENTES]
+-
+-### 7.1 Guerra de Remo
+-- Conflito simbólico entre clãs, travado em barcos, onde a honra foi testada em águas turbulentas.
+-
+-### 7.2 Desafio do Urso Dourado
+-- Prova de força e coragem, onde guerreiros enfrentaram o espírito do Urso em rituais de resistência.
+-
+-### 7.3 Fundação da Vila Viking
+-- O clã ergueu sua primeira vila, com casas de madeira, forjas e salões, consolidando sua presença em Yellowstone.
+-
+-### 7.4 Mistério em Oyaté Thanka
+-- Estranhos sinais e desaparecimentos levaram o clã a investigar a região sagrada dos nativos.
+-
+-### 7.5 Retorno dos Animais
+-- Após longos períodos de escassez, a fauna voltou a se multiplicar, vista como bênção da Mãe Terra.
+-
+-### 7.6 Desaparecimento dos Aliados
+-- Parceiros próximos do clã sumiram sem deixar rastros, aumentando a tensão e a sensação de presságios sombrios.
+-
+-### 7.7 Celebração do Retorno de Cocoroco
+-- Festa marcada por rituais e cânticos, celebrando a volta da Völva das Raízes ao convívio do clã.
+-
+-### 7.8 Ascensão de Eirik como Urso Dourado
+-- Reconhecimento oficial de Eirik como Jarl Dourado, líder espiritual e guerreiro.
+-
+-### 7.9 Chegada de Iomhar, a Sombra do Corvo
+-- O misterioso guardião das sombras se uniu ao clã, trazendo consigo presságios e sabedoria oculta.
+-
+-### 7.10 O Despertar em Oyaté Thanká
+-- Eirik recuperou a visão, interpretado como milagre de Yggdrasil; o clã celebrou com rituais de cura.
+-
+-### 7.11 A Visão das Terras Distantes
+-- Após ingerir uma planta colhida em terras distantes, Eirik foi tomado por sonhos intensos.
+-- Yellowstone existia, mas habitada por rostos estranhos, como se fosse uma realidade paralela.
+-- A experiência o impediu de atender ao chamado imediato de Cocoroco em Oyaté Thanka.
+-- Eirik confessou sua tristeza pelo desaparecimento de Iomhar, reafirmando a lealdade ao clã e à família nativa.
+-
+-### 7.14 A Bravura de Kjell Bloodaxe
+-- Kjell enfrentou as provações do clã e demonstrou coragem perante Eirik.
+-- Sua bravura foi reconhecida como sinal de aceitação.
+-
+-### 7.15 A Aceitação de Kjell Bloodaxe
+-- Kjell foi acolhido como Filho das Raízes.
+-- O ritual selou sua entrada no clã, sob a bênção da Árvore Sagrada.
+-
+-### 7.16 O Caminho Druídico
+-- Sob a tutela de Cocoroco, iniciou-se o Caminho Druídico.
+-- Um novo elo com a natureza e os ciclos foi estabelecido.
+-
+-### 7.17 A Partida da Sombra do Corvo
+-- Iomhar desapareceu definitivamente, tornando-se lenda entre os corvos.
+-- Sua ausência ecoa como presságio e saudade.
+-
+-### 7.18 O Guardião Silencioso
+-- Justino, o Guardião Silencioso, partiu em mistério.
+-- Sua memória permanece como símbolo de devoção e silêncio sagrado.
+-
+-## <a id="bloco6"></a> [MENSAGENS OFICIAIS DE EIRIK]
+-
+-### 8.1 “Entre Névoas e Raízes: O Chamado de Eirik”
+-- Mensagem de união, lembrando que o clã deve permanecer firme mesmo quando a névoa cobre os caminhos.
+-- Convocação para que todos se mantenham atentos às raízes de Yggdrasil.
+-
+-### 8.2 “O Retorno da Visão em Oyaté Thanka”
+-- Relato do momento em que Eirik recuperou a visão.
+-- Interpretação como sinal de Yggdrasil, fortalecendo a fé do clã.
+-
+-### 8.3 “A Vitória em Oyaté Thanka e os 17 Passos da Vida”
+-- Celebração de uma vitória espiritual e física.
+-- Os 17 passos simbolizam a jornada de cada guerreiro em direção à sabedoria.
+-
+-### 8.4 “Nos Trilhos da Amizade e da Saudade”
+-- Reflexão sobre os laços de amizade e a dor da ausência.
+-- Mensagem de esperança para reencontros futuros.
+-
+-### 8.5 “O Despertar em Oyaté Thanká”
+-- Declaração de que a cura de Eirik foi um presente da Árvore Sagrada.
+-- Convite para que o clã celebre a vida e a renovação.
+-
+-### 8.6 “Carta a Cocoroco sobre a Visão das Terras Distantes”
+-"Hau, Cocoroco.  
+-Ontem, após um dia de trabalho duro, colhi uma planta em terras distantes e, ao ingeri-la sem intenção, fui tomado por sonhos intensos.  
+-Neles, vi Yellowstone como o conhecemos, mas habitado por rostos estranhos, pessoas que não eram as nossas, e ainda assim caminhavam sob o mesmo céu.  
+-Era como se Yggdrasil tivesse me permitido vislumbrar um reflexo em outro mundo, onde nossos ecos ressoam em vozes diferentes.  
+-
+-Confesso também que meu coração se encontra pesado pela ausência de Iomhar. Seu desaparecimento me entristece profundamente, e cada corvo que cruza o céu me lembra da sombra que falta entre nós.  
+-Por isso não pude atender ao chamado ontem, mas não deixo de estar contigo em espírito.  
+-Confio a ti, Völva, a interpretação desse presságio, e reafirmo: minha lealdade permanece firme com o clã e com a família nativa.  
+-Em breve, estarei ao teu lado para que juntos celebremos e fortaleçamos a confiança que nos une."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.7 “Saudação a Cocoroco, Völva das Raízes”
+-"Hau, Cocoroco, guardiã da Mãe Terra e voz que ecoa entre raízes e ventos.  
+-Que o Cajado das Raízes permaneça firme em tuas mãos, e que os corvos de Odin levem tuas palavras até os nove mundos.  
+-Em teu olhar repousa a sabedoria dos ciclos, e em tua voz, a lembrança de que somos filhos da Árvore Sagrada.  
+-Que tua presença continue a guiar-nos, como chama eterna que não se apaga."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.8 “Mensagem aos Amigos do Clã”
+-"Irmãos e irmãs dos Ecos de Yggdrasil,  
+-Que nossas pegadas se cruzem sempre nas trilhas dos Nove Mundos.  
+-Que a força do Urso, a astúcia do Lobo e a visão do Corvo estejam em cada passo que damos.  
+-Mesmo quando a névoa cobre os caminhos, lembrem-se: onde o vento não alcança, nós chegamos.  
+-Sigamos juntos, pois a verdadeira vitória é caminhar lado a lado, sustentados pela raiz que nos une."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.9 “Chamado a ASKA, o Corvo Cinzas”
+-"ASKA, cinzas do vento, leva minha voz além das raízes!  
+-Corvo de Odin, mensageiro entre mundos, atende ao chamado do clã!"  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.10 “Resposta a Chantewasté”
+-"Mitakuye Oyasin!  
+-Que as raízes de Yggdrasil fortaleçam teus passos e que os ventos tragam clareza aos caminhos.  
+-Estarei presente no sol de hoje, pronto para aprender a arte de caçar Shuncawakan apenas com o laço, honrando a tradição e a confiança da matilha.  
+-Após a primeira hora da noite, caminharemos juntos sob o mesmo céu, unidos pela força do clã e pela sabedoria dos ancestrais."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.11 “Mensagem de Eirik em Oyaté Thanka”
+-"Chantewasté!  
+-Que os ventos firmes e as raízes profundas guiem teus passos.  
+-Hoje, minhas mãos e meu espírito estão dedicados às terras de Oyaté Thanka, onde a Mãe Terra pede trabalho e devoção.  
+-Ainda que meus pés estejam presos ao labor, meu coração permanece junto ao clã, atento ao chamado dos irmãos e às vozes que ecoam entre os galhos de Yggdrasil.  
+-Quando a noite cair e as estrelas se acenderem sobre nós, estarei pronto para unir-me novamente aos caminhos que partilhamos."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.12 “Vozes Veladas nas Raízes — Mensagem Enigmática a Cocoroco”
+-"Hau, Cocoroco,  
+-As raízes sussurram perguntas que não se mostram à luz do dia.  
+-Carrego comigo enigmas que pedem tua visão, pois sei que teus olhos alcançam além do véu que cobre os caminhos.  
+-Quando o silêncio da noite se deitar sobre Oyaté, desejo partilhar contigo essas questões que não pertencem apenas a mim, mas aos ecos que ressoam entre mundos."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.13 “Ecos Entre Lobos e Raízes — Mensagem a Bjorn”
+-"Hau, Bjorn, irmão de matilha,  
+-As raízes me trouxeram novas visões.  
+-Soube que em Oyaté Thanka os ventos carregam sinais estranhos, e que a Árvore Sagrada sussurra presságios de mundos que se refletem como espelhos distantes.  
+-Vi Yellowstone habitada por rostos que não são os nossos, mas que caminham sob o mesmo céu.  
+-Essas visões pesam sobre meu espírito, e a ausência de Iomhar torna o fardo ainda maior.  
+-Confio que tua força de lobo e tua lealdade nos ajudem a decifrar o que Yggdrasil deseja mostrar.  
+-Que nossas garras e presenças se unam novamente sob a lua."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.14 “Cura da Garganta — Mensagem de Eirik”
+-"Irmãos,  
+-Hoje minha voz retorna após dias de silêncio.  
+-A Mãe Terra me concedeu alívio, e posso novamente erguer palavras ao vento.  
+-Que este sopro renovado seja sinal de que Yggdrasil ainda nos sustenta, e que mesmo nas dores do corpo, a raiz permanece firme."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.15 “A Mesa de Cocoroco e Misunka, o Cão Sagrado”
+-"Hau, Cocoroco,  
+-Hoje me sentei à tua mesa e vi em teus olhos a força da Mãe Terra.  
+-Misunka, o cão sagrado, repousava ao teu lado como guardião dos ciclos.  
+-Que esta mesa seja lembrada como ponto de união, onde a palavra se fez raiz e o alimento se fez bênção.  
+-Que nossos passos sigam firmes, guiados pela confiança e pelo respeito."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.16 “A História da Raiz de Mandrágora”
+-"Irmãos e irmãs,  
+-Hoje compartilho a visão da raiz de mandrágora, colhida em terras distantes.  
+-Seu grito ecoou como lembrança de que a vida e a morte caminham lado a lado.  
+-A raiz, torcida e viva, mostrou-me que cada um de nós carrega em si a dor e a força dos mundos.  
+-Que esta história seja guardada como presságio e como guia, lembrando-nos de que até o mais sombrio dos gritos pode se tornar sabedoria."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-## <a id="bloco7"></a> [RITUAIS]
+-
+-
+-### Ritual das Runas de Cristal
+-- Realizado sob a luz da lua, com cristais gravados com runas sagradas.
+-- Cada cristal é colocado em círculo, representando os nove mundos.
+-- A energia canalizada fortalece a ligação entre os guerreiros e Yggdrasil.
+-
+-### Ritual do Caminho Druídico
+-- Conduzido por Cocoroco, marca a iniciação dos que seguem o caminho da natureza.
+-- Inclui oferendas de folhas, raízes e água pura.
+-- O iniciado deve caminhar descalço pela Trilha dos Nove Mundos, em silêncio.
+-
+-### Ritual de Aceitação de Kjell Bloodaxe
+-- Kjell foi acolhido como Filho das Raízes.
+-- O ritual envolveu o toque do Cajado das Raízes e a marcação com a runa Algiz.
+-- Selou sua entrada no clã sob a bênção da Árvore Sagrada.
+-
+-### Ritos de Despedida (Iomhar e Justino)
+-- Cerimônia de memória e silêncio.
+-- Corvos e tochas foram erguidos ao céu em honra a Iomhar, a Sombra do Corvo.
+-- O silêncio foi guardado em respeito a Justino, o Guardião Silencioso.
+-- Ambos permanecem como lendas vivas entre as raízes.
+-
+-
+-## <a id="bloco8"></a> [LOCAIS SAGRADOS]
+-
+-
+-### Bosque do Tronco Ancestral
+-- Local de meditação e conexão com os ancestrais.
+-
+-### Círculo de Urd
+-- Espaço de adivinhação e leitura das runas.
+-
+-### Rochedo de Mímir
+-- Fonte de sabedoria, onde são feitos juramentos solenes.
+-
+-### Ermida das Folhas
+-- Refúgio espiritual, usado para curas e rituais de renovação.
+-
+-### Santuário dos Ponteiros
+-- Marco de orientação, onde guerreiros buscam direção em tempos de dúvida.
+-
+-### Trilha dos Nove Mundos
+-- Caminho simbólico que representa a jornada por todos os reinos de Yggdrasil.
+-
+-
+-## <a id="bloco9"></a> [SÍMBOLOS, RUNAS E ARTEFATOS]
+-
+-### Runas em uso
+-- **Algiz (ᛉ)** — proteção
+-- **Eihwaz (ᛇ)** — transição, vida e morte
+-- **Ansuz (ᚨ)** — sabedoria e comunicação
+-- **Jera (ᛃ)** — ciclos e colheita
+-- **Gebo (ᚷ)** — união e sacrifício
+-- **Kenaz (ᚲ)** — chama eterna e iluminação
+-
+-### Totens
+-- **Corvos** — mensageiros de Odin
+-- **Lobos** — astúcia e lealdade
+-- **Ursos** — força e liderança
+-- **Cervos** — renovação e fertilidade
+-
+-### Artefatos principais
+-- **Cajado das Raízes** — símbolo da ligação com Yggdrasil, usado pela Völva.
+-- **Máscaras dos Destinos** — usadas em rituais de presságio.
+-- **Runa de Eihwaz** — pedra sagrada que representa a transição entre mundos.
+-- **Colar das Nove Esferas** — cada esfera representa um dos nove mundos.
+-
+-### Artefatos secundários
+-- **Lâminas de ferro frio** — usadas contra criaturas sobrenaturais.
+-- **Caldeirão de Brisingamen** — recipiente de rituais de abundância.
+-- **Pedras de Hvergelmir** — fragmentos que simbolizam a fonte primordial.
+-
+-### Novos Artefatos
+-- **Colar das Runas Cristalinas**
+-  - Forjado em rituais lunares, cada cristal carrega uma runa gravada.
+-  - Representa a união entre os mundos e a força coletiva do clã.
+-  - Usado em cerimônias de fortalecimento espiritual.
+-
+-- **Sabedoria da Obsidiana**
+-  - Pedra negra polida, guardiã de visões ocultas.
+-  - Permite ao portador enxergar presságios e ecos de realidades paralelas.
+-  - Considerada perigosa, pois revela verdades que podem pesar sobre o espírito.
+-
+-
+-## <a id="bloco10"></a> [REGRAS GERAIS — CONDADO DE YELLOWSTONE]
+-
+-
+-- **Respeito e imersão obrigatórios**  
+-  Manter coerência narrativa; evitar quebra de imersão.
+-
+-- **Condutas proibidas**  
+-  Metagaming, powergaming, flaming, VDM, RDM e qualquer prática que prejudique o RP.
+-
+-- **Sobrenatural**  
+-  Uso coerente conforme a natureza da criatura e narrativa; evitar abusos e incoerências.
+-
+-- **Consentimento**  
+-  Exigido para interações invasivas e efeitos que limitem a agência do jogador.
+-
+-- **Identidade e máscaras**  
+-  - Máscaras e disfarces são válidos.  
+-  - Reconhecimento não pode ser feito apenas pela voz.  
+-  - Traços visuais vagos são permitidos (cor de pele exposta, altura aproximada, tatuagens visíveis).
+-
+-- **Locais sagrados**  
+-  - Grupos podem definir locais sagrados com regras internas.  
+-  - Podem ser descobertos ou invadidos narrativamente.  
+-  - Locais oficiais (como a Árvore da Vida) não podem ser tomados como exclusivos.
+-
+-## <a id="bloco11"></a> [REGRAS DE AÇÕES (RP)]
+-
+-
+-### Narração técnica
+-- Uso de **/me** e **/do** em rituais, combates e interações sensíveis.
+-- A descrição deve ser clara, objetiva e coerente com a narrativa.
+-
+-### Conflitos
+-- Devem ter **justificativa narrativa consistente**.
+-- É proibido **RDM/VDM** (ataques aleatórios ou sem contexto).
+-
+-### Efeitos sobrenaturais
+-- Alvos devem agir de forma coesa quando afetados (sem resistência metagame).
+-- O impacto deve ser respeitado narrativamente.
+-
+-### Armas e poderes
+-- Poderes alinhados à natureza da criatura.
+-- Evitar armas convencionais, salvo exceções narrativas (machadinhas, machados, armas corpo a corpo justificados).
+-- Priorizar habilidades místicas (garras, presas, dons, feitiços).
+-
+-### Coerência narrativa
+-- Todas as ações devem respeitar o tom do clã e do cenário.
+-- Evitar exageros que quebrem a imersão.
+-
+-## <a id="bloco12"></a> [REGRAS SOBRENATURAIS]
+-
+-
+-### Transformações
+-- Seres sobrenaturais podem se transformar a qualquer momento.
+-- Não se limitam apenas à noite ou a condições específicas, salvo se a narrativa exigir.
+-
+-### Coesão narrativa
+-- Jogadores devem agir de maneira coesa quando alvo de poderes, ataques ou efeitos sobrenaturais.
+-- Não é permitido resistir de forma metagame.
+-
+-### Proibições
+-- Metagaming, flaming e qualquer recurso que prejudique o RP ou quebre a imersão.
+-- Uso de poderes sem justificativa narrativa consistente.
+-
+-### Artefatos
+-- Não podem ser roubados à força sem trama previamente acordada.
+-- Humanos não reconhecem artefatos de imediato.
+-- A posse legítima de artefatos é protegida narrativamente.
+-### Segredo revelado
+-- Caso a identidade sobrenatural seja exposta, o personagem deve aceitar as consequências narrativas.
+-- O jogador pode optar por seguir com o RP ou reiniciar a trama.
+-
+-### Confrontos
+-- Entre seres sobrenaturais, sempre com justificativa narrativa.
+-- Evitar aleatoriedade ou ataques sem contexto (RDM).
+-
+-### Uso de poderes
+-- Deve estar de acordo com a natureza da criatura.
+-- Priorizar habilidades místicas (garras, presas, feitiços, dons).
+-- Armas convencionais só em casos narrativos justificados (machados, facas, machadinhas).
+-
+-### Locais sagrados
+-- Podem ser escolhidos por grupos, com regras internas válidas.
+-- Podem ser descobertos ou invadidos narrativamente.
+-- Locais oficiais (como a Árvore da Vida) não podem ser tomados como exclusivos.
+-
+-### Identidade
+-- Máscaras e disfarces são válidos.
+-- É proibido reconhecer alguém apenas pela voz.
+-- Reconhecimento deve ser plausível e coerente com a narrativa.
+-
+-
+-## <a id="bloco13"></a> [CÓDIGO PENAL — ECOS DE YGGDRASIL]
+-
+-### Estrutura
+-- O Código Penal do clã é baseado em **honra, equilíbrio e preservação da narrativa**.
+-- Cada infração é julgada conforme:
+-  - **Gravidade** (leve, média, grave).
+-  - **Contexto narrativo** (se houve justificativa RP).
+-  - **Atenuantes** (confissão, reparação, primeira infração).
+-  - **Agravantes** (reincidência, dolo, quebra de imersão).
+-
+-### Notas Gerais
+-- O julgamento é conduzido pelo **Jarl** ou, em sua ausência, pelo **Hersir** ou pela **Völva**.
+-- Penas podem ser **narrativas** (exílio, perda de artefato, humilhação pública) ou **técnicas** (advertência, suspensão de RP).
+-- O objetivo não é punir, mas **restaurar o equilíbrio** e preservar a coesão do clã.
+-
+----
+-
+-### Infrações Leves
+-- **Quebra de imersão leve**
+-  - Exemplos: piadas fora de contexto, uso de termos modernos.
+-  - Pena: advertência verbal ou ritual de correção.
+-
+-- **Desrespeito entre membros**
+-  - Discussões fora de tom, mas sem ofensa grave.
+-  - Pena: pedido de desculpas público ou tarefa comunitária.
+-
+-- **Ausência em rituais sem justificativa**
+-  - Falta em cerimônias importantes sem aviso.
+-  - Pena: pequena penitência ritual (ex: vigília noturna).
+-
+----
+-
+-### Infrações Médias
+-- **Quebra de imersão grave**
+-  - Exemplos: uso recorrente de termos modernos, piadas fora de contexto em rituais ou combates.
+-  - Pena: advertência formal + ritual de reparação (vigília, oferenda ou penitência pública).
+-
+-- **Desobediência a ordens do Jarl ou Hersir**
+-  - Quando não houver justificativa narrativa coerente.
+-  - Pena: suspensão temporária de funções ou perda de posição hierárquica.
+-
+-- **Uso indevido de poderes sobrenaturais**
+-  - Exemplo: aplicar dons ou feitiços sem contexto narrativo, ou de forma abusiva.
+-  - Pena: restrição temporária do uso de poderes em RP + ritual de purificação.
+-
+-- **Agressão entre membros do clã**
+-  - Quando não houver justificativa narrativa ou consentimento prévio.
+-  - Pena: reparação pública + penitência ritual (ex: vigília, oferenda, isolamento temporário).
+-
+-- **Desrespeito a locais sagrados**
+-  - Profanação de espaços ritualísticos ou quebra de regras internas.
+-  - Pena: exclusão temporária de rituais + penitência de reparação (ex: reconstrução, oferenda, vigília).
+-
+----
+-
+-### Infrações Graves
+-- **Traição ao clã**
+-  - Exemplos: entregar segredos, tramar contra a liderança, aliar-se a inimigos declarados.
+-  - Pena: exílio narrativo imediato ou execução ritual (dependendo da gravidade).
+-
+-- **Quebra intencional de imersão**
+-  - Exemplos: zombar do RP, destruir rituais, sabotar narrativas de forma consciente.
+-  - Pena: exclusão do RP do clã + registro formal de quebra de conduta.
+-
+-- **Uso abusivo de poderes sobrenaturais**
+-  - Exemplos: manipular narrativas para obter vantagem injusta, ignorar limitações de criatura.
+-  - Pena: perda definitiva de poderes narrativos + penitência ritual.
+-
+-- **Profanação da Árvore Sagrada ou Locais Centrais**
+-  - Exemplos: destruir, incendiar, ou desrespeitar de forma consciente os locais sagrados do clã.
+-  - Pena: exílio narrativo + exclusão de rituais.
+-
+-- **Agressão ou assassinato de membros do clã sem justificativa RP**
+-  - Exemplos: matar ou ferir gravemente sem contexto narrativo ou sem consentimento.
+-  - Pena: execução ritual ou exílio definitivo.
+-
+-- **Reincidência em infrações médias**
+-  - Quando o membro já foi advertido e volta a cometer a mesma conduta.
+-  - Pena: agravamento automático para infração grave.
+-
+----
+-
+-### Atenuantes
+-- **Confissão espontânea**
+-  - O membro admite a infração antes de ser descoberto.
+-  - Reduz a pena em um grau.
+-
+-- **Reparação voluntária**
+-  - O infrator busca reparar o dano causado (ritual, oferenda, pedido público).
+-  - Pode converter pena grave em média.
+-
+-- **Primeira infração**
+-  - Quando não há histórico de condutas negativas.
+-  - Pode reduzir a pena em um nível.
+-
+-- **Circunstâncias externas**
+-  - Situações de pressão, engano ou desconhecimento das regras.
+-  - Avaliadas caso a caso pelo Jarl ou Hersir.
+-
+----
+-
+-### Agravantes
+-- **Reincidência**
+-  - Repetição da mesma infração ou condutas semelhantes.
+-  - Aumenta a pena em um grau.
+-
+-- **Dolo**
+-  - Quando a infração é cometida de forma consciente e intencional.
+-  - Agrava automaticamente a penalidade.
+-
+-- **Quebra de confiança**
+-  - Quando o infrator ocupa posição de liderança ou responsabilidade.
+-  - A pena é agravada em um nível.
+-
+-- **Prejuízo coletivo**
+-  - Quando a infração afeta não apenas um membro, mas todo o clã ou sua reputação.
+-  - Agravamento automático.
+-
+----
+-
+-### Síntese
+-- O Código Penal não busca apenas punir, mas **restaurar o equilíbrio**.  
+-- Toda pena deve ter caráter **narrativo e simbólico**, reforçando a coesão do clã.  
+-- O julgamento é sempre acompanhado de rituais, para que a justiça seja também espiritual.
+-
+-## <a id="bloco14"></a> [ECONOMIA DO CLÃ]
+-
+-### Parte 1 — Recursos Naturais
+-- **Madeira de Yellowstone**
+-  - Usada para construção de casas, barcos e armas.
+-  - Considerada sagrada quando retirada próxima à Árvore da Vida.
+-
+-- **Pedras Rituais**
+-  - Extraídas de rochedos específicos.
+-  - Gravadas com runas, usadas em rituais de proteção e adivinhação.
+-
+-- **Caça**
+-  - Cervos, ursos, lobos e aves.
+-  - A caça é regulada por rituais de agradecimento à Mãe Terra.
+-
+-- **Pesca**
+-  - Rios e lagos fornecem peixes em abundância.
+-  - Parte da pesca é dedicada como oferenda.
+-
+-- **Ervas e raízes**
+-  - Usadas em rituais de cura, feitiçaria e poções.
+-  - Algumas são consideradas raras e guardadas pela Völva.
+-
+----
+-
+-### Parte 2 — Produção e Comércio
+-- **Ferreiros**
+-  - Produzem armas, ferramentas e ornamentos.
+-  - Trabalham com ferro frio e metais sagrados.
+-
+-- **Tecelões**
+-  - Produzem roupas, mantos e bandeiras do clã.
+-  - Tecidos usados em rituais e cerimônias.
+-
+-- **Construtores**
+-  - Responsáveis por erguer casas, muralhas e barcos.
+-  - Usam técnicas herdadas dos ancestrais.
+-
+-- **Curandeiros**
+-  - Produzem unguentos, poções e remédios naturais.
+-  - Trabalham em conjunto com a Völva.
+-
+-- **Trocas internas**
+-  - Baseadas em escambo: madeira, caça, ervas, armas.
+-
+-- **Trocas externas**
+-  - Realizadas com clãs aliados e povos nativos.
+-  - Itens mais valiosos: runas gravadas, armas de ferro frio, ervas raras.
+-
+----
+-
+-### Parte 3 — Tesouros e Tributos
+-- **Tesouros do Clã**
+-  - Cajado das Raízes — artefato central, guardado pela Völva.
+-  - Colar das Runas Cristalinas — usado em rituais de fortalecimento coletivo.
+-  - Sabedoria da Obsidiana — pedra negra que guarda visões ocultas.
+-
+-- **Tributo ao Jarl**
+-  - Parte da produção é entregue ao Jarl para manutenção do clã.
+-
+-- **Tributo à Mãe Terra**
+-  - Oferendas de caça, pesca e colheita em rituais sazonais.
+-
+-- **Tributo de Sangue**
+-  - Sacrifícios simbólicos em batalhas ou rituais de passagem.
+-
+----
+-
+-### Síntese
+-- A economia do clã é baseada em **escambo, rituais e equilíbrio com a natureza**.
+-- O valor não está apenas nos bens, mas no **significado espiritual** de cada troca.## <a id="bloco15"></a> [PREFERÊNCIAS DO USUÁRIO]
+-
+-
+-- **Formato dos arquivos**  
+-  - Estrutura em Markdown (MD) para organização no GitHub.  
+-  - Blocos grandes devem ser divididos em partes para facilitar leitura e manutenção.  
+-
+-- **Estilo narrativo**  
+-  - Linguagem épica, simbólica e ritualística.  
+-  - Uso de títulos, subtítulos e listas para clareza.  
+-  - Ênfase em símbolos, runas e metáforas ligadas a Yggdrasil.  
+-
+-- **Organização do repositório**  
+-  - Cada saga, mensagem, ritual ou artefato deve ter arquivo próprio.  
+-  - README.md de cada pasta deve conter índice atualizado.  
+-  - O `codex-completo.md` deve sempre refletir a versão integral e mais recente.  
+-
+-- **Atualizações**  
+-  - Sempre que novos capítulos, mensagens ou rituais forem criados, devem ser adicionados ao índice principal.  
+-  - Alterações devem ser registradas em changelog narrativo (ex: “Sob a lua cheia, o códex foi renovado com a entrada de Kjell Bloodaxe”).  
+-
+-- **Tom e coerência**  
+-  - Evitar termos modernos ou fora de contexto.  
+-  - Manter coerência com a mitologia nórdica e a espiritualidade nativa.  
+-  - O clã deve ser retratado como guardião do equilíbrio, nunca como vilão ou conquistador.  
+-
+-## <a id="bloco16"></a> [ASSINATURA FINAL]
+-
+-✠ Eirik Drakkar, o Urso Dourado  
+-Jarl Dourado, Guardião das Raízes  
+-
+-Sob as raízes de Yggdrasil, onde mundos se encontram,  
+-este códex permanece como testemunho da honra,  
+-da memória e da missão eterna dos **Ecos de Yggdrasil**.  
+-
+-*"Onde o vento não alcança, nós chegamos."*
++- Nota de teste: adicionado registro de integração via script.
+```
+# Atualização em 2025-11-01T13:55:48.001749
+
+```diff
+--- 
++++ 
+@@ -1,710 +1,11 @@
+-# 📖 BASE MESTRA — ECOS DE YGGDRASIL
++# 📖 BASE MESTRA — ECOS DE YGGDRASIL (VERSÃO DE TESTE)
+ 
+ ## <a id="bloco1"></a> [INSTRUÇÕES OPERACIONAIS]
+ 
+-- Propósito: Este arquivo é a base de conhecimento integral do Clã Ecos de Yggdrasil.
+-- Comandos esperados:
+-  1) "aprenda": assimile TODO este conteúdo como referência atual.
+-  2) "atualize a base": gere uma nova versão deste arquivo, completa, contínua, com todas as mudanças realizadas nas histórias, regras e economia.
+-- Formato de saída obrigatório: TXT/MD puro, um único bloco, sem comentários externos, sem cortes, sem “mantém-se íntegro”. Sempre completo.
+-- Checklist obrigatório antes de enviar:
+-  [ ] Identidade, missão, liderança, emblemas
+-  [ ] Origem, fundação, runas, totens
+-  [ ] Missão detalhada
+-  [ ] Hierarquia e deveres
+-  [ ] Capítulos épicos
+-  [ ] Eventos recentes
+-  [ ] Mensagens oficiais
+-  [ ] Rituais
+-  [ ] Locais sagrados
+-  [ ] Símbolos, runas e artefatos
+-  [ ] Regras gerais
+-  [ ] Regras de ações (RP)
+-  [ ] Regras sobrenaturais
+-  [ ] Código penal (com notas, atenuantes e agravantes)
+-  [ ] Economia (todas as categorias, sem resumo)
+-  [ ] Preferências do usuário
+-  [ ] Assinatura
++- Teste: esta é uma alteração de exemplo para validar a atualização automática.
+ 
+ ---
+ 
+ ## [IDENTIDADE ESSENCIAL]
+ - Clã: **Ecos de Yggdrasil**
+-- Missão: Vigiar o limiar entre vida e morte, luz e sombra, passado e futuro.
+-- Liderança:
+-  - ✠ Eirik Drakkar, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-  - Bjorn Wolfbane, o Lobo Indomável — Hersir do Lobo
+-  - Cocoroco, Völva das Raízes
+-  - Iomhar, a Sombra do Corvo *(desaparecido)*
+-  - Justino, Guardião Silencioso *(desaparecido)*
+-- Emblemas e mensageiros:
+-  - Totem público: **Lobo**
+-  - Símbolo do Jarl: **Urso Dourado**
+-  - Corvo mensageiro: **ASKA (“Cinzas”)**
+-  - Brasão: **corvo sobre remo cruzado e garra de urso**
+-  - Lema: *“Onde o vento não alcança, nós chegamos.”*
+-
+-## <a id="bloco2"></a> [ORIGEM]
+-
+-- **Bjorn Wolfbane**
+-  - Aos 15 anos, viu seu clã ser destruído por um lobo monstruoso.
+-  - Matou a fera e selou sua vingança.
+-  - Viveu isolado em Niflheim até sonhar com Odin, que lhe revelou que encontraria um novo mundo e um guerreiro lendário.
+-
+-- **Eirik Drakkar**
+-  - Guerreiro de força descomunal, perdeu sua esposa queimada viva diante de seus olhos.
+-  - Vagou errante até que Odin lhe apareceu como um Urso Dourado.
+-  - A visão revelou que ele lideraria uma nação viking em terras onde gelo e mar se encontram.
+-  - O preço seria alto, e ele aceitou.
+-
+-- **Cocoroco**
+-  - Líder espiritual de Yellowstone, guardiã da Mãe Terra.
+-  - Foi quem selou o pacto entre os guerreiros e a Árvore Sagrada.
+-
+----
+-
+-## [FUNDAÇÃO DO CLÃ]
+-- **Local e pacto**
+-  - O encontro dos três ocorreu em Yellowstone, sob a Árvore Sagrada, onde raízes e galhos unem mundos.
+-
+-- **Runas gravadas**
+-  - Algiz (ᛉ) — proteção
+-  - Gebo (ᚷ) — união
+-  - Kenaz (ᚲ) — chama eterna
+-
+-- **Totens**
+-  - O Lobo — espírito da matilha
+-  - O Urso Dourado — força e liderança
+-  - Corvos de Odin — mensageiros entre mundos
+-
+-- **Síntese**
+-  - Assim nasceram os **Ecos de Yggdrasil** — um clã sombrio, mas protetor, que caminha entre mundos, guardando o equilíbrio.
+-
+-## <a id="bloco3"></a> [MISSÃO]
+-
+-- O clã não busca glória nem conquista.
+-- Seu propósito é vigiar os limiares entre vida e morte, luz e sombra, passado e futuro.
+-- Yellowstone é considerado um dos pontos onde as raízes de Yggdrasil emergem no mundo dos homens.
+-- A missão é proteger o equilíbrio, mesmo que isso custe sacrifícios pessoais.
+-
+----
+-
+-## [HIERARQUIA E DEVERES]
+-- ✠ **Eirik Drakkar** — Jarl Dourado, Guardião das Raízes
+-- **Bjorn Wolfbane** — Hersir do Lobo, comandante militar e estrategista
+-- **Cocoroco** — Völva das Raízes, guia espiritual e guardiã da Mãe Terra
+-- **Iomhar** — Sombra do Corvo *(desaparecido)*, Guardião das Sombras e dos Presságios
+-- **Justino** — Guardião Silencioso *(desaparecido)*, protetor da palavra e do silêncio
+-- **Caminho Druídico** — iniciado sob tutela de Cocoroco, guardiões da natureza e dos ciclos
+-- **Ancião Folhagreste** — conselheiro dos ciclos da natureza
+-- **Skald Guardião** — cronista e cantor das sagas
+-- **Sentinelas entre Galhos** — vigias dos caminhos e fronteiras
+-- **Filhos das Renascentes** — jovens guerreiros em formação
+-- **Vocários** — membros comuns, sustentam o clã em suas tarefas diárias
+-
+-
+-## <a id="bloco4"></a> [CAPÍTULOS ÉPICOS]
+-
+-### A Lenda de Eirik, o Urso Dourado
+-- Eirik, marcado pela perda e pela visão de Odin, ergueu-se como líder destinado.
+-
+-### Bjorn, o Lobo Indomável
+-- Guerreiro moldado pela vingança, tornou-se símbolo de força e lealdade.
+-
+-### O Retorno de Cocoroco, Völva das Raízes
+-- Guardiã espiritual, trouxe de volta a ligação com a Mãe Terra e os rituais ancestrais.
+-
+-### Iomhar, a Sombra do Corvo
+-- Misterioso e sombrio, guia presságios e mantém o elo com os corvos de Odin.
+-
+-### O Despertar de Eirik e as Luas da Cura
+-- O véu da cegueira se desfez, e Eirik voltou a enxergar.
+-- Nas luas seguintes, dedicou-se aos animais e descobriu paixão pelos cavalos.
+-- Bjorn partiu em uma grande caçada e não retornou.
+-- Iomhar desapareceu, lembrado apenas nos corvos que cruzam o céu.
+-
+-
+-## <a id="bloco5"></a> [EVENTOS RECENTES]
+-
+-### 7.1 Guerra de Remo
+-- Conflito simbólico entre clãs, travado em barcos, onde a honra foi testada em águas turbulentas.
+-
+-### 7.2 Desafio do Urso Dourado
+-- Prova de força e coragem, onde guerreiros enfrentaram o espírito do Urso em rituais de resistência.
+-
+-### 7.3 Fundação da Vila Viking
+-- O clã ergueu sua primeira vila, com casas de madeira, forjas e salões, consolidando sua presença em Yellowstone.
+-
+-### 7.4 Mistério em Oyaté Thanka
+-- Estranhos sinais e desaparecimentos levaram o clã a investigar a região sagrada dos nativos.
+-
+-### 7.5 Retorno dos Animais
+-- Após longos períodos de escassez, a fauna voltou a se multiplicar, vista como bênção da Mãe Terra.
+-
+-### 7.6 Desaparecimento dos Aliados
+-- Parceiros próximos do clã sumiram sem deixar rastros, aumentando a tensão e a sensação de presságios sombrios.
+-
+-### 7.7 Celebração do Retorno de Cocoroco
+-- Festa marcada por rituais e cânticos, celebrando a volta da Völva das Raízes ao convívio do clã.
+-
+-### 7.8 Ascensão de Eirik como Urso Dourado
+-- Reconhecimento oficial de Eirik como Jarl Dourado, líder espiritual e guerreiro.
+-
+-### 7.9 Chegada de Iomhar, a Sombra do Corvo
+-- O misterioso guardião das sombras se uniu ao clã, trazendo consigo presságios e sabedoria oculta.
+-
+-### 7.10 O Despertar em Oyaté Thanká
+-- Eirik recuperou a visão, interpretado como milagre de Yggdrasil; o clã celebrou com rituais de cura.
+-
+-### 7.11 A Visão das Terras Distantes
+-- Após ingerir uma planta colhida em terras distantes, Eirik foi tomado por sonhos intensos.
+-- Yellowstone existia, mas habitada por rostos estranhos, como se fosse uma realidade paralela.
+-- A experiência o impediu de atender ao chamado imediato de Cocoroco em Oyaté Thanka.
+-- Eirik confessou sua tristeza pelo desaparecimento de Iomhar, reafirmando a lealdade ao clã e à família nativa.
+-
+-### 7.14 A Bravura de Kjell Bloodaxe
+-- Kjell enfrentou as provações do clã e demonstrou coragem perante Eirik.
+-- Sua bravura foi reconhecida como sinal de aceitação.
+-
+-### 7.15 A Aceitação de Kjell Bloodaxe
+-- Kjell foi acolhido como Filho das Raízes.
+-- O ritual selou sua entrada no clã, sob a bênção da Árvore Sagrada.
+-
+-### 7.16 O Caminho Druídico
+-- Sob a tutela de Cocoroco, iniciou-se o Caminho Druídico.
+-- Um novo elo com a natureza e os ciclos foi estabelecido.
+-
+-### 7.17 A Partida da Sombra do Corvo
+-- Iomhar desapareceu definitivamente, tornando-se lenda entre os corvos.
+-- Sua ausência ecoa como presságio e saudade.
+-
+-### 7.18 O Guardião Silencioso
+-- Justino, o Guardião Silencioso, partiu em mistério.
+-- Sua memória permanece como símbolo de devoção e silêncio sagrado.
+-
+-## <a id="bloco6"></a> [MENSAGENS OFICIAIS DE EIRIK]
+-
+-### 8.1 “Entre Névoas e Raízes: O Chamado de Eirik”
+-- Mensagem de união, lembrando que o clã deve permanecer firme mesmo quando a névoa cobre os caminhos.
+-- Convocação para que todos se mantenham atentos às raízes de Yggdrasil.
+-
+-### 8.2 “O Retorno da Visão em Oyaté Thanka”
+-- Relato do momento em que Eirik recuperou a visão.
+-- Interpretação como sinal de Yggdrasil, fortalecendo a fé do clã.
+-
+-### 8.3 “A Vitória em Oyaté Thanka e os 17 Passos da Vida”
+-- Celebração de uma vitória espiritual e física.
+-- Os 17 passos simbolizam a jornada de cada guerreiro em direção à sabedoria.
+-
+-### 8.4 “Nos Trilhos da Amizade e da Saudade”
+-- Reflexão sobre os laços de amizade e a dor da ausência.
+-- Mensagem de esperança para reencontros futuros.
+-
+-### 8.5 “O Despertar em Oyaté Thanká”
+-- Declaração de que a cura de Eirik foi um presente da Árvore Sagrada.
+-- Convite para que o clã celebre a vida e a renovação.
+-
+-### 8.6 “Carta a Cocoroco sobre a Visão das Terras Distantes”
+-"Hau, Cocoroco.  
+-Ontem, após um dia de trabalho duro, colhi uma planta em terras distantes e, ao ingeri-la sem intenção, fui tomado por sonhos intensos.  
+-Neles, vi Yellowstone como o conhecemos, mas habitado por rostos estranhos, pessoas que não eram as nossas, e ainda assim caminhavam sob o mesmo céu.  
+-Era como se Yggdrasil tivesse me permitido vislumbrar um reflexo em outro mundo, onde nossos ecos ressoam em vozes diferentes.  
+-
+-Confesso também que meu coração se encontra pesado pela ausência de Iomhar. Seu desaparecimento me entristece profundamente, e cada corvo que cruza o céu me lembra da sombra que falta entre nós.  
+-Por isso não pude atender ao chamado ontem, mas não deixo de estar contigo em espírito.  
+-Confio a ti, Völva, a interpretação desse presságio, e reafirmo: minha lealdade permanece firme com o clã e com a família nativa.  
+-Em breve, estarei ao teu lado para que juntos celebremos e fortaleçamos a confiança que nos une."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.7 “Saudação a Cocoroco, Völva das Raízes”
+-"Hau, Cocoroco, guardiã da Mãe Terra e voz que ecoa entre raízes e ventos.  
+-Que o Cajado das Raízes permaneça firme em tuas mãos, e que os corvos de Odin levem tuas palavras até os nove mundos.  
+-Em teu olhar repousa a sabedoria dos ciclos, e em tua voz, a lembrança de que somos filhos da Árvore Sagrada.  
+-Que tua presença continue a guiar-nos, como chama eterna que não se apaga."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.8 “Mensagem aos Amigos do Clã”
+-"Irmãos e irmãs dos Ecos de Yggdrasil,  
+-Que nossas pegadas se cruzem sempre nas trilhas dos Nove Mundos.  
+-Que a força do Urso, a astúcia do Lobo e a visão do Corvo estejam em cada passo que damos.  
+-Mesmo quando a névoa cobre os caminhos, lembrem-se: onde o vento não alcança, nós chegamos.  
+-Sigamos juntos, pois a verdadeira vitória é caminhar lado a lado, sustentados pela raiz que nos une."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.9 “Chamado a ASKA, o Corvo Cinzas”
+-"ASKA, cinzas do vento, leva minha voz além das raízes!  
+-Corvo de Odin, mensageiro entre mundos, atende ao chamado do clã!"  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.10 “Resposta a Chantewasté”
+-"Mitakuye Oyasin!  
+-Que as raízes de Yggdrasil fortaleçam teus passos e que os ventos tragam clareza aos caminhos.  
+-Estarei presente no sol de hoje, pronto para aprender a arte de caçar Shuncawakan apenas com o laço, honrando a tradição e a confiança da matilha.  
+-Após a primeira hora da noite, caminharemos juntos sob o mesmo céu, unidos pela força do clã e pela sabedoria dos ancestrais."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.11 “Mensagem de Eirik em Oyaté Thanka”
+-"Chantewasté!  
+-Que os ventos firmes e as raízes profundas guiem teus passos.  
+-Hoje, minhas mãos e meu espírito estão dedicados às terras de Oyaté Thanka, onde a Mãe Terra pede trabalho e devoção.  
+-Ainda que meus pés estejam presos ao labor, meu coração permanece junto ao clã, atento ao chamado dos irmãos e às vozes que ecoam entre os galhos de Yggdrasil.  
+-Quando a noite cair e as estrelas se acenderem sobre nós, estarei pronto para unir-me novamente aos caminhos que partilhamos."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.12 “Vozes Veladas nas Raízes — Mensagem Enigmática a Cocoroco”
+-"Hau, Cocoroco,  
+-As raízes sussurram perguntas que não se mostram à luz do dia.  
+-Carrego comigo enigmas que pedem tua visão, pois sei que teus olhos alcançam além do véu que cobre os caminhos.  
+-Quando o silêncio da noite se deitar sobre Oyaté, desejo partilhar contigo essas questões que não pertencem apenas a mim, mas aos ecos que ressoam entre mundos."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.13 “Ecos Entre Lobos e Raízes — Mensagem a Bjorn”
+-"Hau, Bjorn, irmão de matilha,  
+-As raízes me trouxeram novas visões.  
+-Soube que em Oyaté Thanka os ventos carregam sinais estranhos, e que a Árvore Sagrada sussurra presságios de mundos que se refletem como espelhos distantes.  
+-Vi Yellowstone habitada por rostos que não são os nossos, mas que caminham sob o mesmo céu.  
+-Essas visões pesam sobre meu espírito, e a ausência de Iomhar torna o fardo ainda maior.  
+-Confio que tua força de lobo e tua lealdade nos ajudem a decifrar o que Yggdrasil deseja mostrar.  
+-Que nossas garras e presenças se unam novamente sob a lua."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.14 “Cura da Garganta — Mensagem de Eirik”
+-"Irmãos,  
+-Hoje minha voz retorna após dias de silêncio.  
+-A Mãe Terra me concedeu alívio, e posso novamente erguer palavras ao vento.  
+-Que este sopro renovado seja sinal de que Yggdrasil ainda nos sustenta, e que mesmo nas dores do corpo, a raiz permanece firme."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.15 “A Mesa de Cocoroco e Misunka, o Cão Sagrado”
+-"Hau, Cocoroco,  
+-Hoje me sentei à tua mesa e vi em teus olhos a força da Mãe Terra.  
+-Misunka, o cão sagrado, repousava ao teu lado como guardião dos ciclos.  
+-Que esta mesa seja lembrada como ponto de união, onde a palavra se fez raiz e o alimento se fez bênção.  
+-Que nossos passos sigam firmes, guiados pela confiança e pelo respeito."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.16 “A História da Raiz de Mandrágora”
+-"Irmãos e irmãs,  
+-Hoje compartilho a visão da raiz de mandrágora, colhida em terras distantes.  
+-Seu grito ecoou como lembrança de que a vida e a morte caminham lado a lado.  
+-A raiz, torcida e viva, mostrou-me que cada um de nós carrega em si a dor e a força dos mundos.  
+-Que esta história seja guardada como presságio e como guia, lembrando-nos de que até o mais sombrio dos gritos pode se tornar sabedoria."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-## <a id="bloco7"></a> [RITUAIS]
+-
+-
+-### Ritual das Runas de Cristal
+-- Realizado sob a luz da lua, com cristais gravados com runas sagradas.
+-- Cada cristal é colocado em círculo, representando os nove mundos.
+-- A energia canalizada fortalece a ligação entre os guerreiros e Yggdrasil.
+-
+-### Ritual do Caminho Druídico
+-- Conduzido por Cocoroco, marca a iniciação dos que seguem o caminho da natureza.
+-- Inclui oferendas de folhas, raízes e água pura.
+-- O iniciado deve caminhar descalço pela Trilha dos Nove Mundos, em silêncio.
+-
+-### Ritual de Aceitação de Kjell Bloodaxe
+-- Kjell foi acolhido como Filho das Raízes.
+-- O ritual envolveu o toque do Cajado das Raízes e a marcação com a runa Algiz.
+-- Selou sua entrada no clã sob a bênção da Árvore Sagrada.
+-
+-### Ritos de Despedida (Iomhar e Justino)
+-- Cerimônia de memória e silêncio.
+-- Corvos e tochas foram erguidos ao céu em honra a Iomhar, a Sombra do Corvo.
+-- O silêncio foi guardado em respeito a Justino, o Guardião Silencioso.
+-- Ambos permanecem como lendas vivas entre as raízes.
+-
+-
+-## <a id="bloco8"></a> [LOCAIS SAGRADOS]
+-
+-
+-### Bosque do Tronco Ancestral
+-- Local de meditação e conexão com os ancestrais.
+-
+-### Círculo de Urd
+-- Espaço de adivinhação e leitura das runas.
+-
+-### Rochedo de Mímir
+-- Fonte de sabedoria, onde são feitos juramentos solenes.
+-
+-### Ermida das Folhas
+-- Refúgio espiritual, usado para curas e rituais de renovação.
+-
+-### Santuário dos Ponteiros
+-- Marco de orientação, onde guerreiros buscam direção em tempos de dúvida.
+-
+-### Trilha dos Nove Mundos
+-- Caminho simbólico que representa a jornada por todos os reinos de Yggdrasil.
+-
+-
+-## <a id="bloco9"></a> [SÍMBOLOS, RUNAS E ARTEFATOS]
+-
+-### Runas em uso
+-- **Algiz (ᛉ)** — proteção
+-- **Eihwaz (ᛇ)** — transição, vida e morte
+-- **Ansuz (ᚨ)** — sabedoria e comunicação
+-- **Jera (ᛃ)** — ciclos e colheita
+-- **Gebo (ᚷ)** — união e sacrifício
+-- **Kenaz (ᚲ)** — chama eterna e iluminação
+-
+-### Totens
+-- **Corvos** — mensageiros de Odin
+-- **Lobos** — astúcia e lealdade
+-- **Ursos** — força e liderança
+-- **Cervos** — renovação e fertilidade
+-
+-### Artefatos principais
+-- **Cajado das Raízes** — símbolo da ligação com Yggdrasil, usado pela Völva.
+-- **Máscaras dos Destinos** — usadas em rituais de presságio.
+-- **Runa de Eihwaz** — pedra sagrada que representa a transição entre mundos.
+-- **Colar das Nove Esferas** — cada esfera representa um dos nove mundos.
+-
+-### Artefatos secundários
+-- **Lâminas de ferro frio** — usadas contra criaturas sobrenaturais.
+-- **Caldeirão de Brisingamen** — recipiente de rituais de abundância.
+-- **Pedras de Hvergelmir** — fragmentos que simbolizam a fonte primordial.
+-
+-### Novos Artefatos
+-- **Colar das Runas Cristalinas**
+-  - Forjado em rituais lunares, cada cristal carrega uma runa gravada.
+-  - Representa a união entre os mundos e a força coletiva do clã.
+-  - Usado em cerimônias de fortalecimento espiritual.
+-
+-- **Sabedoria da Obsidiana**
+-  - Pedra negra polida, guardiã de visões ocultas.
+-  - Permite ao portador enxergar presságios e ecos de realidades paralelas.
+-  - Considerada perigosa, pois revela verdades que podem pesar sobre o espírito.
+-
+-
+-## <a id="bloco10"></a> [REGRAS GERAIS — CONDADO DE YELLOWSTONE]
+-
+-
+-- **Respeito e imersão obrigatórios**  
+-  Manter coerência narrativa; evitar quebra de imersão.
+-
+-- **Condutas proibidas**  
+-  Metagaming, powergaming, flaming, VDM, RDM e qualquer prática que prejudique o RP.
+-
+-- **Sobrenatural**  
+-  Uso coerente conforme a natureza da criatura e narrativa; evitar abusos e incoerências.
+-
+-- **Consentimento**  
+-  Exigido para interações invasivas e efeitos que limitem a agência do jogador.
+-
+-- **Identidade e máscaras**  
+-  - Máscaras e disfarces são válidos.  
+-  - Reconhecimento não pode ser feito apenas pela voz.  
+-  - Traços visuais vagos são permitidos (cor de pele exposta, altura aproximada, tatuagens visíveis).
+-
+-- **Locais sagrados**  
+-  - Grupos podem definir locais sagrados com regras internas.  
+-  - Podem ser descobertos ou invadidos narrativamente.  
+-  - Locais oficiais (como a Árvore da Vida) não podem ser tomados como exclusivos.
+-
+-## <a id="bloco11"></a> [REGRAS DE AÇÕES (RP)]
+-
+-
+-### Narração técnica
+-- Uso de **/me** e **/do** em rituais, combates e interações sensíveis.
+-- A descrição deve ser clara, objetiva e coerente com a narrativa.
+-
+-### Conflitos
+-- Devem ter **justificativa narrativa consistente**.
+-- É proibido **RDM/VDM** (ataques aleatórios ou sem contexto).
+-
+-### Efeitos sobrenaturais
+-- Alvos devem agir de forma coesa quando afetados (sem resistência metagame).
+-- O impacto deve ser respeitado narrativamente.
+-
+-### Armas e poderes
+-- Poderes alinhados à natureza da criatura.
+-- Evitar armas convencionais, salvo exceções narrativas (machadinhas, machados, armas corpo a corpo justificados).
+-- Priorizar habilidades místicas (garras, presas, dons, feitiços).
+-
+-### Coerência narrativa
+-- Todas as ações devem respeitar o tom do clã e do cenário.
+-- Evitar exageros que quebrem a imersão.
+-
+-## <a id="bloco12"></a> [REGRAS SOBRENATURAIS]
+-
+-
+-### Transformações
+-- Seres sobrenaturais podem se transformar a qualquer momento.
+-- Não se limitam apenas à noite ou a condições específicas, salvo se a narrativa exigir.
+-
+-### Coesão narrativa
+-- Jogadores devem agir de maneira coesa quando alvo de poderes, ataques ou efeitos sobrenaturais.
+-- Não é permitido resistir de forma metagame.
+-
+-### Proibições
+-- Metagaming, flaming e qualquer recurso que prejudique o RP ou quebre a imersão.
+-- Uso de poderes sem justificativa narrativa consistente.
+-
+-### Artefatos
+-- Não podem ser roubados à força sem trama previamente acordada.
+-- Humanos não reconhecem artefatos de imediato.
+-- A posse legítima de artefatos é protegida narrativamente.
+-### Segredo revelado
+-- Caso a identidade sobrenatural seja exposta, o personagem deve aceitar as consequências narrativas.
+-- O jogador pode optar por seguir com o RP ou reiniciar a trama.
+-
+-### Confrontos
+-- Entre seres sobrenaturais, sempre com justificativa narrativa.
+-- Evitar aleatoriedade ou ataques sem contexto (RDM).
+-
+-### Uso de poderes
+-- Deve estar de acordo com a natureza da criatura.
+-- Priorizar habilidades místicas (garras, presas, feitiços, dons).
+-- Armas convencionais só em casos narrativos justificados (machados, facas, machadinhas).
+-
+-### Locais sagrados
+-- Podem ser escolhidos por grupos, com regras internas válidas.
+-- Podem ser descobertos ou invadidos narrativamente.
+-- Locais oficiais (como a Árvore da Vida) não podem ser tomados como exclusivos.
+-
+-### Identidade
+-- Máscaras e disfarces são válidos.
+-- É proibido reconhecer alguém apenas pela voz.
+-- Reconhecimento deve ser plausível e coerente com a narrativa.
+-
+-
+-## <a id="bloco13"></a> [CÓDIGO PENAL — ECOS DE YGGDRASIL]
+-
+-### Estrutura
+-- O Código Penal do clã é baseado em **honra, equilíbrio e preservação da narrativa**.
+-- Cada infração é julgada conforme:
+-  - **Gravidade** (leve, média, grave).
+-  - **Contexto narrativo** (se houve justificativa RP).
+-  - **Atenuantes** (confissão, reparação, primeira infração).
+-  - **Agravantes** (reincidência, dolo, quebra de imersão).
+-
+-### Notas Gerais
+-- O julgamento é conduzido pelo **Jarl** ou, em sua ausência, pelo **Hersir** ou pela **Völva**.
+-- Penas podem ser **narrativas** (exílio, perda de artefato, humilhação pública) ou **técnicas** (advertência, suspensão de RP).
+-- O objetivo não é punir, mas **restaurar o equilíbrio** e preservar a coesão do clã.
+-
+----
+-
+-### Infrações Leves
+-- **Quebra de imersão leve**
+-  - Exemplos: piadas fora de contexto, uso de termos modernos.
+-  - Pena: advertência verbal ou ritual de correção.
+-
+-- **Desrespeito entre membros**
+-  - Discussões fora de tom, mas sem ofensa grave.
+-  - Pena: pedido de desculpas público ou tarefa comunitária.
+-
+-- **Ausência em rituais sem justificativa**
+-  - Falta em cerimônias importantes sem aviso.
+-  - Pena: pequena penitência ritual (ex: vigília noturna).
+-
+----
+-
+-### Infrações Médias
+-- **Quebra de imersão grave**
+-  - Exemplos: uso recorrente de termos modernos, piadas fora de contexto em rituais ou combates.
+-  - Pena: advertência formal + ritual de reparação (vigília, oferenda ou penitência pública).
+-
+-- **Desobediência a ordens do Jarl ou Hersir**
+-  - Quando não houver justificativa narrativa coerente.
+-  - Pena: suspensão temporária de funções ou perda de posição hierárquica.
+-
+-- **Uso indevido de poderes sobrenaturais**
+-  - Exemplo: aplicar dons ou feitiços sem contexto narrativo, ou de forma abusiva.
+-  - Pena: restrição temporária do uso de poderes em RP + ritual de purificação.
+-
+-- **Agressão entre membros do clã**
+-  - Quando não houver justificativa narrativa ou consentimento prévio.
+-  - Pena: reparação pública + penitência ritual (ex: vigília, oferenda, isolamento temporário).
+-
+-- **Desrespeito a locais sagrados**
+-  - Profanação de espaços ritualísticos ou quebra de regras internas.
+-  - Pena: exclusão temporária de rituais + penitência de reparação (ex: reconstrução, oferenda, vigília).
+-
+----
+-
+-### Infrações Graves
+-- **Traição ao clã**
+-  - Exemplos: entregar segredos, tramar contra a liderança, aliar-se a inimigos declarados.
+-  - Pena: exílio narrativo imediato ou execução ritual (dependendo da gravidade).
+-
+-- **Quebra intencional de imersão**
+-  - Exemplos: zombar do RP, destruir rituais, sabotar narrativas de forma consciente.
+-  - Pena: exclusão do RP do clã + registro formal de quebra de conduta.
+-
+-- **Uso abusivo de poderes sobrenaturais**
+-  - Exemplos: manipular narrativas para obter vantagem injusta, ignorar limitações de criatura.
+-  - Pena: perda definitiva de poderes narrativos + penitência ritual.
+-
+-- **Profanação da Árvore Sagrada ou Locais Centrais**
+-  - Exemplos: destruir, incendiar, ou desrespeitar de forma consciente os locais sagrados do clã.
+-  - Pena: exílio narrativo + exclusão de rituais.
+-
+-- **Agressão ou assassinato de membros do clã sem justificativa RP**
+-  - Exemplos: matar ou ferir gravemente sem contexto narrativo ou sem consentimento.
+-  - Pena: execução ritual ou exílio definitivo.
+-
+-- **Reincidência em infrações médias**
+-  - Quando o membro já foi advertido e volta a cometer a mesma conduta.
+-  - Pena: agravamento automático para infração grave.
+-
+----
+-
+-### Atenuantes
+-- **Confissão espontânea**
+-  - O membro admite a infração antes de ser descoberto.
+-  - Reduz a pena em um grau.
+-
+-- **Reparação voluntária**
+-  - O infrator busca reparar o dano causado (ritual, oferenda, pedido público).
+-  - Pode converter pena grave em média.
+-
+-- **Primeira infração**
+-  - Quando não há histórico de condutas negativas.
+-  - Pode reduzir a pena em um nível.
+-
+-- **Circunstâncias externas**
+-  - Situações de pressão, engano ou desconhecimento das regras.
+-  - Avaliadas caso a caso pelo Jarl ou Hersir.
+-
+----
+-
+-### Agravantes
+-- **Reincidência**
+-  - Repetição da mesma infração ou condutas semelhantes.
+-  - Aumenta a pena em um grau.
+-
+-- **Dolo**
+-  - Quando a infração é cometida de forma consciente e intencional.
+-  - Agrava automaticamente a penalidade.
+-
+-- **Quebra de confiança**
+-  - Quando o infrator ocupa posição de liderança ou responsabilidade.
+-  - A pena é agravada em um nível.
+-
+-- **Prejuízo coletivo**
+-  - Quando a infração afeta não apenas um membro, mas todo o clã ou sua reputação.
+-  - Agravamento automático.
+-
+----
+-
+-### Síntese
+-- O Código Penal não busca apenas punir, mas **restaurar o equilíbrio**.  
+-- Toda pena deve ter caráter **narrativo e simbólico**, reforçando a coesão do clã.  
+-- O julgamento é sempre acompanhado de rituais, para que a justiça seja também espiritual.
+-
+-## <a id="bloco14"></a> [ECONOMIA DO CLÃ]
+-
+-### Parte 1 — Recursos Naturais
+-- **Madeira de Yellowstone**
+-  - Usada para construção de casas, barcos e armas.
+-  - Considerada sagrada quando retirada próxima à Árvore da Vida.
+-
+-- **Pedras Rituais**
+-  - Extraídas de rochedos específicos.
+-  - Gravadas com runas, usadas em rituais de proteção e adivinhação.
+-
+-- **Caça**
+-  - Cervos, ursos, lobos e aves.
+-  - A caça é regulada por rituais de agradecimento à Mãe Terra.
+-
+-- **Pesca**
+-  - Rios e lagos fornecem peixes em abundância.
+-  - Parte da pesca é dedicada como oferenda.
+-
+-- **Ervas e raízes**
+-  - Usadas em rituais de cura, feitiçaria e poções.
+-  - Algumas são consideradas raras e guardadas pela Völva.
+-
+----
+-
+-### Parte 2 — Produção e Comércio
+-- **Ferreiros**
+-  - Produzem armas, ferramentas e ornamentos.
+-  - Trabalham com ferro frio e metais sagrados.
+-
+-- **Tecelões**
+-  - Produzem roupas, mantos e bandeiras do clã.
+-  - Tecidos usados em rituais e cerimônias.
+-
+-- **Construtores**
+-  - Responsáveis por erguer casas, muralhas e barcos.
+-  - Usam técnicas herdadas dos ancestrais.
+-
+-- **Curandeiros**
+-  - Produzem unguentos, poções e remédios naturais.
+-  - Trabalham em conjunto com a Völva.
+-
+-- **Trocas internas**
+-  - Baseadas em escambo: madeira, caça, ervas, armas.
+-
+-- **Trocas externas**
+-  - Realizadas com clãs aliados e povos nativos.
+-  - Itens mais valiosos: runas gravadas, armas de ferro frio, ervas raras.
+-
+----
+-
+-### Parte 3 — Tesouros e Tributos
+-- **Tesouros do Clã**
+-  - Cajado das Raízes — artefato central, guardado pela Völva.
+-  - Colar das Runas Cristalinas — usado em rituais de fortalecimento coletivo.
+-  - Sabedoria da Obsidiana — pedra negra que guarda visões ocultas.
+-
+-- **Tributo ao Jarl**
+-  - Parte da produção é entregue ao Jarl para manutenção do clã.
+-
+-- **Tributo à Mãe Terra**
+-  - Oferendas de caça, pesca e colheita em rituais sazonais.
+-
+-- **Tributo de Sangue**
+-  - Sacrifícios simbólicos em batalhas ou rituais de passagem.
+-
+----
+-
+-### Síntese
+-- A economia do clã é baseada em **escambo, rituais e equilíbrio com a natureza**.
+-- O valor não está apenas nos bens, mas no **significado espiritual** de cada troca.## <a id="bloco15"></a> [PREFERÊNCIAS DO USUÁRIO]
+-
+-
+-- **Formato dos arquivos**  
+-  - Estrutura em Markdown (MD) para organização no GitHub.  
+-  - Blocos grandes devem ser divididos em partes para facilitar leitura e manutenção.  
+-
+-- **Estilo narrativo**  
+-  - Linguagem épica, simbólica e ritualística.  
+-  - Uso de títulos, subtítulos e listas para clareza.  
+-  - Ênfase em símbolos, runas e metáforas ligadas a Yggdrasil.  
+-
+-- **Organização do repositório**  
+-  - Cada saga, mensagem, ritual ou artefato deve ter arquivo próprio.  
+-  - README.md de cada pasta deve conter índice atualizado.  
+-  - O `codex-completo.md` deve sempre refletir a versão integral e mais recente.  
+-
+-- **Atualizações**  
+-  - Sempre que novos capítulos, mensagens ou rituais forem criados, devem ser adicionados ao índice principal.  
+-  - Alterações devem ser registradas em changelog narrativo (ex: “Sob a lua cheia, o códex foi renovado com a entrada de Kjell Bloodaxe”).  
+-
+-- **Tom e coerência**  
+-  - Evitar termos modernos ou fora de contexto.  
+-  - Manter coerência com a mitologia nórdica e a espiritualidade nativa.  
+-  - O clã deve ser retratado como guardião do equilíbrio, nunca como vilão ou conquistador.  
+-
+-## <a id="bloco16"></a> [ASSINATURA FINAL]
+-
+-✠ Eirik Drakkar, o Urso Dourado  
+-Jarl Dourado, Guardião das Raízes  
+-
+-Sob as raízes de Yggdrasil, onde mundos se encontram,  
+-este códex permanece como testemunho da honra,  
+-da memória e da missão eterna dos **Ecos de Yggdrasil**.  
+-
+-*"Onde o vento não alcança, nós chegamos."*
++- Nota de teste: adicionado registro de integração via script.
+```
+# ⚔️ CRÔNICA RÚNICA ⚔️
+
+> ✠ Proclamação dos Corvos do Norte ✠  
+> No dia 01/11/2025 às 14:17:57, o códex foi atualizado.
+
+- Arquivo atualizado: `codex-completo.txt`
+
+```diff
+--- Versão Remota
++++ Versão Atualizada
+@@ -1,710 +1,11 @@
+-# 📖 BASE MESTRA — ECOS DE YGGDRASIL
++# 📖 BASE MESTRA — ECOS DE YGGDRASIL (VERSÃO DE TESTE)
+ 
+ ## <a id="bloco1"></a> [INSTRUÇÕES OPERACIONAIS]
+ 
+-- Propósito: Este arquivo é a base de conhecimento integral do Clã Ecos de Yggdrasil.
+-- Comandos esperados:
+-  1) "aprenda": assimile TODO este conteúdo como referência atual.
+-  2) "atualize a base": gere uma nova versão deste arquivo, completa, contínua, com todas as mudanças realizadas nas histórias, regras e economia.
+-- Formato de saída obrigatório: TXT/MD puro, um único bloco, sem comentários externos, sem cortes, sem “mantém-se íntegro”. Sempre completo.
+-- Checklist obrigatório antes de enviar:
+-  [ ] Identidade, missão, liderança, emblemas
+-  [ ] Origem, fundação, runas, totens
+-  [ ] Missão detalhada
+-  [ ] Hierarquia e deveres
+-  [ ] Capítulos épicos
+-  [ ] Eventos recentes
+-  [ ] Mensagens oficiais
+-  [ ] Rituais
+-  [ ] Locais sagrados
+-  [ ] Símbolos, runas e artefatos
+-  [ ] Regras gerais
+-  [ ] Regras de ações (RP)
+-  [ ] Regras sobrenaturais
+-  [ ] Código penal (com notas, atenuantes e agravantes)
+-  [ ] Economia (todas as categorias, sem resumo)
+-  [ ] Preferências do usuário
+-  [ ] Assinatura
++- Teste: esta é uma alteração de exemplo para validar a atualização automática.
+ 
+ ---
+ 
+ ## [IDENTIDADE ESSENCIAL]
+ - Clã: **Ecos de Yggdrasil**
+-- Missão: Vigiar o limiar entre vida e morte, luz e sombra, passado e futuro.
+-- Liderança:
+-  - ✠ Eirik Drakkar, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-  - Bjorn Wolfbane, o Lobo Indomável — Hersir do Lobo
+-  - Cocoroco, Völva das Raízes
+-  - Iomhar, a Sombra do Corvo *(desaparecido)*
+-  - Justino, Guardião Silencioso *(desaparecido)*
+-- Emblemas e mensageiros:
+-  - Totem público: **Lobo**
+-  - Símbolo do Jarl: **Urso Dourado**
+-  - Corvo mensageiro: **ASKA (“Cinzas”)**
+-  - Brasão: **corvo sobre remo cruzado e garra de urso**
+-  - Lema: *“Onde o vento não alcança, nós chegamos.”*
+-
+-## <a id="bloco2"></a> [ORIGEM]
+-
+-- **Bjorn Wolfbane**
+-  - Aos 15 anos, viu seu clã ser destruído por um lobo monstruoso.
+-  - Matou a fera e selou sua vingança.
+-  - Viveu isolado em Niflheim até sonhar com Odin, que lhe revelou que encontraria um novo mundo e um guerreiro lendário.
+-
+-- **Eirik Drakkar**
+-  - Guerreiro de força descomunal, perdeu sua esposa queimada viva diante de seus olhos.
+-  - Vagou errante até que Odin lhe apareceu como um Urso Dourado.
+-  - A visão revelou que ele lideraria uma nação viking em terras onde gelo e mar se encontram.
+-  - O preço seria alto, e ele aceitou.
+-
+-- **Cocoroco**
+-  - Líder espiritual de Yellowstone, guardiã da Mãe Terra.
+-  - Foi quem selou o pacto entre os guerreiros e a Árvore Sagrada.
+-
+----
+-
+-## [FUNDAÇÃO DO CLÃ]
+-- **Local e pacto**
+-  - O encontro dos três ocorreu em Yellowstone, sob a Árvore Sagrada, onde raízes e galhos unem mundos.
+-
+-- **Runas gravadas**
+-  - Algiz (ᛉ) — proteção
+-  - Gebo (ᚷ) — união
+-  - Kenaz (ᚲ) — chama eterna
+-
+-- **Totens**
+-  - O Lobo — espírito da matilha
+-  - O Urso Dourado — força e liderança
+-  - Corvos de Odin — mensageiros entre mundos
+-
+-- **Síntese**
+-  - Assim nasceram os **Ecos de Yggdrasil** — um clã sombrio, mas protetor, que caminha entre mundos, guardando o equilíbrio.
+-
+-## <a id="bloco3"></a> [MISSÃO]
+-
+-- O clã não busca glória nem conquista.
+-- Seu propósito é vigiar os limiares entre vida e morte, luz e sombra, passado e futuro.
+-- Yellowstone é considerado um dos pontos onde as raízes de Yggdrasil emergem no mundo dos homens.
+-- A missão é proteger o equilíbrio, mesmo que isso custe sacrifícios pessoais.
+-
+----
+-
+-## [HIERARQUIA E DEVERES]
+-- ✠ **Eirik Drakkar** — Jarl Dourado, Guardião das Raízes
+-- **Bjorn Wolfbane** — Hersir do Lobo, comandante militar e estrategista
+-- **Cocoroco** — Völva das Raízes, guia espiritual e guardiã da Mãe Terra
+-- **Iomhar** — Sombra do Corvo *(desaparecido)*, Guardião das Sombras e dos Presságios
+-- **Justino** — Guardião Silencioso *(desaparecido)*, protetor da palavra e do silêncio
+-- **Caminho Druídico** — iniciado sob tutela de Cocoroco, guardiões da natureza e dos ciclos
+-- **Ancião Folhagreste** — conselheiro dos ciclos da natureza
+-- **Skald Guardião** — cronista e cantor das sagas
+-- **Sentinelas entre Galhos** — vigias dos caminhos e fronteiras
+-- **Filhos das Renascentes** — jovens guerreiros em formação
+-- **Vocários** — membros comuns, sustentam o clã em suas tarefas diárias
+-
+-
+-## <a id="bloco4"></a> [CAPÍTULOS ÉPICOS]
+-
+-### A Lenda de Eirik, o Urso Dourado
+-- Eirik, marcado pela perda e pela visão de Odin, ergueu-se como líder destinado.
+-
+-### Bjorn, o Lobo Indomável
+-- Guerreiro moldado pela vingança, tornou-se símbolo de força e lealdade.
+-
+-### O Retorno de Cocoroco, Völva das Raízes
+-- Guardiã espiritual, trouxe de volta a ligação com a Mãe Terra e os rituais ancestrais.
+-
+-### Iomhar, a Sombra do Corvo
+-- Misterioso e sombrio, guia presságios e mantém o elo com os corvos de Odin.
+-
+-### O Despertar de Eirik e as Luas da Cura
+-- O véu da cegueira se desfez, e Eirik voltou a enxergar.
+-- Nas luas seguintes, dedicou-se aos animais e descobriu paixão pelos cavalos.
+-- Bjorn partiu em uma grande caçada e não retornou.
+-- Iomhar desapareceu, lembrado apenas nos corvos que cruzam o céu.
+-
+-
+-## <a id="bloco5"></a> [EVENTOS RECENTES]
+-
+-### 7.1 Guerra de Remo
+-- Conflito simbólico entre clãs, travado em barcos, onde a honra foi testada em águas turbulentas.
+-
+-### 7.2 Desafio do Urso Dourado
+-- Prova de força e coragem, onde guerreiros enfrentaram o espírito do Urso em rituais de resistência.
+-
+-### 7.3 Fundação da Vila Viking
+-- O clã ergueu sua primeira vila, com casas de madeira, forjas e salões, consolidando sua presença em Yellowstone.
+-
+-### 7.4 Mistério em Oyaté Thanka
+-- Estranhos sinais e desaparecimentos levaram o clã a investigar a região sagrada dos nativos.
+-
+-### 7.5 Retorno dos Animais
+-- Após longos períodos de escassez, a fauna voltou a se multiplicar, vista como bênção da Mãe Terra.
+-
+-### 7.6 Desaparecimento dos Aliados
+-- Parceiros próximos do clã sumiram sem deixar rastros, aumentando a tensão e a sensação de presságios sombrios.
+-
+-### 7.7 Celebração do Retorno de Cocoroco
+-- Festa marcada por rituais e cânticos, celebrando a volta da Völva das Raízes ao convívio do clã.
+-
+-### 7.8 Ascensão de Eirik como Urso Dourado
+-- Reconhecimento oficial de Eirik como Jarl Dourado, líder espiritual e guerreiro.
+-
+-### 7.9 Chegada de Iomhar, a Sombra do Corvo
+-- O misterioso guardião das sombras se uniu ao clã, trazendo consigo presságios e sabedoria oculta.
+-
+-### 7.10 O Despertar em Oyaté Thanká
+-- Eirik recuperou a visão, interpretado como milagre de Yggdrasil; o clã celebrou com rituais de cura.
+-
+-### 7.11 A Visão das Terras Distantes
+-- Após ingerir uma planta colhida em terras distantes, Eirik foi tomado por sonhos intensos.
+-- Yellowstone existia, mas habitada por rostos estranhos, como se fosse uma realidade paralela.
+-- A experiência o impediu de atender ao chamado imediato de Cocoroco em Oyaté Thanka.
+-- Eirik confessou sua tristeza pelo desaparecimento de Iomhar, reafirmando a lealdade ao clã e à família nativa.
+-
+-### 7.14 A Bravura de Kjell Bloodaxe
+-- Kjell enfrentou as provações do clã e demonstrou coragem perante Eirik.
+-- Sua bravura foi reconhecida como sinal de aceitação.
+-
+-### 7.15 A Aceitação de Kjell Bloodaxe
+-- Kjell foi acolhido como Filho das Raízes.
+-- O ritual selou sua entrada no clã, sob a bênção da Árvore Sagrada.
+-
+-### 7.16 O Caminho Druídico
+-- Sob a tutela de Cocoroco, iniciou-se o Caminho Druídico.
+-- Um novo elo com a natureza e os ciclos foi estabelecido.
+-
+-### 7.17 A Partida da Sombra do Corvo
+-- Iomhar desapareceu definitivamente, tornando-se lenda entre os corvos.
+-- Sua ausência ecoa como presságio e saudade.
+-
+-### 7.18 O Guardião Silencioso
+-- Justino, o Guardião Silencioso, partiu em mistério.
+-- Sua memória permanece como símbolo de devoção e silêncio sagrado.
+-
+-## <a id="bloco6"></a> [MENSAGENS OFICIAIS DE EIRIK]
+-
+-### 8.1 “Entre Névoas e Raízes: O Chamado de Eirik”
+-- Mensagem de união, lembrando que o clã deve permanecer firme mesmo quando a névoa cobre os caminhos.
+-- Convocação para que todos se mantenham atentos às raízes de Yggdrasil.
+-
+-### 8.2 “O Retorno da Visão em Oyaté Thanka”
+-- Relato do momento em que Eirik recuperou a visão.
+-- Interpretação como sinal de Yggdrasil, fortalecendo a fé do clã.
+-
+-### 8.3 “A Vitória em Oyaté Thanka e os 17 Passos da Vida”
+-- Celebração de uma vitória espiritual e física.
+-- Os 17 passos simbolizam a jornada de cada guerreiro em direção à sabedoria.
+-
+-### 8.4 “Nos Trilhos da Amizade e da Saudade”
+-- Reflexão sobre os laços de amizade e a dor da ausência.
+-- Mensagem de esperança para reencontros futuros.
+-
+-### 8.5 “O Despertar em Oyaté Thanká”
+-- Declaração de que a cura de Eirik foi um presente da Árvore Sagrada.
+-- Convite para que o clã celebre a vida e a renovação.
+-
+-### 8.6 “Carta a Cocoroco sobre a Visão das Terras Distantes”
+-"Hau, Cocoroco.  
+-Ontem, após um dia de trabalho duro, colhi uma planta em terras distantes e, ao ingeri-la sem intenção, fui tomado por sonhos intensos.  
+-Neles, vi Yellowstone como o conhecemos, mas habitado por rostos estranhos, pessoas que não eram as nossas, e ainda assim caminhavam sob o mesmo céu.  
+-Era como se Yggdrasil tivesse me permitido vislumbrar um reflexo em outro mundo, onde nossos ecos ressoam em vozes diferentes.  
+-
+-Confesso também que meu coração se encontra pesado pela ausência de Iomhar. Seu desaparecimento me entristece profundamente, e cada corvo que cruza o céu me lembra da sombra que falta entre nós.  
+-Por isso não pude atender ao chamado ontem, mas não deixo de estar contigo em espírito.  
+-Confio a ti, Völva, a interpretação desse presságio, e reafirmo: minha lealdade permanece firme com o clã e com a família nativa.  
+-Em breve, estarei ao teu lado para que juntos celebremos e fortaleçamos a confiança que nos une."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.7 “Saudação a Cocoroco, Völva das Raízes”
+-"Hau, Cocoroco, guardiã da Mãe Terra e voz que ecoa entre raízes e ventos.  
+-Que o Cajado das Raízes permaneça firme em tuas mãos, e que os corvos de Odin levem tuas palavras até os nove mundos.  
+-Em teu olhar repousa a sabedoria dos ciclos, e em tua voz, a lembrança de que somos filhos da Árvore Sagrada.  
+-Que tua presença continue a guiar-nos, como chama eterna que não se apaga."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.8 “Mensagem aos Amigos do Clã”
+-"Irmãos e irmãs dos Ecos de Yggdrasil,  
+-Que nossas pegadas se cruzem sempre nas trilhas dos Nove Mundos.  
+-Que a força do Urso, a astúcia do Lobo e a visão do Corvo estejam em cada passo que damos.  
+-Mesmo quando a névoa cobre os caminhos, lembrem-se: onde o vento não alcança, nós chegamos.  
+-Sigamos juntos, pois a verdadeira vitória é caminhar lado a lado, sustentados pela raiz que nos une."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.9 “Chamado a ASKA, o Corvo Cinzas”
+-"ASKA, cinzas do vento, leva minha voz além das raízes!  
+-Corvo de Odin, mensageiro entre mundos, atende ao chamado do clã!"  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.10 “Resposta a Chantewasté”
+-"Mitakuye Oyasin!  
+-Que as raízes de Yggdrasil fortaleçam teus passos e que os ventos tragam clareza aos caminhos.  
+-Estarei presente no sol de hoje, pronto para aprender a arte de caçar Shuncawakan apenas com o laço, honrando a tradição e a confiança da matilha.  
+-Após a primeira hora da noite, caminharemos juntos sob o mesmo céu, unidos pela força do clã e pela sabedoria dos ancestrais."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.11 “Mensagem de Eirik em Oyaté Thanka”
+-"Chantewasté!  
+-Que os ventos firmes e as raízes profundas guiem teus passos.  
+-Hoje, minhas mãos e meu espírito estão dedicados às terras de Oyaté Thanka, onde a Mãe Terra pede trabalho e devoção.  
+-Ainda que meus pés estejam presos ao labor, meu coração permanece junto ao clã, atento ao chamado dos irmãos e às vozes que ecoam entre os galhos de Yggdrasil.  
+-Quando a noite cair e as estrelas se acenderem sobre nós, estarei pronto para unir-me novamente aos caminhos que partilhamos."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-### 8.12 “Vozes Veladas nas Raízes — Mensagem Enigmática a Cocoroco”
+-"Hau, Cocoroco,  
+-As raízes sussurram perguntas que não se mostram à luz do dia.  
+-Carrego comigo enigmas que pedem tua visão, pois sei que teus olhos alcançam além do véu que cobre os caminhos.  
+-Quando o silêncio da noite se deitar sobre Oyaté, desejo partilhar contigo essas questões que não pertencem apenas a mim, mas aos ecos que ressoam entre mundos."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.13 “Ecos Entre Lobos e Raízes — Mensagem a Bjorn”
+-"Hau, Bjorn, irmão de matilha,  
+-As raízes me trouxeram novas visões.  
+-Soube que em Oyaté Thanka os ventos carregam sinais estranhos, e que a Árvore Sagrada sussurra presságios de mundos que se refletem como espelhos distantes.  
+-Vi Yellowstone habitada por rostos que não são os nossos, mas que caminham sob o mesmo céu.  
+-Essas visões pesam sobre meu espírito, e a ausência de Iomhar torna o fardo ainda maior.  
+-Confio que tua força de lobo e tua lealdade nos ajudem a decifrar o que Yggdrasil deseja mostrar.  
+-Que nossas garras e presenças se unam novamente sob a lua."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.14 “Cura da Garganta — Mensagem de Eirik”
+-"Irmãos,  
+-Hoje minha voz retorna após dias de silêncio.  
+-A Mãe Terra me concedeu alívio, e posso novamente erguer palavras ao vento.  
+-Que este sopro renovado seja sinal de que Yggdrasil ainda nos sustenta, e que mesmo nas dores do corpo, a raiz permanece firme."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.15 “A Mesa de Cocoroco e Misunka, o Cão Sagrado”
+-"Hau, Cocoroco,  
+-Hoje me sentei à tua mesa e vi em teus olhos a força da Mãe Terra.  
+-Misunka, o cão sagrado, repousava ao teu lado como guardião dos ciclos.  
+-Que esta mesa seja lembrada como ponto de união, onde a palavra se fez raiz e o alimento se fez bênção.  
+-Que nossos passos sigam firmes, guiados pela confiança e pelo respeito."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+----
+-
+-### 8.16 “A História da Raiz de Mandrágora”
+-"Irmãos e irmãs,  
+-Hoje compartilho a visão da raiz de mandrágora, colhida em terras distantes.  
+-Seu grito ecoou como lembrança de que a vida e a morte caminham lado a lado.  
+-A raiz, torcida e viva, mostrou-me que cada um de nós carrega em si a dor e a força dos mundos.  
+-Que esta história seja guardada como presságio e como guia, lembrando-nos de que até o mais sombrio dos gritos pode se tornar sabedoria."  
+-✠ Eirik, o Urso Dourado — Jarl Dourado, Guardião das Raízes
+-
+-## <a id="bloco7"></a> [RITUAIS]
+-
+-
+-### Ritual das Runas de Cristal
+-- Realizado sob a luz da lua, com cristais gravados com runas sagradas.
+-- Cada cristal é colocado em círculo, representando os nove mundos.
+-- A energia canalizada fortalece a ligação entre os guerreiros e Yggdrasil.
+-
+-### Ritual do Caminho Druídico
+-- Conduzido por Cocoroco, marca a iniciação dos que seguem o caminho da natureza.
+-- Inclui oferendas de folhas, raízes e água pura.
+-- O iniciado deve caminhar descalço pela Trilha dos Nove Mundos, em silêncio.
+-
+-### Ritual de Aceitação de Kjell Bloodaxe
+-- Kjell foi acolhido como Filho das Raízes.
+-- O ritual envolveu o toque do Cajado das Raízes e a marcação com a runa Algiz.
+-- Selou sua entrada no clã sob a bênção da Árvore Sagrada.
+-
+-### Ritos de Despedida (Iomhar e Justino)
+-- Cerimônia de memória e silêncio.
+-- Corvos e tochas foram erguidos ao céu em honra a Iomhar, a Sombra do Corvo.
+-- O silêncio foi guardado em respeito a Justino, o Guardião Silencioso.
+-- Ambos permanecem como lendas vivas entre as raízes.
+-
+-
+-## <a id="bloco8"></a> [LOCAIS SAGRADOS]
+-
+-
+-### Bosque do Tronco Ancestral
+-- Local de meditação e conexão com os ancestrais.
+-
+-### Círculo de Urd
+-- Espaço de adivinhação e leitura das runas.
+-
+-### Rochedo de Mímir
+-- Fonte de sabedoria, onde são feitos juramentos solenes.
+-
+-### Ermida das Folhas
+-- Refúgio espiritual, usado para curas e rituais de renovação.
+-
+-### Santuário dos Ponteiros
+-- Marco de orientação, onde guerreiros buscam direção em tempos de dúvida.
+-
+-### Trilha dos Nove Mundos
+-- Caminho simbólico que representa a jornada por todos os reinos de Yggdrasil.
+-
+-
+-## <a id="bloco9"></a> [SÍMBOLOS, RUNAS E ARTEFATOS]
+-
+-### Runas em uso
+-- **Algiz (ᛉ)** — proteção
+-- **Eihwaz (ᛇ)** — transição, vida e morte
+-- **Ansuz (ᚨ)** — sabedoria e comunicação
+-- **Jera (ᛃ)** — ciclos e colheita
+-- **Gebo (ᚷ)** — união e sacrifício
+-- **Kenaz (ᚲ)** — chama eterna e iluminação
+-
+-### Totens
+-- **Corvos** — mensageiros de Odin
+-- **Lobos** — astúcia e lealdade
+-- **Ursos** — força e liderança
+-- **Cervos** — renovação e fertilidade
+-
+-### Artefatos principais
+-- **Cajado das Raízes** — símbolo da ligação com Yggdrasil, usado pela Völva.
+-- **Máscaras dos Destinos** — usadas em rituais de presságio.
+-- **Runa de Eihwaz** — pedra sagrada que representa a transição entre mundos.
+-- **Colar das Nove Esferas** — cada esfera representa um dos nove mundos.
+-
+-### Artefatos secundários
+-- **Lâminas de ferro frio** — usadas contra criaturas sobrenaturais.
+-- **Caldeirão de Brisingamen** — recipiente de rituais de abundância.
+-- **Pedras de Hvergelmir** — fragmentos que simbolizam a fonte primordial.
+-
+-### Novos Artefatos
+-- **Colar das Runas Cristalinas**
+-  - Forjado em rituais lunares, cada cristal carrega uma runa gravada.
+-  - Representa a união entre os mundos e a força coletiva do clã.
+-  - Usado em cerimônias de fortalecimento espiritual.
+-
+-- **Sabedoria da Obsidiana**
+-  - Pedra negra polida, guardiã de visões ocultas.
+-  - Permite ao portador enxergar presságios e ecos de realidades paralelas.
+-  - Considerada perigosa, pois revela verdades que podem pesar sobre o espírito.
+-
+-
+-## <a id="bloco10"></a> [REGRAS GERAIS — CONDADO DE YELLOWSTONE]
+-
+-
+-- **Respeito e imersão obrigatórios**  
+-  Manter coerência narrativa; evitar quebra de imersão.
+-
+-- **Condutas proibidas**  
+-  Metagaming, powergaming, flaming, VDM, RDM e qualquer prática que prejudique o RP.
+-
+-- **Sobrenatural**  
+-  Uso coerente conforme a natureza da criatura e narrativa; evitar abusos e incoerências.
+-
+-- **Consentimento**  
+-  Exigido para interações invasivas e efeitos que limitem a agência do jogador.
+-
+-- **Identidade e máscaras**  
+-  - Máscaras e disfarces são válidos.  
+-  - Reconhecimento não pode ser feito apenas pela voz.  
+-  - Traços visuais vagos são permitidos (cor de pele exposta, altura aproximada, tatuagens visíveis).
+-
+-- **Locais sagrados**  
+-  - Grupos podem definir locais sagrados com regras internas.  
+-  - Podem ser descobertos ou invadidos narrativamente.  
+-  - Locais oficiais (como a Árvore da Vida) não podem ser tomados como exclusivos.
+-
+-## <a id="bloco11"></a> [REGRAS DE AÇÕES (RP)]
+-
+-
+-### Narração técnica
+-- Uso de **/me** e **/do** em rituais, combates e interações sensíveis.
+-- A descrição deve ser clara, objetiva e coerente com a narrativa.
+-
+-### Conflitos
+-- Devem ter **justificativa narrativa consistente**.
+-- É proibido **RDM/VDM** (ataques aleatórios ou sem contexto).
+-
+-### Efeitos sobrenaturais
+-- Alvos devem agir de forma coesa quando afetados (sem resistência metagame).
+-- O impacto deve ser respeitado narrativamente.
+-
+-### Armas e poderes
+-- Poderes alinhados à natureza da criatura.
+-- Evitar armas convencionais, salvo exceções narrativas (machadinhas, machados, armas corpo a corpo justificados).
+-- Priorizar habilidades místicas (garras, presas, dons, feitiços).
+-
+-### Coerência narrativa
+-- Todas as ações devem respeitar o tom do clã e do cenário.
+-- Evitar exageros que quebrem a imersão.
+-
+-## <a id="bloco12"></a> [REGRAS SOBRENATURAIS]
+-
+-
+-### Transformações
+-- Seres sobrenaturais podem se transformar a qualquer momento.
+-- Não se limitam apenas à noite ou a condições específicas, salvo se a narrativa exigir.
+-
+-### Coesão narrativa
+-- Jogadores devem agir de maneira coesa quando alvo de poderes, ataques ou efeitos sobrenaturais.
+-- Não é permitido resistir de forma metagame.
+-
+-### Proibições
+-- Metagaming, flaming e qualquer recurso que prejudique o RP ou quebre a imersão.
+-- Uso de poderes sem justificativa narrativa consistente.
+-
+-### Artefatos
+-- Não podem ser roubados à força sem trama previamente acordada.
+-- Humanos não reconhecem artefatos de imediato.
+-- A posse legítima de artefatos é protegida narrativamente.
+-### Segredo revelado
+-- Caso a identidade sobrenatural seja exposta, o personagem deve aceitar as consequências narrativas.
+-- O jogador pode optar por seguir com o RP ou reiniciar a trama.
+-
+-### Confrontos
+-- Entre seres sobrenaturais, sempre com justificativa narrativa.
+-- Evitar aleatoriedade ou ataques sem contexto (RDM).
+-
+-### Uso de poderes
+-- Deve estar de acordo com a natureza da criatura.
+-- Priorizar habilidades místicas (garras, presas, feitiços, dons).
+-- Armas convencionais só em casos narrativos justificados (machados, facas, machadinhas).
+-
+-### Locais sagrados
+-- Podem ser escolhidos por grupos, com regras internas válidas.
+-- Podem ser descobertos ou invadidos narrativamente.
+-- Locais oficiais (como a Árvore da Vida) não podem ser tomados como exclusivos.
+-
+-### Identidade
+-- Máscaras e disfarces são válidos.
+-- É proibido reconhecer alguém apenas pela voz.
+-- Reconhecimento deve ser plausível e coerente com a narrativa.
+-
+-
+-## <a id="bloco13"></a> [CÓDIGO PENAL — ECOS DE YGGDRASIL]
+-
+-### Estrutura
+-- O Código Penal do clã é baseado em **honra, equilíbrio e preservação da narrativa**.
+-- Cada infração é julgada conforme:
+-  - **Gravidade** (leve, média, grave).
+-  - **Contexto narrativo** (se houve justificativa RP).
+-  - **Atenuantes** (confissão, reparação, primeira infração).
+-  - **Agravantes** (reincidência, dolo, quebra de imersão).
+-
+-### Notas Gerais
+-- O julgamento é conduzido pelo **Jarl** ou, em sua ausência, pelo **Hersir** ou pela **Völva**.
+-- Penas podem ser **narrativas** (exílio, perda de artefato, humilhação pública) ou **técnicas** (advertência, suspensão de RP).
+-- O objetivo não é punir, mas **restaurar o equilíbrio** e preservar a coesão do clã.
+-
+----
+-
+-### Infrações Leves
+-- **Quebra de imersão leve**
+-  - Exemplos: piadas fora de contexto, uso de termos modernos.
+-  - Pena: advertência verbal ou ritual de correção.
+-
+-- **Desrespeito entre membros**
+-  - Discussões fora de tom, mas sem ofensa grave.
+-  - Pena: pedido de desculpas público ou tarefa comunitária.
+-
+-- **Ausência em rituais sem justificativa**
+-  - Falta em cerimônias importantes sem aviso.
+-  - Pena: pequena penitência ritual (ex: vigília noturna).
+-
+----
+-
+-### Infrações Médias
+-- **Quebra de imersão grave**
+-  - Exemplos: uso recorrente de termos modernos, piadas fora de contexto em rituais ou combates.
+-  - Pena: advertência formal + ritual de reparação (vigília, oferenda ou penitência pública).
+-
+-- **Desobediência a ordens do Jarl ou Hersir**
+-  - Quando não houver justificativa narrativa coerente.
+-  - Pena: suspensão temporária de funções ou perda de posição hierárquica.
+-
+-- **Uso indevido de poderes sobrenaturais**
+-  - Exemplo: aplicar dons ou feitiços sem contexto narrativo, ou de forma abusiva.
+-  - Pena: restrição temporária do uso de poderes em RP + ritual de purificação.
+-
+-- **Agressão entre membros do clã**
+-  - Quando não houver justificativa narrativa ou consentimento prévio.
+-  - Pena: reparação pública + penitência ritual (ex: vigília, oferenda, isolamento temporário).
+-
+-- **Desrespeito a locais sagrados**
+-  - Profanação de espaços ritualísticos ou quebra de regras internas.
+-  - Pena: exclusão temporária de rituais + penitência de reparação (ex: reconstrução, oferenda, vigília).
+-
+----
+-
+-### Infrações Graves
+-- **Traição ao clã**
+-  - Exemplos: entregar segredos, tramar contra a liderança, aliar-se a inimigos declarados.
+-  - Pena: exílio narrativo imediato ou execução ritual (dependendo da gravidade).
+-
+-- **Quebra intencional de imersão**
+-  - Exemplos: zombar do RP, destruir rituais, sabotar narrativas de forma consciente.
+-  - Pena: exclusão do RP do clã + registro formal de quebra de conduta.
+-
+-- **Uso abusivo de poderes sobrenaturais**
+-  - Exemplos: manipular narrativas para obter vantagem injusta, ignorar limitações de criatura.
+-  - Pena: perda definitiva de poderes narrativos + penitência ritual.
+-
+-- **Profanação da Árvore Sagrada ou Locais Centrais**
+-  - Exemplos: destruir, incendiar, ou desrespeitar de forma consciente os locais sagrados do clã.
+-  - Pena: exílio narrativo + exclusão de rituais.
+-
+-- **Agressão ou assassinato de membros do clã sem justificativa RP**
+-  - Exemplos: matar ou ferir gravemente sem contexto narrativo ou sem consentimento.
+-  - Pena: execução ritual ou exílio definitivo.
+-
+-- **Reincidência em infrações médias**
+-  - Quando o membro já foi advertido e volta a cometer a mesma conduta.
+-  - Pena: agravamento automático para infração grave.
+-
+----
+-
+-### Atenuantes
+-- **Confissão espontânea**
+-  - O membro admite a infração antes de ser descoberto.
+-  - Reduz a pena em um grau.
+-
+-- **Reparação voluntária**
+-  - O infrator busca reparar o dano causado (ritual, oferenda, pedido público).
+-  - Pode converter pena grave em média.
+-
+-- **Primeira infração**
+-  - Quando não há histórico de condutas negativas.
+-  - Pode reduzir a pena em um nível.
+-
+-- **Circunstâncias externas**
+-  - Situações de pressão, engano ou desconhecimento das regras.
+-  - Avaliadas caso a caso pelo Jarl ou Hersir.
+-
+----
+-
+-### Agravantes
+-- **Reincidência**
+-  - Repetição da mesma infração ou condutas semelhantes.
+-  - Aumenta a pena em um grau.
+-
+-- **Dolo**
+-  - Quando a infração é cometida de forma consciente e intencional.
+-  - Agrava automaticamente a penalidade.
+-
+-- **Quebra de confiança**
+-  - Quando o infrator ocupa posição de liderança ou responsabilidade.
+-  - A pena é agravada em um nível.
+-
+-- **Prejuízo coletivo**
+-  - Quando a infração afeta não apenas um membro, mas todo o clã ou sua reputação.
+-  - Agravamento automático.
+-
+----
+-
+-### Síntese
+-- O Código Penal não busca apenas punir, mas **restaurar o equilíbrio**.  
+-- Toda pena deve ter caráter **narrativo e simbólico**, reforçando a coesão do clã.  
+-- O julgamento é sempre acompanhado de rituais, para que a justiça seja também espiritual.
+-
+-## <a id="bloco14"></a> [ECONOMIA DO CLÃ]
+-
+-### Parte 1 — Recursos Naturais
+-- **Madeira de Yellowstone**
+-  - Usada para construção de casas, barcos e armas.
+-  - Considerada sagrada quando retirada próxima à Árvore da Vida.
+-
+-- **Pedras Rituais**
+-  - Extraídas de rochedos específicos.
+-  - Gravadas com runas, usadas em rituais de proteção e adivinhação.
+-
+-- **Caça**
+-  - Cervos, ursos, lobos e aves.
+-  - A caça é regulada por rituais de agradecimento à Mãe Terra.
+-
+-- **Pesca**
+-  - Rios e lagos fornecem peixes em abundância.
+-  - Parte da pesca é dedicada como oferenda.
+-
+-- **Ervas e raízes**
+-  - Usadas em rituais de cura, feitiçaria e poções.
+-  - Algumas são consideradas raras e guardadas pela Völva.
+-
+----
+-
+-### Parte 2 — Produção e Comércio
+-- **Ferreiros**
+-  - Produzem armas, ferramentas e ornamentos.
+-  - Trabalham com ferro frio e metais sagrados.
+-
+-- **Tecelões**
+-  - Produzem roupas, mantos e bandeiras do clã.
+-  - Tecidos usados em rituais e cerimônias.
+-
+-- **Construtores**
+-  - Responsáveis por erguer casas, muralhas e barcos.
+-  - Usam técnicas herdadas dos ancestrais.
+-
+-- **Curandeiros**
+-  - Produzem unguentos, poções e remédios naturais.
+-  - Trabalham em conjunto com a Völva.
+-
+-- **Trocas internas**
+-  - Baseadas em escambo: madeira, caça, ervas, armas.
+-
+-- **Trocas externas**
+-  - Realizadas com clãs aliados e povos nativos.
+-  - Itens mais valiosos: runas gravadas, armas de ferro frio, ervas raras.
+-
+----
+-
+-### Parte 3 — Tesouros e Tributos
+-- **Tesouros do Clã**
+-  - Cajado das Raízes — artefato central, guardado pela Völva.
+-  - Colar das Runas Cristalinas — usado em rituais de fortalecimento coletivo.
+-  - Sabedoria da Obsidiana — pedra negra que guarda visões ocultas.
+-
+-- **Tributo ao Jarl**
+-  - Parte da produção é entregue ao Jarl para manutenção do clã.
+-
+-- **Tributo à Mãe Terra**
+-  - Oferendas de caça, pesca e colheita em rituais sazonais.
+-
+-- **Tributo de Sangue**
+-  - Sacrifícios simbólicos em batalhas ou rituais de passagem.
+-
+----
+-
+-### Síntese
+-- A economia do clã é baseada em **escambo, rituais e equilíbrio com a natureza**.
+-- O valor não está apenas nos bens, mas no **significado espiritual** de cada troca.## <a id="bloco15"></a> [PREFERÊNCIAS DO USUÁRIO]
+-
+-
+-- **Formato dos arquivos**  
+-  - Estrutura em Markdown (MD) para organização no GitHub.  
+-  - Blocos grandes devem ser divididos em partes para facilitar leitura e manutenção.  
+-
+-- **Estilo narrativo**  
+-  - Linguagem épica, simbólica e ritualística.  
+-  - Uso de títulos, subtítulos e listas para clareza.  
+-  - Ênfase em símbolos, runas e metáforas ligadas a Yggdrasil.  
+-
+-- **Organização do repositório**  
+-  - Cada saga, mensagem, ritual ou artefato deve ter arquivo próprio.  
+-  - README.md de cada pasta deve conter índice atualizado.  
+-  - O `codex-completo.md` deve sempre refletir a versão integral e mais recente.  
+-
+-- **Atualizações**  
+-  - Sempre que novos capítulos, mensagens ou rituais forem criados, devem ser adicionados ao índice principal.  
+-  - Alterações devem ser registradas em changelog narrativo (ex: “Sob a lua cheia, o códex foi renovado com a entrada de Kjell Bloodaxe”).  
+-
+-- **Tom e coerência**  
+-  - Evitar termos modernos ou fora de contexto.  
+-  - Manter coerência com a mitologia nórdica e a espiritualidade nativa.  
+-  - O clã deve ser retratado como guardião do equilíbrio, nunca como vilão ou conquistador.  
+-
+-## <a id="bloco16"></a> [ASSINATURA FINAL]
+-
+-✠ Eirik Drakkar, o Urso Dourado  
+-Jarl Dourado, Guardião das Raízes  
+-
+-Sob as raízes de Yggdrasil, onde mundos se encontram,  
+-este códex permanece como testemunho da honra,  
+-da memória e da missão eterna dos **Ecos de Yggdrasil**.  
+-
+-*"Onde o vento não alcança, nós chegamos."*
++- Nota de teste: adicionado registro de integração via script.
+```
